@@ -1,12 +1,5 @@
-import { Button } from '@geist-ui/react';
+import { HomeView } from 'views';
 
-const HomePage = () => {
-    return (
-        <>
-            <h1>Burundiarxiv</h1>
-            <Button>Test</Button>
-        </>
-    );
-};
+const HomePage = () => <HomeView />;
 
 export default HomePage;
