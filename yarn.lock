@@ -1014,6 +1014,13 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@geist-ui/react@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@geist-ui/react/-/react-2.0.2.tgz#6e786920600afe077dceb3474f4283ceb2050555"
+  integrity sha512-g8rDTc4siR/96bmIbUYaw5+khZ9hn7Eha/PuvtuT61eO7Hg9jBcGIJTw5pn333MF2/bkJy4LKjousgMvOTBaWA==
+  dependencies:
+    styled-jsx "^3.2.5"
+
 "@next/react-dev-overlay@9.5.3":
   version "9.5.3"
   resolved "https://registry.yarnpkg.com/@next/react-dev-overlay/-/react-dev-overlay-9.5.3.tgz#3275301f08045ecc709e3273031973a1f5e81427"
@@ -4332,7 +4339,7 @@ style-loader@1.2.1:
     loader-utils "^2.0.0"
     schema-utils "^2.6.6"
 
-styled-jsx@3.3.0:
+styled-jsx@3.3.0, styled-jsx@^3.2.5:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/styled-jsx/-/styled-jsx-3.3.0.tgz#32335c1a3ecfc923ba4f9c056eeb3d4699006b09"
   integrity sha512-sh8BI5eGKyJlwL4kNXHjb27/a/GJV8wP4ElRIkRXrGW3sHKOsY9Pa1VZRNxyvf3+lisdPwizD9JDkzVO9uGwZw==
