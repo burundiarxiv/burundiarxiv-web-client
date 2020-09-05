@@ -1,5 +1,5 @@
 export const theme = {
     palette: {
-        foreground: '#1A202C',
+        foreground: '#4A5568',
     },
 };

@@ -1,18 +1,29 @@
-import { AutoComplete, Text, Link } from '@geist-ui/react';
+import { Fragment, useState } from 'react';
+import {
+    AutoComplete,
+    Text,
+    Link,
+    Divider,
+    Modal,
+    Button,
+} from '@geist-ui/react';
 import { DocumentHead, Container } from 'components';
-import { Fragment } from 'react';
+import { datasets } from 'mock/datasets';
 
 export const HomeView = () => {
+    const data = datasets;
+    const [modalState, setModalState] = useState(false);
+    const [path, setPath] = useState('');
     return (
         <Fragment>
             <DocumentHead />
             <Container>
-                <Text style={{ textAlign: 'center', margin: '30px 0' }} h1>
+                <Text className="logo" h1>
                     Burundiarxiv
                 </Text>
                 <AutoComplete
                     searching={false}
-                    placeholder="Enter here"
+                    placeholder="Search data here"
                     width="100%"
                     size="large"
                 >
@@ -21,48 +32,40 @@ export const HomeView = () => {
                     </AutoComplete.Searching>
                 </AutoComplete>
 
-                <Text h2>Categories</Text>
-                <div>
-                    <Text h4>Revolution</Text>
-                    <Text>
-                        <Link href="#" block>
-                            The Evil Rabbit Jumped over the Fence.
-                        </Link>
-                    </Text>
+                <Text h2 style={{ margin: '30px 0', textAlign: 'center' }}>
+                    Categories
+                </Text>
 
-                    <Text>
-                        <Link href="#" block>
-                            The Evil Rabbit Jumped over the Fence.
-                        </Link>
-                    </Text>
+                <div className="categories">
+                    {data.map(({ category_name, data }, i) => (
+                        <div className="category" key={i}>
+                            <Text h4>{category_name}</Text>
+                            {data.map(({ name, path }) => (
+                                <Text
+                                    onClick={() => {
+                                        setModalState(true);
+                                        setPath(path);
+                                    }}
+                                >
+                                    <Link href="#" block>
+                                        {name}
+                                    </Link>
+                                </Text>
+                            ))}
 
-                    <Text>
-                        <Link href="#" block onClick={() => alert('Hello')}>
-                            The Evil Rabbit Jumped over the Fence.
-                        </Link>
-                    </Text>
+                            <Divider />
+                        </div>
+                    ))}
                 </div>
 
-                <div>
-                    <Text h4>Revolution</Text>
-                    <Text>
-                        <Link href="#" block>
-                            The Evil Rabbit Jumped over the Fence.
-                        </Link>
-                    </Text>
-
-                    <Text>
-                        <Link href="#" block>
-                            The Evil Rabbit Jumped over the Fence.
-                        </Link>
-                    </Text>
-
-                    <Text>
-                        <Link href="#" block onClick={() => alert('Hello')}>
-                            The Evil Rabbit Jumped over the Fence.
-                        </Link>
-                    </Text>
-                </div>
+                <Modal open={modalState} onClose={() => setModalState(false)}>
+                    <Modal.Title>Download data in:</Modal.Title>
+                    <Modal.Content style={{ textAlign: 'center' }}>
+                        <Button auto type="success" size="small">
+                            <Link href={path}>CSV</Link>
+                        </Button>
+                    </Modal.Content>
+                </Modal>
             </Container>
         </Fragment>
     );

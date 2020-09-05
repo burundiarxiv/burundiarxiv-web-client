@@ -1,13 +1,21 @@
 :root {
     --layout-width: 700px;
 }
+
+*,
+*::before,
+*::after {
+    font-family: 'Inter', sans-serif;
+}
+
 .layout {
     max-width: var(--layout-width);
     width: 90%;
     margin: 0 auto;
 }
 
-.button {
-    border-radius: 3px;
-    margin-top: 100px;
+.logo {
+    font-weight: 900;
+    text-align: center;
+    margin: 30px 0;
 }
