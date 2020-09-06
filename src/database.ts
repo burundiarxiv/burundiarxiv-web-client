@@ -13,7 +13,7 @@ export const datasets = [
                     'https://api.burundiarxiv.org/datasets/isteebu-annuaire-2018-19-02.csv',
             },
             {
-                name: 'Postern of Fate',
+                name: 'Postern and Fate',
                 path:
                     'https://api.burundiarxiv.org/datasets/isteebu-annuaire-2018-19-02.csv',
             },
