@@ -1,4 +1,5 @@
-import { Fragment, useState, useRef } from 'react';
+import axios from 'axios';
+import { Fragment, useState, useRef, useEffect } from 'react';
 import {
     AutoComplete,
     Text,
@@ -40,6 +41,18 @@ export const HomeView = () => {
             clearTimeout(timer.current);
         }, 1000);
     };
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const response = await axios.get(
+                'https://api.burundiarxiv.org/api/v1/datasets'
+            );
+
+            console.log(response);
+        };
+
+        fetchData();
+    });
 
     return (
         <Fragment>
