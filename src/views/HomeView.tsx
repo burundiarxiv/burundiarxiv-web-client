@@ -32,7 +32,7 @@ export const HomeView = () => {
     setSearching(true);
 
     const relatedOptions = allOptions.filter((item) =>
-      item.value.includes(currentValue)
+      item.value.toLowerCase().includes(currentValue.toLowerCase())
     );
     // this is mock async request
     // you can get data in any way
