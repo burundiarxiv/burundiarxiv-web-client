@@ -14,14 +14,17 @@ import { searchData } from 'mock/search';
 export const HomeView = () => {
   const [modalState, setModalState] = useState(false);
   const [path, setPath] = useState('');
-
-  const allOptions = searchData.map(({ name, path }) => {
-    return { label: name, value: name };
-  });
-
-  const [options, setOptions] = useState();
+  const [options, setOptions] = useState([]);
   const [searching, setSearching] = useState(false);
   const timer = useRef();
+
+  const allOptions = [];
+  datasets.forEach((dataset) => {
+    dataset.data.forEach((item) => {
+      const { name: value, path } = item;
+      allOptions.push({ value, label: value, path });
+    });
+  });
 
   // triggered every time input
   const searchHandler = (currentValue) => {
