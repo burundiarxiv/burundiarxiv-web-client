@@ -50,7 +50,7 @@ export const HomeView = () => {
         </Text>
         <AutoComplete
           searching={searching}
-          placeholder="Search data here"
+          placeholder="Nom de la base de données"
           width="100%"
           size="large"
           options={options}
@@ -58,7 +58,7 @@ export const HomeView = () => {
         />
 
         <Text h2 style={{ margin: '30px 0', textAlign: 'center' }}>
-          Categories
+          Catégories
         </Text>
 
         <div className="categories">
@@ -85,7 +85,7 @@ export const HomeView = () => {
         </div>
 
         <Modal open={modalState} onClose={() => setModalState(false)}>
-          <Modal.Title>Download data in:</Modal.Title>
+          <Modal.Title>Télécharger au format</Modal.Title>
           <Modal.Content style={{ textAlign: 'center' }}>
             <Button auto type="success" size="small">
               <Link href={path}>CSV</Link>
