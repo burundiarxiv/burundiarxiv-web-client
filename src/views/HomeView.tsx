@@ -9,7 +9,6 @@ import {
 } from '@geist-ui/react';
 import { DocumentHead, Container } from 'components';
 import { datasets } from 'mock/datasets';
-import { searchData } from 'mock/search';
 
 export const HomeView = () => {
     const [modalState, setModalState] = useState(false);
