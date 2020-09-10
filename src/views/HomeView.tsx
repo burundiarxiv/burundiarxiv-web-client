@@ -34,6 +34,7 @@ export const HomeView = () => {
       .filter((item) =>
         item.value.toLowerCase().includes(currentValue.toLowerCase())
       );
+
     setOptions(relatedOptions as any);
     setSearching(false);
   };
