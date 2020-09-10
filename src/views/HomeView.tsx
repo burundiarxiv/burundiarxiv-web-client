@@ -1,4 +1,4 @@
-import { Fragment, useState, useRef } from 'react';
+import { Fragment, useState } from 'react';
 import {
   AutoComplete,
   Text,
@@ -59,10 +59,10 @@ export const HomeView = () => {
         </Text>
 
         <div className="categories">
-          {datasets.map(({ category, data }, dataIndex) => (
-            <div className="category" key={dataIndex}>
+          {datasets.map(({ category, data }, datasetIndex) => (
+            <div className="category" key={datasetIndex}>
               <Text h4>{category}</Text>
-              {data.map(({ name, path }, i) => (
+              {data.map(({ name, path }, dataIndex) => (
                 <Text
                   key={dataIndex}
                   onClick={() => {
