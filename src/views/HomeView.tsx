@@ -15,7 +15,6 @@ export const HomeView = () => {
   const [path, setPath] = useState('');
   const [options, setOptions] = useState([]);
   const [searching, setSearching] = useState(false);
-  const timer = useRef();
 
   const allOptions = datasets.map((dataset) => {
     return dataset.data.map((item) => {
