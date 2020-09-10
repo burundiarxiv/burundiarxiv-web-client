@@ -17,11 +17,10 @@ export const HomeView = () => {
   const [searching, setSearching] = useState(false);
   const timer = useRef();
 
-  const allOptions = [];
-  datasets.forEach((dataset) => {
-    dataset.data.forEach((item) => {
+  const allOptions = datasets.map((dataset) => {
+    return dataset.data.map((item) => {
       const { name: value, path } = item;
-      allOptions.push({ value, label: value, path });
+      return { value, label: value, path };
     });
   });
 
@@ -30,17 +29,13 @@ export const HomeView = () => {
     if (!currentValue) return setOptions([] as any);
     setSearching(true);
 
-    const relatedOptions = allOptions.filter((item) =>
-      item.value.toLowerCase().includes(currentValue.toLowerCase())
-    );
-    // this is mock async request
-    // you can get data in any way
-    timer.current && clearTimeout(timer.current);
-    (timer as any).current = setTimeout(() => {
-      setOptions(relatedOptions as any);
-      setSearching(false);
-      clearTimeout(timer.current);
-    }, 1000);
+    const relatedOptions = allOptions
+      .flat()
+      .filter((item) =>
+        item.value.toLowerCase().includes(currentValue.toLowerCase())
+      );
+    setOptions(relatedOptions as any);
+    setSearching(false);
   };
 
   return (
@@ -64,12 +59,12 @@ export const HomeView = () => {
         </Text>
 
         <div className="categories">
-          {datasets.map(({ category, data }, index) => (
-            <div className="category" key={index}>
+          {datasets.map(({ category, data }, dataIndex) => (
+            <div className="category" key={dataIndex}>
               <Text h4>{category}</Text>
               {data.map(({ name, path }, i) => (
                 <Text
-                  key={index}
+                  key={dataIndex}
                   onClick={() => {
                     setModalState(true);
                     setPath(path);
