@@ -75,7 +75,6 @@ export const HomeView = () => {
                   </Link>
                 </Text>
               ))}
-
               <Divider />
             </div>
           ))}
