@@ -43,7 +43,11 @@ export const HomeView = () => {
       <DocumentHead />
       <Container>
         <Text className="logo" h1>
-          Burundiarxiv
+          Burundi Open Data
+        </Text>
+
+        <Text style={{ margin: '30px 0', textAlign: 'center' }} p>
+          Free and open access to global development data on Burundi
         </Text>
         <AutoComplete
           searching={searching}
