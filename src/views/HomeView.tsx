@@ -97,7 +97,9 @@ export const HomeView = () => {
           <Modal.Title>Download data in</Modal.Title>
           <Modal.Content style={{ textAlign: 'center' }}>
             <Button auto type="success" size="small">
-              <Link href={path}>CSV</Link>
+              <Link href={path} download>
+                CSV
+              </Link>
             </Button>
           </Modal.Content>
         </Modal>
