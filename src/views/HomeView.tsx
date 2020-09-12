@@ -18,7 +18,7 @@ export const HomeView = () => {
     setSearchTerm(value);
 
     if (value) {
-      let relatedDatasets = datasets.map((dataset) => {
+      let relatedDatasets = database.map((dataset) => {
         const filteredData = dataset.data.filter(({ name }) => {
           return name.toLowerCase().includes(value.toLowerCase());
         });
