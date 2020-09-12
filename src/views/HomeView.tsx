@@ -1,41 +1,42 @@
-import { Fragment, useState } from 'react';
-import {
-  AutoComplete,
-  Text,
-  Link,
-  Divider,
-  Modal,
-  Button,
-} from '@geist-ui/react';
+import { Fragment, useState, ReactEventHandler, SyntheticEvent } from 'react';
+import Search from '@geist-ui/react-icons/search';
+import Highlighter from 'react-highlight-words';
+
+import { Text, Link, Divider, Modal, Button, Input } from '@geist-ui/react';
 import { DocumentHead, Container } from 'components';
-import { datasets } from 'mock/datasets';
+import { datasets as database } from 'mock/datasets';
 
 export const HomeView = () => {
   const [modalState, setModalState] = useState(false);
   const [path, setPath] = useState('');
-  const [options, setOptions] = useState([]);
-  const [searching, setSearching] = useState(false);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [datasets, setDatasets] = useState(database);
 
-  const allOptions = datasets.map((dataset) => {
-    return dataset.data.map((item) => {
-      const { name: value, path } = item;
-      return { value, label: value, path };
-    });
-  });
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
+    const { value } = event.target;
 
-  // triggered every time input
-  const searchHandler = (currentValue) => {
-    if (!currentValue) return setOptions([] as any);
-    setSearching(true);
+    setSearchTerm(value);
 
-    const relatedOptions = allOptions
-      .flat()
-      .filter((item) =>
-        item.value.toLowerCase().includes(currentValue.toLowerCase())
+    if (value) {
+      let relatedDatasets = datasets.map((dataset) => {
+        const filteredData = dataset.data.filter(({ name }) => {
+          return name.toLowerCase().includes(value.toLowerCase());
+        });
+
+        return { category: dataset.category, data: filteredData };
+      });
+
+      console.log(value);
+
+      // filter out related datasets with the search term but which has empty data
+      relatedDatasets = relatedDatasets.filter(
+        (dataset) => dataset.data.length !== 0
       );
 
-    setOptions(relatedOptions as any);
-    setSearching(false);
+      setDatasets(relatedDatasets);
+    } else {
+      setDatasets(database);
+    }
   };
 
   return (
@@ -49,13 +50,13 @@ export const HomeView = () => {
         <Text style={{ margin: '30px 0', textAlign: 'center' }} p>
           Free and open access to global development data on Burundi
         </Text>
-        <AutoComplete
-          searching={searching}
+        <Input
           placeholder="Search for a database name"
           width="100%"
           size="large"
-          options={options}
-          onSearch={searchHandler}
+          clearable
+          iconRight={<Search />}
+          onChange={handleChange}
         />
 
         <Text h2 style={{ margin: '30px 0', textAlign: 'center' }}>
@@ -63,25 +64,34 @@ export const HomeView = () => {
         </Text>
 
         <div className="categories">
-          {datasets.map(({ category, data }, datasetIndex) => (
-            <div className="category" key={datasetIndex}>
-              <Text h4>{category}</Text>
-              {data.map(({ name, path }, dataIndex) => (
-                <Text
-                  key={dataIndex}
-                  onClick={() => {
-                    setModalState(true);
-                    setPath(path);
-                  }}
-                >
-                  <Link href="#" block>
-                    {name}
-                  </Link>
-                </Text>
-              ))}
-              <Divider />
-            </div>
-          ))}
+          {datasets.length !== 0 ? (
+            datasets.map(({ category, data }, datasetIndex) => (
+              <div className="category" key={datasetIndex}>
+                <Text h4>{category}</Text>
+                {data.map(({ name, path }, dataIndex) => (
+                  <Text
+                    key={dataIndex}
+                    onClick={() => {
+                      setModalState(true);
+                      setPath(path);
+                    }}
+                  >
+                    <Link href="#" block>
+                      <Highlighter
+                        highlightClassName="highlight"
+                        searchWords={[searchTerm]}
+                        autoEscape={true}
+                        textToHighlight={name}
+                      />
+                    </Link>
+                  </Text>
+                ))}
+                <Divider />
+              </div>
+            ))
+          ) : (
+            <Text style={{ textAlign: 'center' }}>No Results Found</Text>
+          )}
         </div>
 
         <Modal open={modalState} onClose={() => setModalState(false)}>
