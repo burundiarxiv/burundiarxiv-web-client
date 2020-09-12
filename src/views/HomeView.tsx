@@ -43,11 +43,15 @@ export const HomeView = () => {
       <DocumentHead />
       <Container>
         <Text className="logo" h1>
-          Burundiarxiv
+          Burundi Open Data
+        </Text>
+
+        <Text style={{ margin: '30px 0', textAlign: 'center' }} p>
+          Free and open access to global development data on Burundi
         </Text>
         <AutoComplete
           searching={searching}
-          placeholder="Nom de la base de données"
+          placeholder="Search for a database name"
           width="100%"
           size="large"
           options={options}
@@ -55,7 +59,7 @@ export const HomeView = () => {
         />
 
         <Text h2 style={{ margin: '30px 0', textAlign: 'center' }}>
-          Catégories
+          Categories
         </Text>
 
         <div className="categories">
@@ -81,7 +85,7 @@ export const HomeView = () => {
         </div>
 
         <Modal open={modalState} onClose={() => setModalState(false)}>
-          <Modal.Title>Télécharger au format</Modal.Title>
+          <Modal.Title>Download data in</Modal.Title>
           <Modal.Content style={{ textAlign: 'center' }}>
             <Button auto type="success" size="small">
               <Link href={path}>CSV</Link>
