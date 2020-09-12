@@ -49,7 +49,7 @@ export const HomeView = () => {
           width="100%"
           size="large"
           clearable
-          iconRight={<Search />}
+          icon={<Search />}
           onChange={handleChange}
         />
 
