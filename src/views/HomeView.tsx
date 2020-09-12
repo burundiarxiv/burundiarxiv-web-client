@@ -1,4 +1,4 @@
-import { Fragment, useState, ReactEventHandler, SyntheticEvent } from 'react';
+import { Fragment, useState } from 'react';
 import Search from '@geist-ui/react-icons/search';
 import Highlighter from 'react-highlight-words';
 
@@ -6,37 +6,31 @@ import { Text, Link, Divider, Modal, Button, Input } from '@geist-ui/react';
 import { DocumentHead, Container } from 'components';
 import { datasets as database } from 'mock/datasets';
 
+type ChangeEvent = React.ChangeEvent<HTMLInputElement>;
+
 export const HomeView = () => {
   const [modalState, setModalState] = useState(false);
   const [path, setPath] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
   const [datasets, setDatasets] = useState(database);
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
+  const handleChange = (event: ChangeEvent): void => {
     const { value } = event.target;
 
     setSearchTerm(value);
 
-    if (value) {
-      let relatedDatasets = database.map((dataset) => {
+    let relatedDatasets = database
+      .map((dataset) => {
         const filteredData = dataset.data.filter(({ name }) => {
           return name.toLowerCase().includes(value.toLowerCase());
         });
 
         return { category: dataset.category, data: filteredData };
-      });
+      })
+      // filter out datasets which has empty data
+      .filter((dataset) => dataset.data.length !== 0);
 
-      console.log(value);
-
-      // filter out related datasets with the search term but which has empty data
-      relatedDatasets = relatedDatasets.filter(
-        (dataset) => dataset.data.length !== 0
-      );
-
-      setDatasets(relatedDatasets);
-    } else {
-      setDatasets(database);
-    }
+    setDatasets(relatedDatasets);
   };
 
   return (
@@ -90,7 +84,12 @@ export const HomeView = () => {
               </div>
             ))
           ) : (
-            <Text style={{ textAlign: 'center' }}>No Results Found</Text>
+            <Text style={{ textAlign: 'center', width: '100%' }}>
+              No data found related to{' '}
+              <span className="highlight" style={{ fontWeight: 'bolder' }}>
+                {searchTerm}
+              </span>
+            </Text>
           )}
         </div>
 
