@@ -28,7 +28,7 @@ export const HomeView = () => {
         return { category: dataset.category, data: filteredData };
       })
       // filter out datasets which has empty data
-      .filter((dataset) => dataset.data.length !== 0);
+      .filter((dataset) => dataset.data.length);
 
     setDatasets(relatedDatasets);
   };
