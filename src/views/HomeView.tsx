@@ -1,6 +1,8 @@
 import { Fragment, useState } from 'react';
 import Search from '@geist-ui/react-icons/search';
 import Highlighter from 'react-highlight-words';
+import ScrollToTop from 'react-scroll-to-top';
+import { ArrowUp } from '@geist-ui/react-icons';
 
 import { Text, Link, Divider, Modal, Button, Input } from '@geist-ui/react';
 import { DocumentHead, Container } from 'components';
@@ -36,6 +38,8 @@ export const HomeView = () => {
   return (
     <Fragment>
       <DocumentHead />
+      <ScrollToTop smooth component={<ArrowUp />} />
+
       <Container>
         <Text className="logo" h1>
           Burundi Open Data
