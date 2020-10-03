@@ -30,7 +30,7 @@ export const HomeView = () => {
         return { category: dataset.category, data: filteredData };
       })
       // filter out datasets which has empty data
-      .filter((dataset) => dataset.data.length !== 0);
+      .filter((dataset) => dataset.data.length);
 
     setDatasets(relatedDatasets);
   };
@@ -62,7 +62,7 @@ export const HomeView = () => {
         </Text>
 
         <div className="categories">
-          {datasets.length !== 0 ? (
+          {datasets.length ? (
             datasets.map(({ category, data }, datasetIndex) => (
               <div className="category" key={datasetIndex}>
                 <Text h4>{category}</Text>
