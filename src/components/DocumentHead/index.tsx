@@ -1,1 +1,1 @@
-export * from './DocumentHead';
+export { DocumentHead } from './DocumentHead';

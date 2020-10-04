@@ -8,6 +8,9 @@
   font-family: 'Inter', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 .layout {
   max-width: var(--layout-width);
   width: 90%;

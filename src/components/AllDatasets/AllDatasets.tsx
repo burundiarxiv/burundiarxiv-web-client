@@ -1,0 +1,84 @@
+import React, { useState } from 'react';
+import styled from 'styled-components/macro';
+import { datasets as database } from 'mock/datasets';
+import { Button, Divider, Link, Modal, Text } from '@geist-ui/react';
+import Highlighter from 'react-highlight-words';
+
+type ChangeEvent = React.ChangeEvent<HTMLInputElement>;
+
+export const AllDatasets = () => {
+  const [modalState, setModalState] = useState(false);
+  const [path, setPath] = useState('');
+  const [searchTerm, setSearchTerm] = useState('');
+  const [datasets, setDatasets] = useState(database);
+
+  const handleChange = (event: ChangeEvent): void => {
+    const { value } = event.target;
+
+    setSearchTerm(value);
+
+    let relatedDatasets = database
+      .map((dataset) => {
+        const filteredData = dataset.data.filter(({ name }) => {
+          return name.toLowerCase().includes(value.toLowerCase());
+        });
+
+        return { category: dataset.category, data: filteredData };
+      })
+      // filter out datasets which has empty data
+      .filter((dataset) => dataset.data.length);
+
+    setDatasets(relatedDatasets);
+  };
+
+  return (
+    <StyledAllDatasets>
+      {datasets.length ? (
+        datasets.map(({ category, data }, datasetIndex) => (
+          <div className="category" id={category} key={datasetIndex}>
+            <Text h6>{category}</Text>
+            {data.map(({ name, path }, dataIndex) => (
+              <Text
+                key={dataIndex}
+                onClick={() => {
+                  setModalState(true);
+                  setPath(path);
+                }}
+              >
+                <Link href="#" block>
+                  <Highlighter
+                    highlightClassName="highlight"
+                    searchWords={[searchTerm]}
+                    autoEscape={true}
+                    textToHighlight={name}
+                  />
+                </Link>
+              </Text>
+            ))}
+            <Divider />
+          </div>
+        ))
+      ) : (
+        <Text style={{ textAlign: 'center', width: '100%' }}>
+          No data found related to{' '}
+          <span className="highlight" style={{ fontWeight: 'bolder' }}>
+            {searchTerm}
+          </span>
+        </Text>
+      )}
+
+      <Modal open={modalState} onClose={() => setModalState(false)}>
+        <Modal.Title>Download data in</Modal.Title>
+        <Modal.Content style={{ textAlign: 'center' }}>
+          <Button auto type="success" size="small">
+            <Link href={path} download>
+              CSV
+            </Link>
+          </Button>
+        </Modal.Content>
+      </Modal>
+    </StyledAllDatasets>
+  );
+};
+
+const StyledAllDatasets = styled.div``;
