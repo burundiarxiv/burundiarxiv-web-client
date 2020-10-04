@@ -9,6 +9,7 @@ yarn-error.log*
 lerna-debug.log*
 
 
+dist/
 # Runtime data
 pids
 *.pid
