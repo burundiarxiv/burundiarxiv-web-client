@@ -2,7 +2,7 @@
   "name": "burundiarxiv-web-client",
   "version": "0.0.1",
   "description": "Burundiarxiv web client",
-  "main": "index.js",
+  "main": "index.ts",
   "repository": "git@github.com:burundiarxiv/burundiarxiv-web-client.git",
   "author": "muco <mucorolle@gmail.com>",
   "license": "MIT",
