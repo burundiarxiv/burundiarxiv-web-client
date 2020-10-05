@@ -1,21 +1,29 @@
 :root {
-    --layout-width: 700px;
+  --layout-width: 700px;
 }
 
 *,
 *::before,
 *::after {
-    font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 .layout {
-    max-width: var(--layout-width);
-    width: 90%;
-    margin: 0 auto;
+  max-width: var(--layout-width);
+  width: 90%;
+  margin: 0 auto;
 }
 
 .logo {
-    font-weight: 900;
-    text-align: center;
-    margin: 30px 0;
+  font-weight: 900;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.highlight {
+  background-color: #001c3d;
+  color: #ebf4ff;
 }

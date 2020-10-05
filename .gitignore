@@ -65,6 +65,7 @@ typings/
 
 # Next.js build output
 .next
+dist
 
 
 Serverless directories
