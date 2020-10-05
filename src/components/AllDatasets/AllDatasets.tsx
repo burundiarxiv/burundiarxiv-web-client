@@ -1,35 +1,19 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import styled from 'styled-components/macro';
-import { datasets as database } from 'mock/datasets';
 import { Button, Divider, Link, Modal, Text } from '@geist-ui/react';
 import Highlighter from 'react-highlight-words';
+import { Context } from 'context';
+import { datasets as database } from 'mock/datasets';
 
 type ChangeEvent = React.ChangeEvent<HTMLInputElement>;
 
 export const AllDatasets = () => {
+  const {
+    store: { datasets, searchTerm },
+  } = useContext(Context);
+
   const [modalState, setModalState] = useState(false);
   const [path, setPath] = useState('');
-  const [searchTerm, setSearchTerm] = useState('');
-  const [datasets, setDatasets] = useState(database);
-
-  const handleChange = (event: ChangeEvent): void => {
-    const { value } = event.target;
-
-    setSearchTerm(value);
-
-    let relatedDatasets = database
-      .map((dataset) => {
-        const filteredData = dataset.data.filter(({ name }) => {
-          return name.toLowerCase().includes(value.toLowerCase());
-        });
-
-        return { category: dataset.category, data: filteredData };
-      })
-      // filter out datasets which has empty data
-      .filter((dataset) => dataset.data.length);
-
-    setDatasets(relatedDatasets);
-  };
 
   return (
     <StyledAllDatasets>

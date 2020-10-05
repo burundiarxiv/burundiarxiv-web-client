@@ -7,7 +7,14 @@ export const DashboardView = () => {
       <Text h1 style={{ textAlign: 'center', marginTop: '30px' }}>
         We're Sorry!
       </Text>
-      <Note type="success" style={{ width: '400px', margin: '0 auto' }}>
+      <Note
+        type="success"
+        style={{
+          width: 'auto',
+          maxWidth: '400px',
+          margin: '0  auto 50px auto',
+        }}
+      >
         This page is down for maintenance. We are working to get it back up and
         running as soon as possible. Please check back!
       </Note>
