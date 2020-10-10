@@ -629,7 +629,7 @@ export const datasets = [
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-6-05.csv',
              },
              {
-               name: 'Wage income per state institution (million BEF).',
+               name: 'Wage income per state institution (in millions of BIF).',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-6-06.csv',
              },
@@ -811,7 +811,7 @@ export const datasets = [
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-9-15.csv',
              },
              {
-               name: 'Fishing valorization (in millions of FBU)',
+               name: 'Fishing valorization (in millions of BIF)',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-9-16.csv',
              },
@@ -1123,12 +1123,12 @@ export const datasets = [
              },
              {
                name:
-                 'Evolution of imports by major product groups in millions of BFU',
+                 'Evolution of imports by major product groups in millions of BIF',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-13-02.csv',
              },
              {
-               name: 'Main imported products (value in millions of BEF).',
+               name: 'Main imported products (value in millions of BIF).',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-13-03.csv',
              },
@@ -1138,47 +1138,47 @@ export const datasets = [
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-13-04.csv',
              },
              {
-               name: "Burundi's imports by continent (in millions of BEF)",
+               name: "Burundi's imports by continent (in millions of BIF)",
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-13-05.csv',
              },
              {
                name:
-                 'Evolution of imports from COMESA countries (in millions of BEF)',
+                 'Evolution of imports from COMESA countries (in millions of BIF)',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-13-06.csv',
              },
              {
                name:
-                 'Evolution of imports from EAC Countries (in millions of BEF)',
+                 'Evolution of imports from EAC Countries (in millions of BIF)',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-13-07.csv',
              },
              {
                name:
-                 'Evolution of imports from CEPGL countries (in millions of BEF)',
+                 'Evolution of imports from CEPGL countries (in millions of BIF)',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-13-08.csv',
              },
              {
-               name: 'Imports from ECCAS countries (in millions of FBU)',
+               name: 'Imports from ECCAS countries (in millions of BIF)',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-13-09.csv',
              },
              {
                name:
-                 'Evolution of imports from SADC countries (in millions of BEF)',
+                 'Evolution of imports from SADC countries (in millions of BIF)',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-13-10.csv',
              },
              {
-               name: 'Evolution of Exports by Continent(in millions of BEF)',
+               name: 'Evolution of Exports by Continent(in millions of BIF)',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-13-11.csv',
              },
              {
                name:
-                 'Evolution of Exports by product in value (in millions of BEF)',
+                 'Evolution of Exports by product in value (in millions of BIF)',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-13-12.csv',
              },
@@ -1188,12 +1188,12 @@ export const datasets = [
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-13-13.csv',
              },
              {
-               name: 'Export to EAC countries( in Million fbu)',
+               name: 'Export to EAC countries( in millions of BIF)',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-13-14.csv',
              },
              {
-               name: 'Re-exports in value (in millions of BEF)',
+               name: 'Re-exports in value (in millions of BIF)',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-13-15.csv',
              },
@@ -1204,13 +1204,13 @@ export const datasets = [
              },
              {
                name:
-                 'Imports of services and primary income (in million Burundian francs).',
+                 'Imports of services and primary income (in millions of BIF).',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-13-17.csv',
              },
              {
                name:
-                 'Exports of services and primary income (in million Burundian francs).',
+                 'Exports of services and primary income (in millions of BIF).',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-13-18.csv',
              },
@@ -1271,13 +1271,13 @@ export const datasets = [
            category: 'BALANCE OF PAYMENTS',
            data: [
              {
-               name: 'Balance of payments (in millions of BEF)',
+               name: 'Balance of payments (in millions of BIF)',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-14-01.csv',
              },
              {
                name:
-                 'Change in foreign currency income and expenditure (in millions of BEF)',
+                 'Change in foreign currency income and expenditure (in millions of BIF)',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-14-02.csv',
              },
@@ -1287,67 +1287,67 @@ export const datasets = [
            category: 'PUBLIC FINANCES',
            data: [
              {
-               name: 'Evolution of the ordinary budget (in millions of BEF).',
+               name: 'Evolution of the ordinary budget (in millions of BIF).',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-15-01.csv',
              },
              {
-               name: 'Evolution of Tax Revenue (in millions of BEF)',
+               name: 'Evolution of Tax Revenue (in millions of BIF)',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-15-02.csv',
              },
              {
-               name: 'Evolution of Non-Fiscal Revenue (in millions of BEF)',
+               name: 'Evolution of Non-Fiscal Revenue (in millions of BIF)',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-15-03.csv',
              },
              {
-               name: 'Evolution of Donations (in millions of BEF).',
+               name: 'Evolution of Donations (in millions of BIF).',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-15-04.csv',
              },
              {
-               name: 'Expenditures (in millions of BEF).',
+               name: 'Expenditures (in millions of BIF).',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-15-05.csv',
              },
              {
-               name: 'Evolution of the public debt (in millions of BEF).',
+               name: 'Evolution of the public debt (in millions of BIF).',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-15-06.csv',
              },
              {
-               name: 'External public debt by sector (in millions of BEF)',
+               name: 'External public debt by sector (in millions of BIF)',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-15-07.csv',
              },
              {
                name:
-                 'Consolidated financial transactions of the State (in millions of Fbu)',
+                 'Consolidated financial transactions of the State (in millions of BIF)',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-15-08.csv',
              },
              {
                name:
-                 "Evolution of the operation of the communes' revenues (in thousands of BUF)",
+                 "Evolution of the operation of the communes' revenues (in thousands of BIF)",
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-15-09.csv',
              },
              {
                name:
-                 'Evolution of the operating expenses of the communes (in thousands of BUF)',
+                 'Evolution of the operating expenses of the communes (in thousands of BIF)',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-15-10.csv',
              },
              {
                name:
-                 'Evolution of the investment income of the communes (in thousands of BEF)',
+                 'Evolution of the investment income of the communes (in thousands of BIF)',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-15-11.csv',
              },
              {
                name:
-                 "Evolution of the communes' capital expenditure (in thousands of BEF)",
+                 "Evolution of the communes' capital expenditure (in thousands of BIF)",
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-15-12.csv',
              },
@@ -1358,31 +1358,31 @@ export const datasets = [
            data: [
              {
                name:
-                 'Resources of the banking system (end of year: in millions of BEF).',
+                 'Resources of the banking system (end of year: in millions of BIF).',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-16-01.csv',
              },
              {
                name:
-                 'Counterpart of monetary resources (end of year: in millions of BEF).',
+                 'Counterpart of monetary resources (end of year: in millions of BIF).',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-16-02.csv',
              },
              {
                name:
-                 'Breakdown of bank deposits by holder (end of year: in millions of BEF).',
+                 'Breakdown of bank deposits by holder (end of year: in millions of BIF).',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-16-03.csv',
              },
              {
                name:
-                 'Evolution of financial system risks (in millions of BEF).',
+                 'Evolution of financial system risks (in millions of BIF).',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-16-04.csv',
              },
              {
                name:
-                 'Evolution of credits distributed to the economy (in millions of BEF).',
+                 'Evolution of credits distributed to the economy (in millions of BIF).',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-16-05.csv',
              },
@@ -1404,7 +1404,7 @@ export const datasets = [
            data: [
              {
                name:
-                 'Gross domestic product according to the production perspective (in billions of Fbu)',
+                 'Gross domestic product according to the production perspective (in billions of BIF)',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-17-01.csv',
              },
@@ -1415,29 +1415,29 @@ export const datasets = [
              },
              {
                name:
-                 'Evolution of the value added of the primary sector (in billions of Fbu)',
+                 'Evolution of the value added of the primary sector (in billions of BIF)',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-17-03.csv',
              },
              {
                name:
-                 'Evolution of the value added of the secondary sector (in billions of Fbu)',
+                 'Evolution of the value added of the secondary sector (in billions of BIF)',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-17-04.csv',
              },
              {
                name:
-                 'Evolution of the value added of the tertiary sector (in billions of Fbu)',
+                 'Evolution of the value added of the tertiary sector (in billions of BIF)',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-17-05.csv',
              },
              {
-               name: 'GDP employment (in billions of Fbu, current prices)',
+               name: 'GDP employment (in billions of BIF, current prices)',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-17-06.csv',
              },
              {
-               name: 'GDP employment (in billions of Fbu, constant prices)',
+               name: 'GDP employment (in billions of BIF, constant prices)',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-17-07.csv',
              },
@@ -1447,17 +1447,17 @@ export const datasets = [
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-17-08.csv',
              },
              {
-               name: 'Breakdown of GFCF by sector in billions of BFBF',
+               name: 'Breakdown of GFCF by sector in billions of BIF',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-17-09.csv',
              },
              {
-               name: 'Structure of imports in billions of Fbu',
+               name: 'Structure of imports in billions of BIF',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-17-10.csv',
              },
              {
-               name: 'Structure of exports by products, in billions of Fbu',
+               name: 'Structure of exports by products, in billions of BIF',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-17-11.csv',
              },
@@ -1497,25 +1497,25 @@ export const datasets = [
              },
              {
                name:
-                 'Change in premiums written by category of non-life insurance (in thousands of BEF)',
+                 'Change in premiums written by category of non-life insurance (in thousands of BIF)',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-18-06.csv',
              },
              {
                name:
-                 'Change in premiums written by category of Life insurance (in thousands of BEF)',
+                 'Change in premiums written by category of Life insurance (in thousands of BIF)',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-18-07.csv',
              },
              {
                name:
-                 'Change in claims paid by category of non-life insurance (in thousands of BEF) at December 31',
+                 'Change in claims paid by category of non-life insurance (in thousands of BIF) at December 31',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-18-08.csv',
              },
              {
                name:
-                 'Evolution of benefits by category of Life insurance (in thousands of BEF) at December 31',
+                 'Evolution of benefits by category of Life insurance (in thousands of BIF) at December 31',
                path:
                  'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-18-09.csv',
              },
