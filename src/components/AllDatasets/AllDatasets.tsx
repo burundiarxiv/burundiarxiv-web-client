@@ -3,9 +3,6 @@ import styled from 'styled-components/macro';
 import { Button, Divider, Link, Modal, Text } from '@geist-ui/react';
 import Highlighter from 'react-highlight-words';
 import { Context } from 'context';
-import { datasets as database } from 'mock/datasets';
-
-type ChangeEvent = React.ChangeEvent<HTMLInputElement>;
 
 export const AllDatasets = () => {
   const {
