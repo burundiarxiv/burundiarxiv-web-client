@@ -1,4 +1,4 @@
-import { Text, Grid, Card, Link, Image } from '@geist-ui/react';
+import { Text, Grid, Card, Link } from '@geist-ui/react';
 import { Layout } from 'components';
 import { Doughnut, Line, Bubble, Radar } from 'react-chartjs-2';
 
