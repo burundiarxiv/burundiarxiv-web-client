@@ -1,9 +1,9 @@
 {
-  "name": "burundiarxiv-web-client",
+  "name": "open-data",
   "version": "0.0.1",
-  "description": "Burundiarxiv web client",
+  "description": "Burundi Open Data web client",
   "main": "index.ts",
-  "repository": "git@github.com:burundiarxiv/burundiarxiv-web-client.git",
+  "repository": "git@github.com:burundiarxiv/open-data.git",
   "author": "muco <mucorolle@gmail.com>",
   "license": "MIT",
   "scripts": {
