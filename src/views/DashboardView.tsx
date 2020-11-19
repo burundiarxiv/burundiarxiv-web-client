@@ -117,7 +117,7 @@ export const DashboardView = () => {
   };
   const Item = ({ Component, data }) => {
     return (
-      <Card width="400px">
+      <Card className="card">
         <Text h6 style={{ marginBottom: '0' }}>
           Burundi's main demographic and socio-economic indicators
         </Text>
@@ -136,20 +136,46 @@ export const DashboardView = () => {
       <Text h4 style={{ textAlign: 'center' }}>
         POPULATION
       </Text>
-      <Grid.Container gap={5} justify="center">
-        <Grid xs={24} md={12}>
-          <Item Component={Doughnut} data={doughnutData} />
-        </Grid>
-        <Grid xs={24} md={12}>
-          <Item Component={Line} data={lineData} />
-        </Grid>
-        <Grid xs={24} md={12}>
-          <Item Component={Bubble} data={bubbleData} />
-        </Grid>
-        <Grid xs={24} md={12}>
-          <Item Component={Radar} data={radarData} />
-        </Grid>
-      </Grid.Container>
+      <div className="grid">
+        <Grid.Container gap={5} justify="center">
+          <Grid xs={24} sm={12} md={12}>
+            <Item Component={Doughnut} data={doughnutData} />
+          </Grid>
+          <Grid xs={24} sm={12} md={12}>
+            <Item Component={Line} data={lineData} />
+          </Grid>
+          <Grid xs={24} sm={12} md={12}>
+            <Item Component={Bubble} data={bubbleData} />
+          </Grid>
+          <Grid xs={24} sm={12} md={12}>
+            <Item Component={Radar} data={radarData} />
+          </Grid>
+          <Grid xs={24} sm={12} md={12}>
+            <Item Component={Doughnut} data={doughnutData} />
+          </Grid>
+          <Grid xs={24} sm={12} md={12}>
+            <Item Component={Line} data={lineData} />
+          </Grid>
+          <Grid xs={24} sm={12} md={12}>
+            <Item Component={Bubble} data={bubbleData} />
+          </Grid>
+          <Grid xs={24} sm={12} md={12}>
+            <Item Component={Radar} data={radarData} />
+          </Grid>
+          <Grid xs={24} sm={12} md={12}>
+            <Item Component={Doughnut} data={doughnutData} />
+          </Grid>
+          <Grid xs={24} sm={12} md={12}>
+            <Item Component={Line} data={lineData} />
+          </Grid>
+          <Grid xs={24} sm={12} md={12}>
+            <Item Component={Bubble} data={bubbleData} />
+          </Grid>
+          <Grid xs={24} sm={12} md={12}>
+            <Item Component={Radar} data={radarData} />
+          </Grid>
+        </Grid.Container>
+      </div>
     </Layout>
   );
 };
