@@ -1,3 +1,4 @@
+import styled from 'styled-components/macro';
 import { Text, Grid, Card, Link } from '@geist-ui/react';
 import { Layout } from 'components';
 import { Doughnut, Line, Bubble, Radar } from 'react-chartjs-2';
@@ -132,50 +133,66 @@ export const DashboardView = () => {
   };
 
   return (
-    <Layout pageTitle="Dashboard">
-      <Text h4 style={{ textAlign: 'center' }}>
-        POPULATION
-      </Text>
-      <div className="grid">
-        <Grid.Container gap={5} justify="center">
-          <Grid xs={24} sm={12} md={12}>
-            <Item Component={Doughnut} data={doughnutData} />
-          </Grid>
-          <Grid xs={24} sm={12} md={12}>
-            <Item Component={Line} data={lineData} />
-          </Grid>
-          <Grid xs={24} sm={12} md={12}>
-            <Item Component={Bubble} data={bubbleData} />
-          </Grid>
-          <Grid xs={24} sm={12} md={12}>
-            <Item Component={Radar} data={radarData} />
-          </Grid>
-          <Grid xs={24} sm={12} md={12}>
-            <Item Component={Doughnut} data={doughnutData} />
-          </Grid>
-          <Grid xs={24} sm={12} md={12}>
-            <Item Component={Line} data={lineData} />
-          </Grid>
-          <Grid xs={24} sm={12} md={12}>
-            <Item Component={Bubble} data={bubbleData} />
-          </Grid>
-          <Grid xs={24} sm={12} md={12}>
-            <Item Component={Radar} data={radarData} />
-          </Grid>
-          <Grid xs={24} sm={12} md={12}>
-            <Item Component={Doughnut} data={doughnutData} />
-          </Grid>
-          <Grid xs={24} sm={12} md={12}>
-            <Item Component={Line} data={lineData} />
-          </Grid>
-          <Grid xs={24} sm={12} md={12}>
-            <Item Component={Bubble} data={bubbleData} />
-          </Grid>
-          <Grid xs={24} sm={12} md={12}>
-            <Item Component={Radar} data={radarData} />
-          </Grid>
-        </Grid.Container>
-      </div>
-    </Layout>
+    <StyledDashboardView>
+      <Layout pageTitle="Dashboard">
+        <Text h4 style={{ textAlign: 'center' }}>
+          POPULATION
+        </Text>
+        <div className="grid">
+          <Grid.Container gap={5} justify="center">
+            <Grid xs={24} sm={12} md={12}>
+              <Item Component={Doughnut} data={doughnutData} />
+            </Grid>
+            <Grid xs={24} sm={12} md={12}>
+              <Item Component={Line} data={lineData} />
+            </Grid>
+            <Grid xs={24} sm={12} md={12}>
+              <Item Component={Bubble} data={bubbleData} />
+            </Grid>
+            <Grid xs={24} sm={12} md={12}>
+              <Item Component={Radar} data={radarData} />
+            </Grid>
+            <Grid xs={24} sm={12} md={12}>
+              <Item Component={Doughnut} data={doughnutData} />
+            </Grid>
+            <Grid xs={24} sm={12} md={12}>
+              <Item Component={Line} data={lineData} />
+            </Grid>
+            <Grid xs={24} sm={12} md={12}>
+              <Item Component={Bubble} data={bubbleData} />
+            </Grid>
+            <Grid xs={24} sm={12} md={12}>
+              <Item Component={Radar} data={radarData} />
+            </Grid>
+            <Grid xs={24} sm={12} md={12}>
+              <Item Component={Doughnut} data={doughnutData} />
+            </Grid>
+            <Grid xs={24} sm={12} md={12}>
+              <Item Component={Line} data={lineData} />
+            </Grid>
+            <Grid xs={24} sm={12} md={12}>
+              <Item Component={Bubble} data={bubbleData} />
+            </Grid>
+            <Grid xs={24} sm={12} md={12}>
+              <Item Component={Radar} data={radarData} />
+            </Grid>
+          </Grid.Container>
+        </div>
+      </Layout>
+    </StyledDashboardView>
   );
 };
+
+const StyledDashboardView = styled.div`
+  .grid {
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+    margin: 50px 0;
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+  }
+`;
