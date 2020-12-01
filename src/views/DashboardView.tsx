@@ -116,11 +116,11 @@ export const DashboardView = () => {
       },
     ],
   };
-  const Item = ({ Component, data }) => {
+  const Item = ({ Component, data, title }) => {
     return (
       <Card className="card">
         <Text h6 style={{ marginBottom: '0' }}>
-          Burundi's main demographic and socio-economic indicators
+          {title}
         </Text>
         <Component data={data} />
         <Card.Footer>
@@ -132,52 +132,82 @@ export const DashboardView = () => {
     );
   };
 
+  const categories = [
+    [
+      'POPULATION',
+      'Population par âge et par sexe dans les communes',
+      "Population résidante de 10 ans et plus selon l'état matrimonial et le sexe",
+      'Population résidante selon la religion et le sexe',
+      "Population de 10 ans ou plus par sexe, âge et niveau d'instruction au recensement de 2008",
+    ],
+    [
+      'EDUCATION',
+      'Répartition des écoles du fondamental par province scolaire',
+      'Répartition des effectifs des élèves du fondamental  par province',
+      'Evolution des établissements d’enseignement supérieur',
+      'Répartition du personnel enseignant du fondamental  par province',
+    ],
+    [
+      'SANTÉ ET NUTRITION',
+      'Evolution des infrastructures sanitaires par province',
+      'Effectif de médecins soignants par province',
+      'Les principales causes de mortalité dans les hôpitaux chez les enfants de moins de 5 ans',
+      'Morbidités hospitalières dues au SIDA',
+    ],
+    [
+      'TOURISME ET HOTELLERIE',
+      "Hotels du Burundi, leur capacite d'accueil et prix moyen d'une chambre",
+      'Tourisme récepteur',
+      'Arrivées par mode de transport',
+      "Hotels du Burundi, leur capacite d'accueil et prix moyen d'une chambre",
+    ],
+    [
+      'FINANCES PUBLIQUES',
+      "Evolution des recettes d'investissement des communes (en milliers de FBU)",
+      'Evolution des Recettes fiscales (en millions de FBU)',
+      'Evolution de la dette publique (en millions de FBU)',
+      'Evolution de fonctionnement des recettes des communes (en milliers de FBU)',
+    ],
+  ];
+
   return (
     <StyledDashboardView>
       <Layout pageTitle="Dashboard">
-        <Text h4 style={{ textAlign: 'center' }}>
-          POPULATION
-        </Text>
-        <div className="grid">
-          <Grid.Container gap={5} justify="center">
-            <Grid xs={24} sm={12} md={12}>
-              <Item Component={Doughnut} data={doughnutData} />
-            </Grid>
-            <Grid xs={24} sm={12} md={12}>
-              <Item Component={Line} data={lineData} />
-            </Grid>
-            <Grid xs={24} sm={12} md={12}>
-              <Item Component={Bubble} data={bubbleData} />
-            </Grid>
-            <Grid xs={24} sm={12} md={12}>
-              <Item Component={Radar} data={radarData} />
-            </Grid>
-            <Grid xs={24} sm={12} md={12}>
-              <Item Component={Doughnut} data={doughnutData} />
-            </Grid>
-            <Grid xs={24} sm={12} md={12}>
-              <Item Component={Line} data={lineData} />
-            </Grid>
-            <Grid xs={24} sm={12} md={12}>
-              <Item Component={Bubble} data={bubbleData} />
-            </Grid>
-            <Grid xs={24} sm={12} md={12}>
-              <Item Component={Radar} data={radarData} />
-            </Grid>
-            <Grid xs={24} sm={12} md={12}>
-              <Item Component={Doughnut} data={doughnutData} />
-            </Grid>
-            <Grid xs={24} sm={12} md={12}>
-              <Item Component={Line} data={lineData} />
-            </Grid>
-            <Grid xs={24} sm={12} md={12}>
-              <Item Component={Bubble} data={bubbleData} />
-            </Grid>
-            <Grid xs={24} sm={12} md={12}>
-              <Item Component={Radar} data={radarData} />
-            </Grid>
-          </Grid.Container>
-        </div>
+        {categories.map((category) => (
+          <div>
+            <Text h4 style={{ textAlign: 'center' }}>
+              {category[0]}
+            </Text>
+            <div className="grid">
+              <Grid.Container gap={5} justify="center">
+                <Grid xs={24} sm={12} md={12}>
+                  <Item
+                    Component={Doughnut}
+                    data={doughnutData}
+                    title={category[1]}
+                  />
+                </Grid>
+                <Grid xs={24} sm={12} md={12}>
+                  <Item Component={Line} data={lineData} title={category[2]} />
+                </Grid>
+                <Grid xs={24} sm={12} md={12}>
+                  <Item
+                    Component={Bubble}
+                    data={bubbleData}
+                    title={category[3]}
+                  />
+                </Grid>
+                <Grid xs={24} sm={12} md={12}>
+                  <Item
+                    Component={Radar}
+                    data={radarData}
+                    title={category[1]}
+                  />
+                </Grid>
+              </Grid.Container>
+            </div>
+          </div>
+        ))}
       </Layout>
     </StyledDashboardView>
   );
