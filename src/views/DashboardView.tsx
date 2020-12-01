@@ -138,7 +138,7 @@ export const DashboardView = () => {
       'Population par âge et par sexe dans les communes',
       "Population résidante de 10 ans et plus selon l'état matrimonial et le sexe",
       'Population résidante selon la religion et le sexe',
-      "Population de 10 ans ou plus par sexe, âge et niveau d'instruction au recensement de 2008",
+      'Population burundaise par province',
     ],
     [
       'EDUCATION',
