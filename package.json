@@ -1,9 +1,9 @@
 {
-  "name": "burundiarxiv-web-client",
+  "name": "open-data",
   "version": "0.0.1",
-  "description": "Burundiarxiv web client",
+  "description": "Burundi Open Data web client",
   "main": "index.ts",
-  "repository": "git@github.com:burundiarxiv/burundiarxiv-web-client.git",
+  "repository": "git@github.com:burundiarxiv/open-data.git",
   "author": "muco <mucorolle@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -14,8 +14,10 @@
   "dependencies": {
     "@geist-ui/react": "^2.0.2",
     "@geist-ui/react-icons": "^1.0.0",
+    "chart.js": "^2.9.4",
     "next": "^9.5.3",
     "react": "^16.13.1",
+    "react-chartjs-2": "^2.11.1",
     "react-dom": "^16.13.1",
     "react-highlight-words": "^0.16.0",
     "react-scroll-to-top": "^1.0.5",
