@@ -8,8 +8,8 @@ export const Header = ({ pageTitle }) => {
     <StyledHeader>
       <div className="header-container">
         <Intro />
-        {pageTitle === 'Home' && <SearchInput />}
         <Nav />
+        {pageTitle === 'Home' && <SearchInput />}
       </div>
     </StyledHeader>
   );
@@ -23,5 +23,10 @@ const StyledHeader = styled.header`
     width: 90%;
     max-width: 800px;
     margin: 0 auto;
+  }
+  .search-input-container {
+    div {
+      margin-bottom: 10px;
+    }
   }
 `;

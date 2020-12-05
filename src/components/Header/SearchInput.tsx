@@ -14,13 +14,15 @@ export const SearchInput = () => {
     dispatch({ name: 'SEARCH', payload: { searchTerm: value } });
   };
   return (
-    <Input
-      placeholder="Search for a database name"
-      width="100%"
-      size="large"
-      clearable
-      icon={<Search />}
-      onChange={onChangeHandler}
-    />
+    <div className="search-input-container">
+      <Input
+        placeholder="Search for a database name"
+        width="100%"
+        size="large"
+        clearable
+        icon={<Search />}
+        onChange={onChangeHandler}
+      />
+    </div>
   );
 };
