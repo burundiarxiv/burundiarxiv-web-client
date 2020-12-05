@@ -1,6 +1,14 @@
 import React, { useContext, useState } from 'react';
 import styled from 'styled-components/macro';
-import { Button, Divider, Link, Modal, Text } from '@geist-ui/react';
+import {
+  Button,
+  Divider,
+  Link,
+  Modal,
+  Text,
+  Table,
+  Spacer,
+} from '@geist-ui/react';
 import Highlighter from 'react-highlight-words';
 import { Context } from 'context';
 
@@ -11,7 +19,28 @@ export const AllDatasets = () => {
 
   const [modalState, setModalState] = useState(false);
   const [path, setPath] = useState('');
+  const [modalTitle, setModalTitle] = useState('');
 
+  const data = [
+    {
+      property: 'type',
+      description: 'Content type',
+      type: 'secondary | warning',
+      default: '-',
+    },
+    {
+      property: 'Component',
+      description: 'DOM element to use',
+      type: 'string',
+      default: '-',
+    },
+    {
+      property: 'bold',
+      description: 'Bold style',
+      type: 'boolean',
+      default: 'true',
+    },
+  ];
   return (
     <StyledAllDatasets>
       {datasets.length ? (
@@ -24,6 +53,7 @@ export const AllDatasets = () => {
                 onClick={() => {
                   setModalState(true);
                   setPath(path);
+                  setModalTitle(name);
                 }}
               >
                 <Link href="#" block>
@@ -48,15 +78,28 @@ export const AllDatasets = () => {
         </Text>
       )}
 
-      <Modal open={modalState} onClose={() => setModalState(false)}>
-        <Modal.Title>Download data in</Modal.Title>
+      <Modal
+        open={modalState}
+        width="100rem"
+        onClose={() => setModalState(false)}
+      >
+        <Modal.Title>{modalTitle}</Modal.Title>
         <Modal.Content style={{ textAlign: 'center' }}>
-          <Button auto type="success" size="small">
-            <Link href={path} download>
-              CSV
-            </Link>
-          </Button>
+          <Table data={data}>
+            <Table.Column prop="property" label="property" />
+            <Table.Column prop="description" label="description" />
+            <Table.Column prop="type" label="type" />
+            <Table.Column prop="default" label="default" />
+          </Table>
         </Modal.Content>
+        <Modal.Action passive onClick={() => setModalState(false)}>
+          Cancel
+        </Modal.Action>
+        <Modal.Action>
+          <Link href={path} download icon color>
+            Download in CSV
+          </Link>
+        </Modal.Action>
       </Modal>
     </StyledAllDatasets>
   );
