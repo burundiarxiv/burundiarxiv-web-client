@@ -12,7 +12,7 @@ export const Layout = ({ children, pageTitle }: LayoutProps) => {
   return (
     <div className="layout-page">
       <DocumentHead title={pageTitle} />
-      <Header />
+      <Header pageTitle={pageTitle} />
       <MainContent>{children}</MainContent>
     </div>
   );

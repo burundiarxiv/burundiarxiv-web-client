@@ -3,12 +3,12 @@ import { Intro } from './Intro';
 import { Nav } from './Nav';
 import { SearchInput } from './SearchInput';
 
-export const Header = () => {
+export const Header = ({ pageTitle }) => {
   return (
     <StyledHeader>
       <div className="header-container">
         <Intro />
-        <SearchInput />
+        {pageTitle === 'Home' && <SearchInput />}
         <Nav />
       </div>
     </StyledHeader>
