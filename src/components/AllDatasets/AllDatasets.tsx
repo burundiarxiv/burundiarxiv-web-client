@@ -12,26 +12,29 @@ export const AllDatasets = () => {
   const [modalState, setModalState] = useState(false);
   const [path, setPath] = useState('');
   const [modalTitle, setModalTitle] = useState('');
-  const [modalData, setModalData] = useState([]);
-  const [modalColumns, setModalColumns] = useState([]);
-  const [dataSource, setDataSource] = useState('');
+  const [modalData, setModalData] = useState({
+    headers: [],
+    rows: [],
+    source: '',
+  });
 
-  const getData = () => {
+  const fetchModalData = () => {
     fetch(
       'https://raw.githubusercontent.com/burundiarxiv/datasets/master/json/isteebu-annuaire-2018-6-07.json'
     )
       .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-        setModalData(data.data);
-        setModalColumns(data.headers);
-        setDataSource(data.source);
+      .then(({ headers, rows, source }) => {
+        setModalData({
+          headers: headers,
+          rows: rows,
+          source: source,
+        });
       });
   };
 
   const tableColumns = (
     <>
-      {modalColumns.map((column, index) => (
+      {modalData.headers.map((column, index) => (
         <Table.Column prop={column} label={column} key={`${column}-${index}`} />
       ))}
     </>
@@ -50,7 +53,7 @@ export const AllDatasets = () => {
                   setModalState(true);
                   setPath(path);
                   setModalTitle(name);
-                  getData();
+                  fetchModalData();
                 }}
               >
                 <Link href="#" block>
@@ -82,12 +85,12 @@ export const AllDatasets = () => {
       >
         <Modal.Title>{modalTitle}</Modal.Title>
         <Modal.Content style={{ textAlign: 'center' }}>
-          <Table data={modalData}>{tableColumns}</Table>
+          <Table data={modalData.rows}>{tableColumns}</Table>
           <Text
             p
             style={{ textAlign: 'left', fontSize: '12px', fontStyle: 'italic' }}
           >
-            Source: {dataSource}
+            Source: {modalData.source}
           </Text>
         </Modal.Content>
         <Modal.Action passive onClick={() => setModalState(false)}>
