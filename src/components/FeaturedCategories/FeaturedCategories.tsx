@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro';
-import { Text, Link } from '@geist-ui/react';
+import { Link } from '@geist-ui/react';
 import { datasets } from 'mock/datasets';
 
 export const FeaturedCategories = () => {

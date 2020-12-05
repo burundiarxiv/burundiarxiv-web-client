@@ -1,14 +1,6 @@
 import React, { useContext, useState } from 'react';
 import styled from 'styled-components/macro';
-import {
-  Button,
-  Divider,
-  Link,
-  Modal,
-  Text,
-  Table,
-  Spacer,
-} from '@geist-ui/react';
+import { Divider, Link, Modal, Text, Table } from '@geist-ui/react';
 import Highlighter from 'react-highlight-words';
 import { Context } from 'context';
 
@@ -20,27 +12,29 @@ export const AllDatasets = () => {
   const [modalState, setModalState] = useState(false);
   const [path, setPath] = useState('');
   const [modalTitle, setModalTitle] = useState('');
+  const [modalData, setModalData] = useState([]);
+  const [modalColumns, setModalColumns] = useState([]);
 
-  const data = [
-    {
-      property: 'type',
-      description: 'Content type',
-      type: 'secondary | warning',
-      default: '-',
-    },
-    {
-      property: 'Component',
-      description: 'DOM element to use',
-      type: 'string',
-      default: '-',
-    },
-    {
-      property: 'bold',
-      description: 'Bold style',
-      type: 'boolean',
-      default: 'true',
-    },
-  ];
+  const getData = () => {
+    fetch(
+      'https://raw.githubusercontent.com/burundiarxiv/datasets/master/json/isteebu-annuaire-2018-6-07.json'
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        setModalData(data.data.slice(0, 1));
+        setModalColumns(data.headers);
+      });
+  };
+
+  const tableColumns = (
+    <>
+      {modalColumns.map((column, index) => (
+        <Table.Column prop={column} label={column} key={`${column}-${index}`} />
+      ))}
+    </>
+  );
+
   return (
     <StyledAllDatasets>
       {datasets.length ? (
@@ -54,6 +48,7 @@ export const AllDatasets = () => {
                   setModalState(true);
                   setPath(path);
                   setModalTitle(name);
+                  getData();
                 }}
               >
                 <Link href="#" block>
@@ -85,11 +80,17 @@ export const AllDatasets = () => {
       >
         <Modal.Title>{modalTitle}</Modal.Title>
         <Modal.Content style={{ textAlign: 'center' }}>
-          <Table data={data}>
-            <Table.Column prop="property" label="property" />
-            <Table.Column prop="description" label="description" />
-            <Table.Column prop="type" label="type" />
-            <Table.Column prop="default" label="default" />
+          <Table data={modalData}>
+            {tableColumns}
+            {/* <Table.Column prop="id_tableau" label="id_tableau" />
+            <Table.Column prop="titre_tableau" label="titre_tableau" />
+            <Table.Column prop="source" label="source" />
+            <Table.Column prop="categorie" label="categorie" />
+            <Table.Column prop="sous_categorie" label="sous_categorie" />
+            <Table.Column prop="2002" label="2002" />
+            <Table.Column prop="2006" label="2006" />
+            <Table.Column prop="2008" label="2008" />
+            <Table.Column prop="2014" label="2014" /> */}
           </Table>
         </Modal.Content>
         <Modal.Action passive onClick={() => setModalState(false)}>
