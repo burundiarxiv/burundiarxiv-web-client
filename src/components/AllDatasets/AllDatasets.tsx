@@ -14,6 +14,7 @@ export const AllDatasets = () => {
   const [modalTitle, setModalTitle] = useState('');
   const [modalData, setModalData] = useState([]);
   const [modalColumns, setModalColumns] = useState([]);
+  const [dataSource, setDataSource] = useState('');
 
   const getData = () => {
     fetch(
@@ -22,8 +23,9 @@ export const AllDatasets = () => {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
-        setModalData(data.data.slice(0, 1));
+        setModalData(data.data);
         setModalColumns(data.headers);
+        setDataSource(data.source);
       });
   };
 
@@ -80,18 +82,13 @@ export const AllDatasets = () => {
       >
         <Modal.Title>{modalTitle}</Modal.Title>
         <Modal.Content style={{ textAlign: 'center' }}>
-          <Table data={modalData}>
-            {tableColumns}
-            {/* <Table.Column prop="id_tableau" label="id_tableau" />
-            <Table.Column prop="titre_tableau" label="titre_tableau" />
-            <Table.Column prop="source" label="source" />
-            <Table.Column prop="categorie" label="categorie" />
-            <Table.Column prop="sous_categorie" label="sous_categorie" />
-            <Table.Column prop="2002" label="2002" />
-            <Table.Column prop="2006" label="2006" />
-            <Table.Column prop="2008" label="2008" />
-            <Table.Column prop="2014" label="2014" /> */}
-          </Table>
+          <Table data={modalData}>{tableColumns}</Table>
+          <Text
+            p
+            style={{ textAlign: 'left', fontSize: '12px', fontStyle: 'italic' }}
+          >
+            Source: {dataSource}
+          </Text>
         </Modal.Content>
         <Modal.Action passive onClick={() => setModalState(false)}>
           Cancel
