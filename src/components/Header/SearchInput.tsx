@@ -22,7 +22,7 @@ export const SearchInput = () => {
   return (
     <div className="search-input-container">
       <Input
-        placeholder="Search for a database name"
+        placeholder="Recherche"
         width="100%"
         size="large"
         clearable

@@ -13,12 +13,12 @@ export const HomeView = () => {
 
         <Row gap={5} style={{ marginLeft: 0, marginRight: 0 }}>
           <Col span={16} style={{ paddingLeft: 0 }} className="datasets-col">
-            <Text h3>All datasets</Text>
+            <Text h3>Données</Text>
             <AllDatasets />
           </Col>
 
           <Col span={8} style={{ paddingRight: 0 }} className="sidebar-col">
-            <Text h3>All Categories</Text>
+            <Text h3>Domaines</Text>
             <FeaturedCategories />
           </Col>
         </Row>

@@ -1,5 +1,4 @@
 import React, { ReactNode, useEffect } from 'react';
-// import { datasets as database } from 'mock/datasets';
 import { searchActionHandler } from './search.action';
 
 /**

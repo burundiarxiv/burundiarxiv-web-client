@@ -18,9 +18,9 @@ export const AllDatasets = () => {
     source: '',
   });
 
-  const fetchModalData = () => {
+  const fetchModalData = (id) => {
     fetch(
-      'https://raw.githubusercontent.com/burundiarxiv/datasets/master/json/isteebu-annuaire-2018-6-07.json'
+      `https://raw.githubusercontent.com/burundiarxiv/datasets/master/json/isteebu-annuaire-2018-${id}.json`
     )
       .then((response) => response.json())
       .then(({ headers, rows, source }) => {
@@ -42,14 +42,14 @@ export const AllDatasets = () => {
         relatedDatasets.map(({ category, data }, datasetIndex) => (
           <div className="category" id={category} key={datasetIndex}>
             <Text h6>{category}</Text>
-            {data.map(({ name, path }, dataIndex) => (
+            {data.map(({ name, path, id }, dataIndex) => (
               <Text
                 key={dataIndex}
                 onClick={() => {
                   setModalState(true);
                   setPath(path);
                   setModalTitle(name);
-                  fetchModalData();
+                  fetchModalData(id);
                 }}
               >
                 <Link href="#" block>
@@ -90,11 +90,11 @@ export const AllDatasets = () => {
           </Text>
         </Modal.Content>
         <Modal.Action passive onClick={() => setModalState(false)}>
-          Cancel
+          Annuler
         </Modal.Action>
         <Modal.Action>
           <Link href={path} download icon color>
-            Download in CSV
+            Téléchager au format CSV
           </Link>
         </Modal.Action>
       </Modal>

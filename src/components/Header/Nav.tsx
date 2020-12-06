@@ -7,12 +7,12 @@ export const Nav = () => {
       <ul>
         <li>
           <NextLink href="/">
-            <a>Home</a>
+            <a>Accueil</a>
           </NextLink>
         </li>
         <li>
           <NextLink href="/dashboard">
-            <a>Dashboard</a>
+            <a>Graphiques</a>
           </NextLink>
         </li>
       </ul>
