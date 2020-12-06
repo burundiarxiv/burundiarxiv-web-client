@@ -44,10 +44,10 @@ const reducer = (store: Store, action: Action): Store => {
  */
 export const Context = React.createContext<Store | any>(initialStore);
 
-export function StoreProvider({ children }: Provider): JSX.Element {
+export const StoreProvider = ({ children }: Provider): JSX.Element => {
   const [store, dispatch] = React.useReducer(reducer, initialStore);
 
   return (
     <Context.Provider value={{ store, dispatch }}>{children}</Context.Provider>
   );
-}
+};
