@@ -1,5 +1,4 @@
 import { Store } from 'context';
-// import { datasets } from 'mock/datasets';
 
 export const searchActionHandler = ({
   searchTerm,

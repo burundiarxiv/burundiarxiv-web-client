@@ -3,7 +3,7 @@ export const datasets = [
     category: 'POPULATION',
     data: [
       {
-        name: "Burundi's main demographic and socio-economic indicators.",
+           name: "Burundi's main demographic and socio-economic indicators.",
         path:
           'https://burundiarxiv-api.herokuapp.com/datasets/isteebu-annuaire-2018-1-01.csv',
       },

@@ -24,11 +24,7 @@ export const AllDatasets = () => {
     )
       .then((response) => response.json())
       .then(({ headers, rows, source }) => {
-        setModalData({
-          headers: headers,
-          rows: rows,
-          source: source,
-        });
+        setModalData({ headers, rows, source });
       });
   };
 

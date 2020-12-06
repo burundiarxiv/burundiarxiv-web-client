@@ -1,7 +1,6 @@
 import { useContext } from 'react';
 import styled from 'styled-components/macro';
 import { Link } from '@geist-ui/react';
-// import { datasets } from 'mock/datasets';
 import { Context } from 'context';
 
 export const FeaturedCategories = () => {

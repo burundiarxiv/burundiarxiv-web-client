@@ -1,13 +1,13 @@
 import React, { ReactNode, useEffect } from 'react';
-import { datasets as database } from 'mock/datasets';
+// import { datasets as database } from 'mock/datasets';
 import { searchActionHandler } from './search.action';
 
 /**
  * Types
  ************************************************/
 export type Store = {
-  datasets: typeof database;
-  relatedDatasets: typeof database;
+  datasets: string[];
+  relatedDatasets: string[];
   searchTerm: string;
 };
 
@@ -61,10 +61,10 @@ export const StoreProvider = ({ children }: Provider): JSX.Element => {
   useEffect(() => {
     const fetchDatasets = async () => {
       await fetch(
-        'https://raw.githubusercontent.com/burundiarxiv/datasets/master/json/isteebu-annuaire-2018-6-07.json'
+        'https://raw.githubusercontent.com/burundiarxiv/datasets/master/json/datasets.json'
       )
         .then((response) => response.json())
-        .then((data) => dispatch({ name: 'FETCH_SUCCESS', payload: database }));
+        .then((data) => dispatch({ name: 'FETCH_SUCCESS', payload: data }));
     };
 
     fetchDatasets();
