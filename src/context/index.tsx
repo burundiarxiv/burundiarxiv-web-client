@@ -7,6 +7,7 @@ import { searchActionHandler } from './search.action';
  ************************************************/
 export type Store = {
   datasets: typeof database;
+  relatedDatasets: typeof database;
   searchTerm: string;
 };
 
@@ -22,7 +23,11 @@ interface Action {
 /**
  * Initial state/store
  ************************************************/
-const initialStore: Store = { datasets: [], searchTerm: '' };
+const initialStore: Store = {
+  datasets: [],
+  searchTerm: '',
+  relatedDatasets: [],
+};
 
 /**
  * Setup the reducer
@@ -34,7 +39,11 @@ const reducer = (store: Store, action: Action): Store => {
     case 'SEARCH':
       return searchActionHandler(action.payload);
     case 'FETCH_SUCCESS':
-      return { datasets: action.payload, searchTerm: '' };
+      return {
+        datasets: action.payload,
+        relatedDatasets: action.payload,
+        searchTerm: '',
+      };
     default:
       return store;
   }

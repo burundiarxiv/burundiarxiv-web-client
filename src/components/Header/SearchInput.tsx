@@ -6,12 +6,19 @@ import { Context } from 'context';
 type ChangeEvent = React.ChangeEvent<HTMLInputElement>;
 
 export const SearchInput = () => {
-  const { _, dispatch } = useContext(Context);
+  //   const { _, dispatch } = useContext(Context);
+  const {
+    store: { datasets, _ },
+    dispatch,
+  } = useContext(Context);
 
   const onChangeHandler = (event: ChangeEvent) => {
     const { value } = event.target;
 
-    dispatch({ name: 'SEARCH', payload: { searchTerm: value } });
+    dispatch({
+      name: 'SEARCH',
+      payload: { searchTerm: value, datasets: datasets },
+    });
   };
   return (
     <div className="search-input-container">

@@ -1,10 +1,12 @@
 import { Store } from 'context';
-import { datasets } from 'mock/datasets';
+// import { datasets } from 'mock/datasets';
 
 export const searchActionHandler = ({
   searchTerm,
+  datasets,
 }: {
   searchTerm: string;
+  datasets;
 }): Store => {
   let relatedDatasets = datasets
     .map((dataset) => {
@@ -17,5 +19,9 @@ export const searchActionHandler = ({
     // filter out datasets which has empty data
     .filter((dataset) => dataset.data.length);
 
-  return { datasets: [...relatedDatasets], searchTerm };
+  return {
+    datasets: datasets,
+    relatedDatasets: [...relatedDatasets],
+    searchTerm,
+  };
 };

@@ -6,7 +6,7 @@ import { Context } from 'context';
 
 export const AllDatasets = () => {
   const {
-    store: { datasets, searchTerm },
+    store: { relatedDatasets, searchTerm },
   } = useContext(Context);
 
   const [modalState, setModalState] = useState(false);
@@ -42,8 +42,8 @@ export const AllDatasets = () => {
 
   return (
     <StyledAllDatasets>
-      {datasets.length ? (
-        datasets.map(({ category, data }, datasetIndex) => (
+      {relatedDatasets.length ? (
+        relatedDatasets.map(({ category, data }, datasetIndex) => (
           <div className="category" id={category} key={datasetIndex}>
             <Text h6>{category}</Text>
             {data.map(({ name, path }, dataIndex) => (
