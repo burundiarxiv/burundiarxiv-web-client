@@ -6,7 +6,6 @@ import { Context } from 'context';
 type ChangeEvent = React.ChangeEvent<HTMLInputElement>;
 
 export const SearchInput = () => {
-  //   const { _, dispatch } = useContext(Context);
   const {
     store: { datasets, _ },
     dispatch,

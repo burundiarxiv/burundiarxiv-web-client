@@ -25,8 +25,6 @@ const StyledHeader = styled.header`
     margin: 0 auto;
   }
   .search-input-container {
-    div {
-      margin-bottom: 10px;
-    }
+    padding-bottom: 22px;
   }
 `;
