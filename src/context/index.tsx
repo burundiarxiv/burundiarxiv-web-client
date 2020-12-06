@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useEffect } from 'react';
 import { datasets as database } from 'mock/datasets';
 import { searchActionHandler } from './search.action';
 
@@ -22,7 +22,7 @@ interface Action {
 /**
  * Initial state/store
  ************************************************/
-const initialStore: Store = { datasets: [...database], searchTerm: '' };
+const initialStore: Store = { datasets: [], searchTerm: '' };
 
 /**
  * Setup the reducer
@@ -33,6 +33,8 @@ const reducer = (store: Store, action: Action): Store => {
   switch (action.name) {
     case 'SEARCH':
       return searchActionHandler(action.payload);
+    case 'FETCH_SUCCESS':
+      return { datasets: action.payload, searchTerm: '' };
     default:
       return store;
   }
@@ -46,6 +48,18 @@ export const Context = React.createContext<Store | any>(initialStore);
 
 export const StoreProvider = ({ children }: Provider): JSX.Element => {
   const [store, dispatch] = React.useReducer(reducer, initialStore);
+
+  useEffect(() => {
+    const fetchDatasets = async () => {
+      await fetch(
+        'https://raw.githubusercontent.com/burundiarxiv/datasets/master/json/isteebu-annuaire-2018-6-07.json'
+      )
+        .then((response) => response.json())
+        .then((data) => dispatch({ name: 'FETCH_SUCCESS', payload: database }));
+    };
+
+    fetchDatasets();
+  }, []);
 
   return (
     <Context.Provider value={{ store, dispatch }}>{children}</Context.Provider>
