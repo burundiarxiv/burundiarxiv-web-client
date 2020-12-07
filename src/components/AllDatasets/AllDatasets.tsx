@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import styled from 'styled-components/macro';
 import { Divider, Link, Modal, Text, Table } from '@geist-ui/react';
 import Highlighter from 'react-highlight-words';
@@ -41,7 +41,9 @@ export const AllDatasets = () => {
       {relatedDatasets.length ? (
         relatedDatasets.map(({ category, data }, datasetIndex) => (
           <div className="category" id={category} key={datasetIndex}>
-            <Text h6>{category}</Text>
+            <Text h6>
+              {category} ({data.length} jeux de données)
+            </Text>
             {data.map(({ name, path, id }, dataIndex) => (
               <Text
                 key={dataIndex}
@@ -67,7 +69,7 @@ export const AllDatasets = () => {
         ))
       ) : (
         <Text style={{ textAlign: 'center', width: '100%' }}>
-          No data found related to{' '}
+          Aucun résultat associé à{' '}
           <span className="highlight" style={{ fontWeight: 'bolder' }}>
             {searchTerm}
           </span>
@@ -89,7 +91,17 @@ export const AllDatasets = () => {
             Source: {modalData.source}
           </Text>
         </Modal.Content>
-        <Modal.Action passive onClick={() => setModalState(false)}>
+        <Modal.Action
+          passive
+          onClick={() => {
+            setModalData({
+              headers: [],
+              rows: [],
+              source: '',
+            });
+            setModalState(false);
+          }}
+        >
           Annuler
         </Modal.Action>
         <Modal.Action>

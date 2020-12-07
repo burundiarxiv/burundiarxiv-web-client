@@ -13,7 +13,7 @@ export const HomeView = () => {
 
         <Row gap={5} style={{ marginLeft: 0, marginRight: 0 }}>
           <Col span={16} style={{ paddingLeft: 0 }} className="datasets-col">
-            <Text h3>Données</Text>
+            <Text h3>Jeux de données</Text>
             <AllDatasets />
           </Col>
 
