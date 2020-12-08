@@ -16,7 +16,7 @@ export const Nav = () => {
             </NextLink>
           </li>
           <li>
-            <NextLink href="/about-us">
+            <NextLink href="/about">
               <a>À propos</a>
             </NextLink>
           </li>
