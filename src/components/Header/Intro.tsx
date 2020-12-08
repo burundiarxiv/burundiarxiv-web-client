@@ -5,11 +5,11 @@ export const Intro = () => {
   return (
     <StyledIntro>
       <Text h1>Burundi Open Data</Text>
-      <Text p>
+      <Text em p type="secondary" size="1.25rem">
         Partageons, amélioreons et réutiliseons les données publiques
         burundaises
       </Text>
-      <Text p>
+      <Text p size="100%">
         Le Lorem Ipsum est simplement du faux texte employé dans la composition
         et la mise en page avant impression. Le Lorem Ipsum est le faux texte
         standard de l'imprimerie depuis les années 1500, quand un imprimeur
