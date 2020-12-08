@@ -11,25 +11,15 @@ export const Nav = () => {
       <div className="link">
         <ul>
           <li>
-            <NextLink href="/">
-              <a>Accueil</a>
-            </NextLink>
-          </li>
-          <li>
-            <NextLink href="/dashboard">
-              <a>Graphiques</a>
-            </NextLink>
-          </li>
-          {/* <li>
             <NextLink href="/dashboard">
               <a>Graphiques</a>
             </NextLink>
           </li>
           <li>
-            <NextLink href="/dashboard">
-              <a>Graphiques</a>
+            <NextLink href="/about-us">
+              <a>À propos</a>
             </NextLink>
-          </li> */}
+          </li>
         </ul>
       </div>
     </StyledNav>
