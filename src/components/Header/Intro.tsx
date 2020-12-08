@@ -27,4 +27,5 @@ export const Intro = () => {
 
 const StyledIntro = styled.div`
   text-align: center;
+  padding-bottom: 20px;
 `;

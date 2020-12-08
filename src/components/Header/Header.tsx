@@ -7,8 +7,8 @@ export const Header = ({ pageTitle }) => {
   return (
     <StyledHeader>
       <div className="header-container">
-        <Intro />
         <Nav />
+        <Intro />
         {pageTitle === 'Home' && <SearchInput />}
       </div>
     </StyledHeader>
@@ -20,11 +20,18 @@ const StyledHeader = styled.header`
   margin-bottom: 70px;
 
   .header-container {
-    width: 90%;
-    max-width: 800px;
+    max-width: 80%;
     margin: 0 auto;
   }
   .search-input-container {
     padding-bottom: 22px;
+    margin: 0 200px;
+    margin-top: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    .search-input-container {
+      margin: 0;
+      margin-top: 10px;
+    }
   }
 `;

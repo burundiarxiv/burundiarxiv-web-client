@@ -1,10 +1,4 @@
-import Document, {
-  Html,
-  Head,
-  Main,
-  NextScript,
-  DocumentContext,
-} from 'next/document';
+import Document, { DocumentContext } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 import { CssBaseline } from '@geist-ui/react';
 
