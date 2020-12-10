@@ -11,7 +11,7 @@ export const AboutView = () => {
           <Text h3>Contributeurs</Text>
           <Text p>
             Ce projet est dirigé par Lionel Kubwimana. D'importantes
-            contributions ont é Significant contributions have been made by :
+            contributions ont été réalisées par :
           </Text>
           <ul>
             <li>Bertrand Rukundo</li>
