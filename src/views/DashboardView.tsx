@@ -173,9 +173,13 @@ export const DashboardView = () => {
   return (
     <StyledDashboardView>
       <Layout pageTitle="Dashboard">
-        {categories.map((category) => (
+        {categories.map((category, index) => (
           <div>
-            <Text h4 style={{ textAlign: 'center' }}>
+            <Text
+              h4
+              style={{ textAlign: 'center' }}
+              key={`${category}-${index}`}
+            >
               {category[0]}
             </Text>
             <div className="grid">

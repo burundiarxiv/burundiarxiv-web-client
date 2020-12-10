@@ -1,15 +1,16 @@
 import NextLink from 'next/link';
 import styled from 'styled-components/macro';
-import Logo from './Logo';
 
 export const Nav = () => {
   return (
     <StyledNav>
-      <div className="logo">
-        <Logo />
-      </div>
       <div className="link">
         <ul>
+          <li>
+            <NextLink href="/">
+              <a>Accueil</a>
+            </NextLink>
+          </li>
           <li>
             <NextLink href="/dashboard">
               <a>Graphiques</a>
@@ -17,7 +18,7 @@ export const Nav = () => {
           </li>
           <li>
             <NextLink href="/about">
-              <a>À propos</a>
+              <a>Contributeurs</a>
             </NextLink>
           </li>
         </ul>
@@ -28,7 +29,7 @@ export const Nav = () => {
 
 const StyledNav = styled.nav`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   ul {
     display: flex;

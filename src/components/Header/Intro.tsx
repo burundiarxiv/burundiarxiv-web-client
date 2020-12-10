@@ -10,9 +10,9 @@ export const Intro = () => {
         burundaises.
       </Text>
       <Text p size="100%">
-        Burundiarxiv Open Data est un projet initié et développé par un groupe
-        d'ingénieurs, statisticiens, data scientists Burundais. Il a pour
-        objectif de fournir et de centraliser les données ouvertes et
+        Burundiarxiv Open Data est un projet initié et développé par un
+        collectif d'Ingénieurs, Statisticiens et Data scientists Burundais. Il a
+        pour objectif de fournir et de centraliser les données ouvertes et
         réutilisables sur le Burundi. Il s'agit d'un travail en cours
         d'élabaration. Pour le moment, nous mettons à disposition les données
         provenant des annuaires de l'Institut de Statistiques et d'Etudes
