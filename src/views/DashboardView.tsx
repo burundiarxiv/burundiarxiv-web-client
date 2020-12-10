@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro';
-import { Text, Grid, Card, Link } from '@geist-ui/react';
+import { Text, Grid, Card, Link, Note } from '@geist-ui/react';
 import { Layout } from 'components';
 import { Doughnut, Line, Bubble, Radar } from 'react-chartjs-2';
 
@@ -173,6 +173,10 @@ export const DashboardView = () => {
   return (
     <StyledDashboardView>
       <Layout pageTitle="Dashboard">
+        <Note type="error" style={{ textAlign: 'center' }}>
+          Cette page est en cours de construction.
+        </Note>
+        <br />
         {categories.map((category, index) => (
           <div>
             <Text
