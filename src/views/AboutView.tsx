@@ -1,30 +1,31 @@
 import styled from 'styled-components/macro';
-import { Row, Col, Text } from '@geist-ui/react';
-import ScrollToTop from 'react-scroll-to-top';
-import { ArrowUp } from '@geist-ui/react-icons';
+import { Text } from '@geist-ui/react';
 
-import { Layout, AllDatasets, FeaturedCategories } from 'components';
+import { Layout } from 'components';
 
 export const AboutView = () => {
   return (
-    <StyledHomeView>
-      <Layout pageTitle="About"></Layout>
-    </StyledHomeView>
+    <StyledAboutView>
+      <Layout pageTitle="About">
+        <div>
+          <Text h3>Credits</Text>
+          <Text p>
+            This project is lead by Lionel Kubwimana, a Software Engineer living
+            in Paris, France. Significant contributions have been made by :
+          </Text>
+          <ul>
+            <li>Bertrand Rukundo</li>
+            <li>Charbel Mugisha</li>
+            <li>Chérubin Mugisha</li>
+            <li>Jean Davy Nizigama</li>
+            <li>Patrick Rumeci</li>
+            <li>Tresor Muco</li>
+            <li>Tresor Sindihebura</li>
+          </ul>
+        </div>
+      </Layout>
+    </StyledAboutView>
   );
 };
 
-const StyledHomeView = styled.div`
-  @media screen and (max-width: 768px) {
-    h3 {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .datasets-col {
-      width: 700px !important;
-      padding-right: 0 !important;
-    }
-    .sidebar-col {
-      display: none;
-    }
-  }
-`;
+const StyledAboutView = styled.div``;
