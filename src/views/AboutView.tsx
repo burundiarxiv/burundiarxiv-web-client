@@ -8,10 +8,10 @@ export const AboutView = () => {
     <StyledAboutView>
       <Layout pageTitle="About">
         <div>
-          <Text h3>Credits</Text>
+          <Text h3>Contributeurs</Text>
           <Text p>
-            This project is lead by Lionel Kubwimana, a Software Engineer living
-            in Paris, France. Significant contributions have been made by :
+            Ce projet est dirigé par Lionel Kubwimana. D'importantes
+            contributions ont é Significant contributions have been made by :
           </Text>
           <ul>
             <li>Bertrand Rukundo</li>
