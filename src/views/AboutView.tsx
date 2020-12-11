@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro';
-import { Text } from '@geist-ui/react';
+import { Text, Divider } from '@geist-ui/react';
 
 import { Layout } from 'components';
 
@@ -22,6 +22,9 @@ export const AboutView = () => {
             <li>Tresor Muco</li>
             <li>Tresor Sindihebura</li>
           </ul>
+          <Divider />
+          <Text em>Contact : data(at)burundiarxiv(point)org</Text>
+          <Divider />
         </div>
       </Layout>
     </StyledAboutView>
