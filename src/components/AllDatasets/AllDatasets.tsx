@@ -88,7 +88,7 @@ export const AllDatasets = () => {
             p
             style={{ textAlign: 'left', fontSize: '12px', fontStyle: 'italic' }}
           >
-            source: {modalData.source}
+            Source: {modalData.source}
           </Text>
         </Modal.Content>
         <Modal.Action
