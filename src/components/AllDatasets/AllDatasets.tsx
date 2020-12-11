@@ -48,10 +48,10 @@ export const AllDatasets = () => {
               <Text
                 key={dataIndex}
                 onClick={() => {
-                  setModalState(true);
                   setPath(path);
                   setModalTitle(name);
                   fetchModalData(id);
+                  setModalState(true);
                 }}
               >
                 <Link href="#" block>
@@ -79,6 +79,7 @@ export const AllDatasets = () => {
       <Modal
         open={modalState}
         width="100rem"
+        disableBackdropClick={true}
         onClose={() => setModalState(false)}
       >
         <Modal.Title>{modalTitle}</Modal.Title>
@@ -102,7 +103,7 @@ export const AllDatasets = () => {
             setModalState(false);
           }}
         >
-          Annuler
+          Fermer
         </Modal.Action>
         <Modal.Action>
           <Link href={path} download icon color>
