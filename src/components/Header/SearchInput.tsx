@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { Input } from '@geist-ui/react';
 import Search from '@geist-ui/react-icons/search';
-import { Context } from 'context';
+import { HomeContext } from 'context';
 
 type ChangeEvent = React.ChangeEvent<HTMLInputElement>;
 
@@ -10,7 +10,7 @@ export const SearchInput = () => {
     store: { datasets, searchTerm },
 
     dispatch,
-  } = useContext(Context);
+  } = useContext(HomeContext);
 
   const onChangeHandler = (event: ChangeEvent) => {
     const { value } = event.target;

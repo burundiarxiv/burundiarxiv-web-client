@@ -2,12 +2,12 @@ import React, { useContext, useState } from 'react';
 import styled from 'styled-components/macro';
 import { Divider, Link, Modal, Text, Table } from '@geist-ui/react';
 import Highlighter from 'react-highlight-words';
-import { Context } from 'context';
+import { HomeContext } from 'context';
 
 export const AllDatasets = () => {
   const {
     store: { relatedDatasets, searchTerm },
-  } = useContext(Context);
+  } = useContext(HomeContext);
 
   const [modalState, setModalState] = useState(false);
   const [path, setPath] = useState('');
