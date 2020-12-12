@@ -1,7 +1,9 @@
 import styled from 'styled-components/macro';
-import { Text, Grid, Card, Link } from '@geist-ui/react';
+import { Text, Grid, Card, Link, Note, Tabs, Collapse } from '@geist-ui/react';
 import { Layout } from 'components';
 import { Doughnut, Line, Bubble, Radar } from 'react-chartjs-2';
+import ScrollToTop from 'react-scroll-to-top';
+import { ArrowUp } from '@geist-ui/react-icons';
 
 export const DashboardView = () => {
   const randomNumber = () => Math.round(Math.random() * 20);
@@ -125,7 +127,7 @@ export const DashboardView = () => {
         <Component data={data} />
         <Card.Footer>
           <Link block target="_blank" href="#">
-            Download data in CSV
+            Téléchager au format CSV
           </Link>
         </Card.Footer>
       </Card>
@@ -170,44 +172,64 @@ export const DashboardView = () => {
     ],
   ];
 
+  const sections = categories.map((category) => ({
+    title: category[0],
+    content: (
+      <div className="grid">
+        <Grid.Container gap={5} justify="center">
+          <Grid xs={24} sm={24} md={24}>
+            <Item
+              Component={Doughnut}
+              data={doughnutData}
+              title={category[1]}
+            />
+          </Grid>
+          <Grid xs={24} sm={24} md={24}>
+            <Item Component={Line} data={lineData} title={category[2]} />
+          </Grid>
+          <Grid xs={24} sm={24} md={24}>
+            <Item Component={Bubble} data={bubbleData} title={category[3]} />
+          </Grid>
+          <Grid xs={24} sm={24} md={24}>
+            <Item Component={Radar} data={radarData} title={category[1]} />
+          </Grid>
+        </Grid.Container>
+      </div>
+    ),
+  }));
+  const tabs = [
+    {
+      label: 'Général',
+      sections: sections,
+    },
+  ];
+
   return (
     <StyledDashboardView>
       <Layout pageTitle="Dashboard">
-        {categories.map((category) => (
-          <div>
-            <Text h4 style={{ textAlign: 'center' }}>
-              {category[0]}
-            </Text>
-            <div className="grid">
-              <Grid.Container gap={5} justify="center">
-                <Grid xs={24} sm={12} md={12}>
-                  <Item
-                    Component={Doughnut}
-                    data={doughnutData}
-                    title={category[1]}
-                  />
-                </Grid>
-                <Grid xs={24} sm={12} md={12}>
-                  <Item Component={Line} data={lineData} title={category[2]} />
-                </Grid>
-                <Grid xs={24} sm={12} md={12}>
-                  <Item
-                    Component={Bubble}
-                    data={bubbleData}
-                    title={category[3]}
-                  />
-                </Grid>
-                <Grid xs={24} sm={12} md={12}>
-                  <Item
-                    Component={Radar}
-                    data={radarData}
-                    title={category[1]}
-                  />
-                </Grid>
-              </Grid.Container>
-            </div>
-          </div>
-        ))}
+        <ScrollToTop smooth component={<ArrowUp />} />
+
+        <Note type="error" style={{ textAlign: 'center' }}>
+          Cette page est en cours de construction.
+        </Note>
+        <br />
+        <Tabs initialValue="0">
+          {tabs.map(({ label, sections }, index) => (
+            <Tabs.Item
+              label={label}
+              value={index.toString()}
+              key={`${label}-${index}`}
+            >
+              <Collapse.Group>
+                {sections.map(({ title, content }) => (
+                  <Collapse title={title} shadow>
+                    {content}
+                  </Collapse>
+                ))}
+              </Collapse.Group>
+            </Tabs.Item>
+          ))}
+        </Tabs>
       </Layout>
     </StyledDashboardView>
   );

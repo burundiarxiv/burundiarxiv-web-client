@@ -1,12 +1,12 @@
-import React, { ReactNode } from 'react';
-import { datasets as database } from 'mock/datasets';
+import React, { ReactNode, useEffect } from 'react';
 import { searchActionHandler } from './search.action';
 
 /**
  * Types
  ************************************************/
 export type Store = {
-  datasets: typeof database;
+  datasets: string[];
+  relatedDatasets: string[];
   searchTerm: string;
 };
 
@@ -22,7 +22,11 @@ interface Action {
 /**
  * Initial state/store
  ************************************************/
-const initialStore: Store = { datasets: [...database], searchTerm: '' };
+const initialStore: Store = {
+  datasets: [],
+  searchTerm: '',
+  relatedDatasets: [],
+};
 
 /**
  * Setup the reducer
@@ -33,6 +37,12 @@ const reducer = (store: Store, action: Action): Store => {
   switch (action.name) {
     case 'SEARCH':
       return searchActionHandler(action.payload);
+    case 'FETCH_SUCCESS':
+      return {
+        datasets: action.payload,
+        relatedDatasets: action.payload,
+        searchTerm: '',
+      };
     default:
       return store;
   }
@@ -44,10 +54,22 @@ const reducer = (store: Store, action: Action): Store => {
  */
 export const Context = React.createContext<Store | any>(initialStore);
 
-export function StoreProvider({ children }: Provider): JSX.Element {
+export const StoreProvider = ({ children }: Provider): JSX.Element => {
   const [store, dispatch] = React.useReducer(reducer, initialStore);
+
+  useEffect(() => {
+    const fetchDatasets = async () => {
+      await fetch(
+        'https://raw.githubusercontent.com/burundiarxiv/datasets/master/json/datasets.json'
+      )
+        .then((response) => response.json())
+        .then((data) => dispatch({ name: 'FETCH_SUCCESS', payload: data }));
+    };
+
+    fetchDatasets();
+  }, []);
 
   return (
     <Context.Provider value={{ store, dispatch }}>{children}</Context.Provider>
   );
-}
+};
