@@ -5,6 +5,8 @@ import { Doughnut, Line, Bubble, Radar } from 'react-chartjs-2';
 import ScrollToTop from 'react-scroll-to-top';
 import { ArrowUp } from '@geist-ui/react-icons';
 
+import { DashboardTab } from 'components';
+
 export const DashboardView = () => {
   const randomNumber = () => Math.round(Math.random() * 20);
 
@@ -172,7 +174,7 @@ export const DashboardView = () => {
     ],
   ];
 
-  const sections = categories.map((category) => ({
+  const generalSections = categories.map((category) => ({
     title: category[0],
     content: (
       <div className="grid">
@@ -197,11 +199,20 @@ export const DashboardView = () => {
       </div>
     ),
   }));
+
   const tabs = [
     {
       label: 'Général',
-      sections: sections,
+      sections: generalSections,
     },
+    // {
+    //   label: 'Provinces',
+    //   sections: ProvincesSections,
+    // },
+    // {
+    //   label: 'Communes',
+    //   sections: CommunesSections,
+    // },
   ];
 
   return (
@@ -215,19 +226,11 @@ export const DashboardView = () => {
         <br />
         <Tabs initialValue="0">
           {tabs.map(({ label, sections }, index) => (
-            <Tabs.Item
+            <DashboardTab
               label={label}
-              value={index.toString()}
-              key={`${label}-${index}`}
-            >
-              <Collapse.Group>
-                {sections.map(({ title, content }) => (
-                  <Collapse title={title} shadow>
-                    {content}
-                  </Collapse>
-                ))}
-              </Collapse.Group>
-            </Tabs.Item>
+              sections={sections}
+              position={index.toString()}
+            />
           ))}
         </Tabs>
       </Layout>
