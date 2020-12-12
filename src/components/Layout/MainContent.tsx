@@ -8,7 +8,6 @@ export const MainContent = ({ children }: MainContentProps) => {
 };
 
 const StyledMainContent = styled.main`
-  width: 90%;
   max-width: 1000px;
   margin: 0 auto;
 
