@@ -73,3 +73,5 @@ export const StoreProvider = ({ children }: Provider): JSX.Element => {
     <Context.Provider value={{ store, dispatch }}>{children}</Context.Provider>
   );
 };
+
+export { DashboardContext, DashboardProvider } from './DashboardContext';

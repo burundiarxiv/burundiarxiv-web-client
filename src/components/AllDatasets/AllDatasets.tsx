@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext, useState } from 'react';
 import styled from 'styled-components/macro';
 import { Divider, Link, Modal, Text, Table } from '@geist-ui/react';
 import Highlighter from 'react-highlight-words';
