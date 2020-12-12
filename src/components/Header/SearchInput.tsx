@@ -7,7 +7,8 @@ type ChangeEvent = React.ChangeEvent<HTMLInputElement>;
 
 export const SearchInput = () => {
   const {
-    store: { datasets },
+    store: { datasets, searchTerm },
+
     dispatch,
   } = useContext(Context);
 
@@ -19,6 +20,7 @@ export const SearchInput = () => {
       payload: { searchTerm: value, datasets: datasets },
     });
   };
+
   return (
     <div className="search-input-container">
       <Input
@@ -27,6 +29,7 @@ export const SearchInput = () => {
         size="large"
         clearable
         icon={<Search />}
+        value={searchTerm}
         onChange={onChangeHandler}
       />
     </div>
