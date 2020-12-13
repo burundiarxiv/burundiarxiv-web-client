@@ -8,7 +8,7 @@ export const Header = ({ pageTitle }) => {
     <StyledHeader>
       <div className="header-container">
         <Nav />
-        <Intro />
+        <Intro pageTitle={pageTitle} />
         {pageTitle === 'Home' && <SearchInput />}
       </div>
     </StyledHeader>

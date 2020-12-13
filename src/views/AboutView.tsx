@@ -8,7 +8,6 @@ export const AboutView = () => {
     <StyledAboutView>
       <Layout pageTitle="About">
         <div>
-          <Text h3>Contributeurs</Text>
           <Text p>
             Ce projet est dirigé par Lionel Kubwimana. D'importantes
             contributions ont été réalisées par :
@@ -19,8 +18,8 @@ export const AboutView = () => {
             <li>Chérubin Mugisha</li>
             <li>Jean Davy Nizigama</li>
             <li>Patrick Rumeci</li>
-            <li>Tresor Muco</li>
-            <li>Tresor Sindihebura</li>
+            <li>Trésor Muco</li>
+            <li>Trésor Sindihebura</li>
           </ul>
           <Divider />
           <Text em>Contact : data(at)burundiarxiv(point)org</Text>
