@@ -10,8 +10,8 @@ export const DashboardTab = ({ name, value }) => {
   return (
     <Tabs.Item label={label} value={value}>
       <Collapse.Group>
-        {sections.map(({ title, graphs }, index) => (
-          <SectionTab title={title} graphs={graphs} key={`${title}-${index}`} />
+        {sections.map(({ title, subtitle, graphs }, index) => (
+          <SectionTab title={title} subtitle={subtitle} graphs={graphs} key={`${title}-${index}`} />
         ))}
       </Collapse.Group>
     </Tabs.Item>
