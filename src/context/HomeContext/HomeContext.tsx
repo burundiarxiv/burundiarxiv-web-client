@@ -60,7 +60,7 @@ export const HomeProvider = ({ children }: Provider): JSX.Element => {
   useEffect(() => {
     const fetchDatasets = async () => {
       await fetch(
-        'https://raw.githubusercontent.com/burundiarxiv/datasets/master/json/datasets.json'
+        '/datasets.json'
       )
         .then((response) => response.json())
         .then((data) => dispatch({ name: 'FETCH_SUCCESS', payload: data }));
