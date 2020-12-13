@@ -17,7 +17,6 @@ export const Header = ({ pageTitle }) => {
 
 const StyledHeader = styled.header`
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-  margin-bottom: 70px;
 
   .header-container {
     max-width: 80%;

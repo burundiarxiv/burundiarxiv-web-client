@@ -120,35 +120,6 @@ export const DashboardView = () => {
   //   ],
   // };
 
-  // const Item = ({ Component, data, title }) => {
-  //   return (
-  //     <Card className="card">
-  //       <Text h6 style={{ marginBottom: '0' }}>
-  //         {title}
-  //       </Text>
-  //       <Component data={data} />
-  //       <Card.Footer>
-  //         <Link block target="_blank" href="#">
-  //           Téléchager au format CSV
-  //         </Link>
-  //       </Card.Footer>
-  //     </Card>
-  //   );
-  // };
-
-  // const generalCategories = [
-  //   {
-  //     title: 'POPULATION',
-  //     graphs: [
-  //       {
-  //         title: 'Population par âge et par sexe dans les communes',
-  //         data: doughnutData,
-  //         type: Doughnut,
-  //       },
-  //     ],
-  //   },
-  // ];
-
   // // const generalCategories = [
   // //   [
   // //     'POPULATION',
@@ -186,73 +157,6 @@ export const DashboardView = () => {
   // //     'Evolution de fonctionnement des recettes des communes (en milliers de FBU)',
   // //   ],
   // // ];
-
-  // const generalSections = generalCategories.map(({ title, graphs }) => ({
-  //   title,
-  //   content: (
-  //     <div className="grid">
-  //       <Grid.Container gap={5} justify="center">
-  //         {graphs.map(({ title, data, type }, index) => (
-  //           <Grid xs={24} sm={24} md={24} key={`${title}-${index}`}>
-  //             <Item Component={type} data={data} title={title} />
-  //           </Grid>
-  //         ))}
-
-  //         {/* <Grid xs={24} sm={24} md={24}>
-  //           <Item Component={Line} data={lineData} title={category[2]} />
-  //         </Grid>
-  //         <Grid xs={24} sm={24} md={24}>
-  //           <Item Component={Bubble} data={bubbleData} title={category[3]} />
-  //         </Grid>
-  //         <Grid xs={24} sm={24} md={24}>
-  //           <Item Component={Radar} data={radarData} title={category[1]} />
-  //         </Grid> */}
-  //       </Grid.Container>
-  //     </div>
-  //   ),
-  // }));
-
-  // const provincesCategories = [
-  //   {
-  //     title: 'Bubanza',
-  //   },
-  //   // 'Bubanza',
-  //   // 'Bujumbura-Mairie',
-  //   // 'Bujumbura',
-  //   // 'Bururi',
-  //   // 'Cankuzo',
-  //   // 'Cibitoke',
-  //   // 'Gitega',
-  //   // 'Karuzi',
-  //   // 'Kayanza',
-  //   // 'Kirundo',
-  //   // 'Makamba',
-  //   // 'Muramvya',
-  //   // 'Muyinga',
-  //   // 'Mwaro',
-  //   // 'Ngozi',
-  //   // 'Rumonge',
-  //   // 'Rutana',
-  //   // 'Ruyigi',
-  // ];
-
-  // const tabs = [
-  //   {
-  //     label: 'Général',
-  //     name: 'general',
-  //     sections: generalSections,
-  //   },
-  //   {
-  //     label: 'Provinces',
-  //     name: 'provinces',
-  //     sections: generalSections,
-  //   },
-  //   {
-  //     label: 'Communes',
-  //     name: 'communes',
-  //     sections: generalSections,
-  //   },
-  // ];
 
   return (
     <StyledDashboardView>
