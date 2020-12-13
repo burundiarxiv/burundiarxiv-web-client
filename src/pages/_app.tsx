@@ -5,16 +5,16 @@ import { ThemeProvider } from 'styled-components';
 
 import 'assets/scss/global-styles.scss'; // global styles
 
-import { StoreProvider } from 'context';
+import { HomeProvider } from 'context';
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
     <ThemeProvider theme={theme}>
       <GeistProvider theme={theme}>
         <CssBaseline />
-        <StoreProvider>
+        <HomeProvider>
           <Component {...pageProps} />
-        </StoreProvider>
+        </HomeProvider>
       </GeistProvider>
     </ThemeProvider>
   );

@@ -3,3 +3,7 @@ export { Layout } from './Layout';
 export { Header } from './Header';
 export { AllDatasets } from './AllDatasets';
 export { FeaturedCategories } from './FeaturedCategories';
+export { DashboardTabs } from './DashboardTabs';
+export { DashboardTab } from './DashboardTab';
+export { SectionTab } from './SectionTab';
+export { Graph } from './Graph';

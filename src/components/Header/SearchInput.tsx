@@ -1,15 +1,16 @@
 import { useContext } from 'react';
 import { Input } from '@geist-ui/react';
 import Search from '@geist-ui/react-icons/search';
-import { Context } from 'context';
+import { HomeContext } from 'context';
 
 type ChangeEvent = React.ChangeEvent<HTMLInputElement>;
 
 export const SearchInput = () => {
   const {
-    store: { datasets },
+    store: { datasets, searchTerm },
+
     dispatch,
-  } = useContext(Context);
+  } = useContext(HomeContext);
 
   const onChangeHandler = (event: ChangeEvent) => {
     const { value } = event.target;
@@ -19,6 +20,7 @@ export const SearchInput = () => {
       payload: { searchTerm: value, datasets: datasets },
     });
   };
+
   return (
     <div className="search-input-container">
       <Input
@@ -27,6 +29,7 @@ export const SearchInput = () => {
         size="large"
         clearable
         icon={<Search />}
+        value={searchTerm}
         onChange={onChangeHandler}
       />
     </div>

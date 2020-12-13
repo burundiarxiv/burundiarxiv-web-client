@@ -1,12 +1,12 @@
 import { useContext } from 'react';
 import styled from 'styled-components/macro';
 import { Link } from '@geist-ui/react';
-import { Context } from 'context';
+import { HomeContext } from 'context';
 
 export const FeaturedCategories = () => {
   const {
     store: { relatedDatasets },
-  } = useContext(Context);
+  } = useContext(HomeContext);
   return (
     <StyledFeaturedCategories>
       <ul>
