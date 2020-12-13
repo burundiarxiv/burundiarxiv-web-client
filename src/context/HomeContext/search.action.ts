@@ -1,4 +1,4 @@
-import { Store } from 'context';
+import { Store } from './HomeContext';
 
 export const searchActionHandler = ({
   searchTerm,
