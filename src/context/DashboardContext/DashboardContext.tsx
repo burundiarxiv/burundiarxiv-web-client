@@ -7,44 +7,18 @@ interface Provider {
 export const DashboardContext = React.createContext<any>({});
 
 export const DashboardProvider = ({ children }: Provider): JSX.Element => {
-  const [tabsContent, setTabsContent] = useState({});
-
-  const doughnutData = {
-    labels: ['Red', 'Green', 'Yellow'],
-    datasets: [
-      {
-        data: [400, 300, 34],
-        backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
-        hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
-      },
-    ],
-  };
+  const [tabsContent, setTabsContent] = useState({
+    general: {
+      label: 'Général',
+      sections: [],
+    },
+  });
 
   useEffect(() => {
     const fetchtabsContent = async () => {
-      await fetch(
-        'https://raw.githubusercontent.com/burundiarxiv/datasets/master/json/datasets.json'
-      )
+      await fetch('/dashboard.json')
         .then((response) => response.json())
-        .then((data) => {
-          setTabsContent({
-            general: {
-              label: 'Général',
-              sections: [
-                {
-                  title: 'POPULATION',
-                  graphs: [
-                    {
-                      title: 'Population par âge et par sexe dans les communes',
-                      data: doughnutData,
-                      type: 'Doughnut',
-                    },
-                  ],
-                },
-              ],
-            },
-          });
-        });
+        .then((data) => setTabsContent(data));
     };
 
     fetchtabsContent();
