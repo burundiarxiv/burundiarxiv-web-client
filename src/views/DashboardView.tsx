@@ -129,7 +129,7 @@ export const DashboardView = () => {
   // //     'Population burundaise par province',
   // //   ],
   // //   [
-  // //     'EDUCATION',
+  // //     'ENSEIGNEMENT',
   // //     'Répartition des écoles du fondamental par province scolaire',
   // //     'Répartition des effectifs des élèves du fondamental  par province',
   // //     'Evolution des établissements d’enseignement supérieur',
