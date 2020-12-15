@@ -10,7 +10,16 @@ export const searchActionHandler = ({
   let relatedDatasets = datasets
     .map((dataset) => {
       const filteredData = dataset.data.filter(({ name }) => {
-        return name.toLowerCase().includes(searchTerm.toLowerCase());
+        return name
+          .toLowerCase()
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .includes(
+            searchTerm
+              .toLowerCase()
+              .normalize('NFD')
+              .replace(/[\u0300-\u036f]/g, '')
+          );
       });
 
       return { category: dataset.category, data: filteredData };
