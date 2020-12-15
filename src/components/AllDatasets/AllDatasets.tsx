@@ -19,9 +19,7 @@ export const AllDatasets = () => {
   });
 
   const fetchModalData = (id) => {
-    fetch(
-      `https://raw.githubusercontent.com/burundiarxiv/datasets/master/json/isteebu-annuaire-2018-${id}.json`
-    )
+    fetch(`/datasets/isteebu-annuaire-2018-${id}.json`)
       .then((response) => response.json())
       .then(({ headers, rows, source }) => {
         setModalData({ headers, rows, source });
