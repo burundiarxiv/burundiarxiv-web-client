@@ -8,8 +8,16 @@ export const DashboardContext = React.createContext<any>({});
 
 export const DashboardProvider = ({ children }: Provider): JSX.Element => {
   const [tabsContent, setTabsContent] = useState({
-    general: {
-      label: 'Général',
+    pays: {
+      label: 'Pays',
+      sections: [],
+    },
+    provinces: {
+      label: 'Provinces',
+      sections: [],
+    },
+    commune: {
+      label: 'Communes',
       sections: [],
     },
   });

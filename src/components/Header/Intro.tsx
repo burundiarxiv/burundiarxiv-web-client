@@ -20,7 +20,6 @@ const content = {
 };
 
 export const Intro = ({ pageTitle }) => {
-  debugger;
   const { title, subtitle, description } = content[pageTitle];
   return (
     <StyledIntro>
