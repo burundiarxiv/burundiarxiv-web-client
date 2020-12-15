@@ -106,7 +106,7 @@ export const AllDatasets = () => {
           Fermer
         </Modal.Action>
         <Modal.Action>
-          <Link href={'/dashboard.json'} download icon color>
+          <Link href={path} download icon color>
             Téléchager au format CSV
           </Link>
         </Modal.Action>
