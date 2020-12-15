@@ -23,13 +23,13 @@ export const DashboardProvider = ({ children }: Provider): JSX.Element => {
   });
 
   useEffect(() => {
-    const fetchtabsContent = async () => {
+    const fetchTabsContent = async () => {
       await fetch('/dashboard.json')
         .then((response) => response.json())
         .then((data) => setTabsContent(data));
     };
 
-    fetchtabsContent();
+    fetchTabsContent();
   }, []);
 
   return (

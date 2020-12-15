@@ -17,9 +17,12 @@ const Item = ({ componentName, data, title }) => {
       </Text>
       <Component data={data} />
       <Card.Footer>
-        <Link block target="_blank" href="#">
-          Téléchager au format CSV
-        </Link>
+        <Text p em>
+          Source:{' '}
+        </Text>
+        {/* <Link block href="#"> */}
+        {/* Téléchager au format CSV */}
+        {/* </Link> */}
       </Card.Footer>
     </Card>
   );
