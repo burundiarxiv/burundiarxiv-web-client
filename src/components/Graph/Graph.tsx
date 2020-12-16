@@ -1,4 +1,4 @@
-import { Doughnut, Line, Bubble, Radar } from 'react-chartjs-2';
+import { Doughnut, Line, Bubble, Radar, HorizontalBar } from 'react-chartjs-2';
 import { Text, Grid, Card, Link } from '@geist-ui/react';
 
 const componentMap = {
@@ -6,29 +6,33 @@ const componentMap = {
   Line: Line,
   Bubble: Bubble,
   Radar: Radar,
+  HorizontalBar: HorizontalBar,
 };
 
-const Item = ({ componentName, data, title }) => {
+const Item = ({ componentName, data, title, source }) => {
   const Component = componentMap[componentName];
   return (
     <Card className="card">
-      <Text h6 style={{ marginBottom: '0' }}>
+      <Text h5 style={{ marginBottom: '0' }}>
         {title}
       </Text>
       <Component data={data} />
       <Card.Footer>
-        <Link block target="_blank" href="#">
-          Téléchager au format CSV
-        </Link>
+        <Text p em>
+          Source: {source}
+        </Text>
+        {/* <Link block href="#"> */}
+        {/* Téléchager au format CSV */}
+        {/* </Link> */}
       </Card.Footer>
     </Card>
   );
 };
 
-export const Graph = ({ title, data, type }) => {
+export const Graph = ({ title, data, type, source }) => {
   return (
     <Grid xs={24} sm={24} md={24}>
-      <Item componentName={type} data={data} title={title} />
+      <Item componentName={type} data={data} title={title} source={source} />
     </Grid>
   );
 };
