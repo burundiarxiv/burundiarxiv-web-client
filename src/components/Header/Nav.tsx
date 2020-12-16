@@ -8,7 +8,7 @@ export const Nav = () => {
         <ul>
           <li>
             <NextLink href="/">
-              <a>Accueil</a>
+              <a>Données</a>
             </NextLink>
           </li>
           <li>
