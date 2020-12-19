@@ -14,7 +14,7 @@ const content = {
     subtitle: 'Une image vaut mille mots. - Confucius',
   },
   About: {
-    title: 'Contributeurs',
+    title: 'À Propos',
     subtitle: 'Seul on va plus vite, ensemble on va plus loin.',
   },
 };
