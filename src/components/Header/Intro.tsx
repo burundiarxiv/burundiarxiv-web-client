@@ -7,7 +7,7 @@ const content = {
     subtitle:
       'Partageons, amélioreons et réutiliseons les données publiques burundaises.',
     description:
-      "Burundiarxiv Open Data est un projet initié et développé par un collectif d'Ingénieurs, Statisticiens et Data scientists Burundais. Il a pour objectif de fournir et de centraliser les données ouvertes et réutilisables sur le Burundi. Il s'agit d'un travail en cours d'élabaration. Pour le moment, nous mettons à disposition les données provenant des annuaires de l'Institut de Statistiques et d'Etudes Economiques du Burundi (ISTEEBU) et bientôt ceux de la Banque de la République du Burundi (BRB). Nous souhaitons proposer un outil gratuit au service des citoyens, chercheurs, ONG et décideurs.",
+      "Burundiarxiv Open Data est un projet initié et développé par un collectif d'Ingénieurs Informatique, Statisticiens, Économistes et Data scientists Burundais. Il a pour objectif de fournir et de centraliser les données ouvertes et réutilisables sur le Burundi. Il s'agit d'un travail en cours d'élabaration. Pour le moment, nous mettons à disposition les données provenant des annuaires de l'Institut de Statistiques et d'Etudes Economiques du Burundi (ISTEEBU) et bientôt ceux de la Banque de la République du Burundi (BRB). Nous souhaitons proposer un outil gratuit au service des citoyens, chercheurs, ONG et décideurs.",
   },
   Dashboard: {
     title: 'Graphiques',
