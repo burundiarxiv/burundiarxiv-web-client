@@ -42,7 +42,7 @@ const StyledNav = styled.nav`
     flex: auto;
     text-align: center;
     &:not(:last-child) {
-      margin-right: 30px;
+      margin-right: 10px;
     }
 
     &::before {
