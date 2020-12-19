@@ -13,6 +13,7 @@ export const AboutView = () => {
             contributions ont été réalisées par :
           </Text>
           <ul>
+            <li>Armel Michel Ndayikeza</li>
             <li>Bertrand Rukundo</li>
             <li>Charbel Mugisha</li>
             <li>Chérubin Mugisha</li>
