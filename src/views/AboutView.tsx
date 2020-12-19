@@ -19,7 +19,7 @@ export const AboutView = () => {
           <Text h3>Publications</Text>
           <Text p>
             Ce projet n'aurait jamais vu le jour sans la publication publique
-            des données de :
+            des données par ces institutions :
           </Text>
           <ul>
             <li>
