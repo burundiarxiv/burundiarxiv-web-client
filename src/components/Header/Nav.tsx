@@ -17,13 +17,8 @@ export const Nav = () => {
             </NextLink>
           </li>
           <li>
-            <NextLink href="/ressources">
-              <a>Ressources</a>
-            </NextLink>
-          </li>
-          <li>
             <NextLink href="/about">
-              <a>Contributeurs</a>
+              <a>À Propos</a>
             </NextLink>
           </li>
         </ul>

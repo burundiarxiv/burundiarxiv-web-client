@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro';
-import { Text, Divider } from '@geist-ui/react';
+import { Text, Divider, Link } from '@geist-ui/react';
 
 import { Layout } from 'components';
 
@@ -8,6 +8,35 @@ export const AboutView = () => {
     <StyledAboutView>
       <Layout pageTitle="About">
         <div>
+          <Text h3>Sources</Text>
+          <Text p>
+            Ce projet n'aurait jamais vu le jour sans la publication publique
+            des données de :
+          </Text>
+          <ul>
+            <li>
+              <Link
+                color
+                target="_blank"
+                href="https://www.isteebu.bi/wp-content/uploads/2020/05/Annuaire-2018.pdf"
+              >
+                Isteebu
+              </Link>
+            </li>
+            <li>
+              <Link
+                color
+                target="_blank"
+                href="https://brb.bi/fr/content/secteur-r%C3%A9el"
+              >
+                Banque de la République du Burundi
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <Divider />
+        <div>
+          <Text h3>Contributeurs</Text>
           <Text p>
             Ce projet est dirigé par Lionel Kubwimana. D'importantes
             contributions ont été réalisées par :
@@ -23,7 +52,11 @@ export const AboutView = () => {
             <li>Trésor Sindihebura</li>
           </ul>
           <Divider />
-          <Text em>Contact : data(at)burundiarxiv(point)org</Text>
+          <Text p>
+            Pour contribuer, publier, corriger ou mettre à jour les données,
+            vous pouvez nous contacter à :
+            <Text em> data(at)burundiarxiv(point)org</Text>
+          </Text>
           <Divider />
         </div>
       </Layout>
