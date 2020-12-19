@@ -20,7 +20,8 @@ export const AboutView = () => {
                 target="_blank"
                 href="https://www.isteebu.bi/wp-content/uploads/2020/05/Annuaire-2018.pdf"
               >
-                Isteebu
+                Institut de Statistiques et d'Études Économiques du Burundi
+                (ISTEEBU)
               </Link>
             </li>
             <li>
@@ -29,7 +30,7 @@ export const AboutView = () => {
                 target="_blank"
                 href="https://brb.bi/fr/content/secteur-r%C3%A9el"
               >
-                Banque de la République du Burundi
+                Banque de la République du Burundi (BRB)
               </Link>
             </li>
           </ul>
