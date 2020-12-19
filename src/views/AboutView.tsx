@@ -6,7 +6,11 @@ import { Layout } from 'components';
 export const AboutView = () => {
   const DashboardItem = ({ size, description }) => {
     return (
-      <Card shadow hoverable style={{ width: '100%', height: '100px' }}>
+      <Card
+        shadow
+        hoverable
+        style={{ width: '100%', height: '100px', textAlign: 'center' }}
+      >
         <h4>{size}</h4>
         <p>{description}</p>
       </Card>
@@ -26,7 +30,7 @@ export const AboutView = () => {
               <Link
                 color
                 target="_blank"
-                href="https://www.isteebu.bi/wp-content/uploads/2020/05/Annuaire-2018.pdf"
+                href="https://www.isteebu.bi/statistiques/"
               >
                 Institut de Statistiques et d'Études Économiques du Burundi
                 (ISTEEBU)
