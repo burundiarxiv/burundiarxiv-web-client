@@ -1,1 +1,6 @@
-{ "change-locale": "Changer la langue" }
+{
+  "about": "À propos",
+  "change-locale": "Changer la langue",
+  "data": "Données",
+  "graphics": "Graphiques"
+}

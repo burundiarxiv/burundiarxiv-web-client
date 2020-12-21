@@ -10,13 +10,13 @@ const Nav = ({ t }) => {
       <div className="link">
         <ul>
           <li>
-            <Link href="/">Données</Link>
+            <Link href="/">{t('data')}</Link>
           </li>
           <li>
-            <Link href="/dashboard">Graphiques</Link>
+            <Link href="/dashboard">{t('graphics')}</Link>
           </li>
           <li>
-            <Link href="/about">À Propos</Link>
+            <Link href="/about">{t('about')}</Link>
           </li>
           <li>
             <Button

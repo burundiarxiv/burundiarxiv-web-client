@@ -1,1 +1,6 @@
-{ "change-locale": "Change to English" }
+{
+  "about": "About",
+  "change-locale": "Change language",
+  "data": "Data",
+  "graphics": "Graphics"
+}
