@@ -1,4 +1,6 @@
 import { AppProps } from 'next/app';
+import App from 'next/app';
+import { appWithTranslation } from '../i18n';
 import { GeistProvider, CssBaseline } from '@geist-ui/react';
 import { theme } from 'theme';
 import { ThemeProvider } from 'styled-components';
@@ -7,7 +9,7 @@ import 'assets/scss/global-styles.scss'; // global styles
 
 import { HomeProvider } from 'context';
 
-const App = ({ Component, pageProps }: AppProps) => {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <ThemeProvider theme={theme}>
       <GeistProvider theme={theme}>
@@ -20,4 +22,15 @@ const App = ({ Component, pageProps }: AppProps) => {
   );
 };
 
-export default App;
+MyApp.getInitialProps = async (appContext) => ({
+  ...(await App.getInitialProps(appContext)),
+});
+
+export default appWithTranslation(MyApp);
+
+// export default App;
+
+// import App from 'next/app';
+// import { appWithTranslation } from '../i18n';
+
+// const MyApp = ({ Component, pageProps }) => <Component {...pageProps} />;

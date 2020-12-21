@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro';
-import { Intro } from './Intro';
+import Intro from './Intro';
 import { Nav } from './Nav';
 import { SearchInput } from './SearchInput';
 

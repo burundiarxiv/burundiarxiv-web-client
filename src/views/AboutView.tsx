@@ -1,5 +1,6 @@
 import styled from 'styled-components/macro';
-import { Text, Divider, Link, Grid, Card } from '@geist-ui/react';
+import { Text, Divider, Grid, Card } from '@geist-ui/react';
+import { Link } from '../i18n';
 
 import { Layout } from 'components';
 
@@ -27,21 +28,13 @@ export const AboutView = () => {
           </Text>
           <ul>
             <li>
-              <Link
-                color
-                target="_blank"
-                href="https://www.isteebu.bi/statistiques/"
-              >
+              <Link href="https://www.isteebu.bi/statistiques/">
                 Institut de Statistiques et d'Études Économiques du Burundi
                 (ISTEEBU)
               </Link>
             </li>
             <li>
-              <Link
-                color
-                target="_blank"
-                href="https://brb.bi/fr/content/secteur-r%C3%A9el"
-              >
+              <Link href="https://brb.bi/fr/content/secteur-r%C3%A9el">
                 Banque de la République du Burundi (BRB)
               </Link>
             </li>

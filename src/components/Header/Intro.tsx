@@ -1,5 +1,6 @@
 import { Text } from '@geist-ui/react';
 import styled from 'styled-components/macro';
+import { withTranslation } from '../../i18n';
 
 const content = {
   Home: {
@@ -19,11 +20,12 @@ const content = {
   },
 };
 
-export const Intro = ({ pageTitle }) => {
+const Intro = ({ pageTitle, t }) => {
   const { title, subtitle, description } = content[pageTitle];
   return (
     <StyledIntro>
       <Text h1>{title}</Text>
+      <Text h2>{t('title')}</Text>
       <Text em p type="secondary" size="1.25rem">
         {subtitle}
       </Text>
@@ -38,3 +40,5 @@ const StyledIntro = styled.div`
   text-align: center;
   padding-bottom: 20px;
 `;
+
+export default withTranslation('intro')(Intro);
