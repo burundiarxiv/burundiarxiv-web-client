@@ -56,6 +56,7 @@ export const AboutView = () => {
           </Text>
           <ul>
             <li>Armel Michel Ndayikeza</li>
+            <li>Bahati Nsaba</li>
             <li>Bertrand Rukundo</li>
             <li>Charbel Mugisha</li>
             <li>Chérubin Mugisha</li>
