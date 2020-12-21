@@ -1,6 +1,6 @@
 import styled from 'styled-components/macro';
 import Intro from './Intro';
-import { Nav } from './Nav';
+import Nav from './Nav';
 import { SearchInput } from './SearchInput';
 
 export const Header = ({ pageTitle }) => {

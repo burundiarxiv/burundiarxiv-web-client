@@ -1,5 +1,14 @@
+import { i18n, withTranslation } from '../i18n';
 import { AboutView } from 'views';
 
-const AboutUsPage = () => <AboutView />;
+const AboutPage = () => <AboutView />;
 
-export default AboutUsPage;
+AboutPage.getInitialProps = async () => ({
+  namespacesRequired: ['common', 'intro'],
+});
+
+// AboutPage.propTypes = {
+//   t: PropTypes.func.isRequired,
+// };
+
+export default withTranslation('common')(AboutPage);

@@ -1,5 +1,6 @@
 import { DashboardView } from 'views';
 import { DashboardProvider } from 'context';
+import { i18n, withTranslation } from '../i18n';
 
 const DashboardPage = () => {
   return (
@@ -9,4 +10,12 @@ const DashboardPage = () => {
   );
 };
 
-export default DashboardPage;
+DashboardPage.getInitialProps = async () => ({
+  namespacesRequired: ['common', 'intro'],
+});
+
+// DashboardPage.propTypes = {
+//   t: PropTypes.func.isRequired,
+// };
+
+export default withTranslation('common')(DashboardPage);
