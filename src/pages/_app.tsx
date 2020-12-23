@@ -27,10 +27,3 @@ MyApp.getInitialProps = async (appContext) => ({
 });
 
 export default appWithTranslation(MyApp);
-
-// export default App;
-
-// import App from 'next/app';
-// import { appWithTranslation } from '../i18n';
-
-// const MyApp = ({ Component, pageProps }) => <Component {...pageProps} />;

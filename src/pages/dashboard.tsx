@@ -11,11 +11,7 @@ const DashboardPage = () => {
 };
 
 DashboardPage.getInitialProps = async () => ({
-  namespacesRequired: ['common', 'intro'],
+  namespacesRequired: ['common'],
 });
-
-// DashboardPage.propTypes = {
-//   t: PropTypes.func.isRequired,
-// };
 
 export default withTranslation('common')(DashboardPage);

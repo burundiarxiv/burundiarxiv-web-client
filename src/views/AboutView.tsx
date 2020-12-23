@@ -1,6 +1,5 @@
 import styled from 'styled-components/macro';
 import { Text, Divider, Link, Grid, Card } from '@geist-ui/react';
-
 import { Layout } from 'components';
 
 export const AboutView = () => {

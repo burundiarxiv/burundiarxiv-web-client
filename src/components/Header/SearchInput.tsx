@@ -1,11 +1,12 @@
 import { useContext } from 'react';
+import { withTranslation } from '../../i18n';
 import { Input } from '@geist-ui/react';
 import Search from '@geist-ui/react-icons/search';
 import { HomeContext } from 'context';
 
 type ChangeEvent = React.ChangeEvent<HTMLInputElement>;
 
-export const SearchInput = () => {
+const SearchInput = ({ t }) => {
   const {
     store: { datasets, searchTerm },
 
@@ -24,7 +25,8 @@ export const SearchInput = () => {
   return (
     <div className="search-input-container">
       <Input
-        placeholder="Recherche"
+        // placeholder="Recherche"
+        placeholder={t('search')}
         width="100%"
         size="large"
         clearable
@@ -35,3 +37,5 @@ export const SearchInput = () => {
     </div>
   );
 };
+
+export default withTranslation('common')(SearchInput);

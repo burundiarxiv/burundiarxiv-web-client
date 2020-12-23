@@ -4,7 +4,6 @@ import { i18n, Link, withTranslation } from '../../i18n';
 import styled from 'styled-components/macro';
 
 const Nav = ({ t }) => {
-  console.log(i18n.language);
   return (
     <StyledNav>
       <div className="link">

@@ -4,11 +4,7 @@ import { AboutView } from 'views';
 const AboutPage = () => <AboutView />;
 
 AboutPage.getInitialProps = async () => ({
-  namespacesRequired: ['common', 'intro'],
+  namespacesRequired: ['common'],
 });
-
-// AboutPage.propTypes = {
-//   t: PropTypes.func.isRequired,
-// };
 
 export default withTranslation('common')(AboutPage);
