@@ -1,11 +1,18 @@
 {
   "about": "About",
+  "brb": "Bank of the Republic of Burundi (BRB)",
   "change-locale": "Change language",
+  "contact": "Contact",
+  "contributors": "Contributors",
+  "dashboard": "Dashboard",
   "data": "Data",
   "datasets": "Datasets",
   "domains": "Domains",
+  "dot": "point",
   "graphics": "Graphics",
+  "isteebu": "Institute of Statistics and Economic Studies of Burundi (ISTEEBU)",
   "no_results_available_for": "No results are available for",
+  "publications": "Publications",
   "search": "Search",
   "Home": {
     "title": "Open data platform on Burundi",
@@ -20,6 +27,15 @@
   "About": {
     "title": "About Us",
     "subtitle": "Alone we go faster, together we go further.",
-    "description": ""
+    "description": "",
+    "publications": {
+      "description": "This project would never have seen the light of day without the public publication of the data by these institutions:"
+    },
+    "contributors": {
+      "description": "This project is directed by Lionel Kubwimana. Important contributions have been made by :"
+    },
+    "contact": {
+      "description": "To contribute, publish, correct or update the data, you can contact us at "
+    }
   }
 }

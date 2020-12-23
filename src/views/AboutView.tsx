@@ -1,8 +1,9 @@
+import { withTranslation } from '../i18n';
 import styled from 'styled-components/macro';
 import { Text, Divider, Link, Grid, Card } from '@geist-ui/react';
 import { Layout } from 'components';
 
-export const AboutView = () => {
+export const AboutView = ({ t }) => {
   const DashboardItem = ({ size, description }) => {
     return (
       <Card
@@ -19,11 +20,8 @@ export const AboutView = () => {
     <StyledAboutView>
       <Layout pageTitle="About">
         <div>
-          <Text h3>Publications</Text>
-          <Text p>
-            Ce projet n'aurait jamais vu le jour sans la publication publique
-            des données par ces institutions :
-          </Text>
+          <Text h3>{t('publications')}</Text>
+          <Text p>{t('About.publications.description')}</Text>
           <ul>
             <li>
               <Link
@@ -31,8 +29,7 @@ export const AboutView = () => {
                 target="_blank"
                 href="https://www.isteebu.bi/statistiques/"
               >
-                Institut de Statistiques et d'Études Économiques du Burundi
-                (ISTEEBU)
+                {t('isteebu')}
               </Link>
             </li>
             <li>
@@ -41,18 +38,15 @@ export const AboutView = () => {
                 target="_blank"
                 href="https://brb.bi/fr/content/secteur-r%C3%A9el"
               >
-                Banque de la République du Burundi (BRB)
+                {t('brb')}
               </Link>
             </li>
           </ul>
         </div>
         <Divider />
         <div>
-          <Text h3>Contributeurs</Text>
-          <Text p>
-            Ce projet est dirigé par Lionel Kubwimana. D'importantes
-            contributions ont été réalisées par :
-          </Text>
+          <Text h3>{t('contributors')}</Text>
+          <Text p>{t('About.contributors.description')}</Text>
           <ul>
             <li>Armel Michel Ndayikeza</li>
             <li>Bahati Nsaba</li>
@@ -66,26 +60,25 @@ export const AboutView = () => {
           </ul>
           <Divider />
           <div>
-            <Text h3>Tableau de bord</Text>
+            <Text h3>{t('dashboard')}</Text>
             <Grid.Container gap={2} justify="center">
               <Grid xs={24} sm={12} md={8}>
-                <DashboardItem size={290} description="Jeux de données" />
+                <DashboardItem size={290} description={t('datasets')} />
               </Grid>
               <Grid xs={24} sm={12} md={8}>
                 <DashboardItem size={70} description="Sources" />
               </Grid>
               <Grid xs={24} sm={12} md={8}>
-                <DashboardItem size={20} description="Domaines" />
+                <DashboardItem size={20} description={t('domains')} />
               </Grid>
             </Grid.Container>
           </div>
           <Divider />
           <div>
-            <Text h3>Contact</Text>
+            <Text h3>{t('contact')}</Text>
             <Text p>
-              Pour contribuer, publier, corriger ou mettre à jour les données,
-              vous pouvez nous contacter à :
-              <Text em> data(at)burundiarxiv(point)org</Text>
+              {t('About.contact.description')}
+              <Text em>data(at)burundiarxiv({t('dot')})org</Text>
             </Text>
           </div>
           <Divider />
@@ -96,3 +89,5 @@ export const AboutView = () => {
 };
 
 const StyledAboutView = styled.div``;
+
+export const AboutViewTranslated = withTranslation('common')(AboutView);

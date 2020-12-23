@@ -45,4 +45,3 @@ const StyledHomeView = styled.div`
 `;
 
 export const HomeViewTranslated = withTranslation('common')(HomeView);
-// export default withTranslation('common')(HomeView);
