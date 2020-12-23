@@ -1,3 +1,3 @@
 export { HomeViewTranslated as HomeView } from './HomeView';
-export { DashboardView } from './DashboardView';
+export { DashboardViewTranslated as DashboardView } from './DashboardView';
 export { AboutViewTranslated as AboutView } from './AboutView';

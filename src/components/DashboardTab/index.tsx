@@ -1,1 +1,1 @@
-export { DashboardTab } from './DashboardTab';
+export { DashboardTabTranslated as DashboardTab } from './DashboardTab';

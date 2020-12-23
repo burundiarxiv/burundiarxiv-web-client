@@ -14,15 +14,19 @@
   "no_results_available_for": "No results are available for",
   "publications": "Publications",
   "search": "Search",
+  "country": "Country",
+  "provinces": "Provinces",
+  "communes": "Communes",
   "Home": {
     "title": "Open data platform on Burundi",
     "subtitle": "Let's share, improve and reuse Burundian public data.",
     "description": "Burundiarxiv Open Data is a project initiated and developed by a collective of Burundian computer engineers, statisticians, economists and data scientists. It aims to provide and centralize open and reusable data on Burundi. It is a work in progress. For the moment, we are making available data from the directories of the Institute of Statistics and Economic Studies of Burundi (ISTEEBU) and soon those of the Bank of the Republic of Burundi (BRB). We wish to offer a free tool at the service of citizens, researchers, NGOs and decision-makers."
   },
   "Dashboard": {
-    "title": "Graphcis",
+    "title": "Graphics",
     "subtitle": "A picture is worth a thousand words. - Confucius",
-    "description": ""
+    "description": "",
+    "note": "This page is under construction."
   },
   "About": {
     "title": "About Us",

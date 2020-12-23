@@ -1,3 +1,4 @@
+import { withTranslation } from '../i18n';
 import styled from 'styled-components/macro';
 import { Note } from '@geist-ui/react';
 import { Layout } from 'components';
@@ -6,7 +7,7 @@ import { ArrowUp } from '@geist-ui/react-icons';
 
 import { DashboardTabs } from 'components';
 
-export const DashboardView = () => {
+export const DashboardView = ({ t }) => {
   // const randomNumber = () => Math.round(Math.random() * 20);
 
   // const doughnutData = {
@@ -163,7 +164,7 @@ export const DashboardView = () => {
       <Layout pageTitle="Dashboard">
         <ScrollToTop smooth component={<ArrowUp />} />
         <Note type="error" style={{ textAlign: 'center' }}>
-          Cette page est en cours de construction.
+          {t('Dashboard.note')}
         </Note>
         <br />
         <DashboardTabs />
@@ -185,3 +186,5 @@ const StyledDashboardView = styled.div`
     width: 100%;
   }
 `;
+
+export const DashboardViewTranslated = withTranslation('common')(DashboardView);
