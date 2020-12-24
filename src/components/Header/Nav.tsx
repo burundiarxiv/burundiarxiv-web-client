@@ -19,6 +19,8 @@ const Nav = ({ t }) => {
           </li>
           <li>
             <Button
+              size="mini"
+              auto
               onClick={() =>
                 i18n.changeLanguage(i18n.language === 'fr' ? 'en' : 'fr')
               }
@@ -38,6 +40,7 @@ const StyledNav = styled.nav`
   align-items: center;
   ul {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-left: 0;
   }
