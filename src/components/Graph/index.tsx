@@ -1,1 +1,1 @@
-export { Graph } from './Graph';
+export { GraphTranslated as Graph } from './Graph';

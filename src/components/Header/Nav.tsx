@@ -1,4 +1,3 @@
-// import Link from 'next/link';
 import { Button } from '@geist-ui/react';
 import { i18n, Link, withTranslation } from '../../i18n';
 import styled from 'styled-components/macro';

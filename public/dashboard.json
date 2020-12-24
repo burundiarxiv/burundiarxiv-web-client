@@ -6,7 +6,7 @@
         "title": "ENSEIGNEMENT",
         "graphs": [
           {
-            "title": "Répartition des Écoles du Fondamental",
+            "title": "distribution_fundamental_schools",
             "data": {
               "labels": [
                 "Bubanza",
@@ -51,24 +51,24 @@
                     242
                   ],
                   "backgroundColor": [
-                    "#8fb6cc",
-                    "#0f32c5",
-                    "#043e61",
-                    "#4549e2",
-                    "#f288a7",
-                    "#284e46",
-                    "#ef0053",
-                    "#1e7c14",
-                    "#951733",
-                    "#c8fcac",
-                    "#221eea",
-                    "#fd3941",
-                    "#c1fef8",
-                    "#718e1c",
-                    "#bdc2e2",
-                    "#952eb1",
-                    "#6e2be1",
-                    "#a7ff9d"
+                    "#bcc33f",
+                    "#45d202",
+                    "#9b4ca1",
+                    "#af9de6",
+                    "#f45ebb",
+                    "#5207ec",
+                    "#840d2a",
+                    "#23f7ec",
+                    "#787878",
+                    "#cb7008",
+                    "#73b7c2",
+                    "#9773e6",
+                    "#147d4e",
+                    "#5e6a60",
+                    "#d65689",
+                    "#23bf48",
+                    "#662bf0",
+                    "#d426f0"
                   ]
                 }
               ]
@@ -82,7 +82,7 @@
         "title": "TOURISME ET HOTELLERIE",
         "graphs": [
           {
-            "title": "Capacité d'Accueil des Hotels",
+            "title": "hotels_capacity",
             "data": {
               "labels": [
                 "Bubanza",
