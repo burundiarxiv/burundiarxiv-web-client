@@ -3,7 +3,7 @@
     "label": "country",
     "sections": [
       {
-        "title": "ENSEIGNEMENT",
+        "title": "education",
         "graphs": [
           {
             "title": "distribution_fundamental_schools",
@@ -51,24 +51,24 @@
                     242
                   ],
                   "backgroundColor": [
-                    "#bcc33f",
-                    "#45d202",
-                    "#9b4ca1",
-                    "#af9de6",
-                    "#f45ebb",
-                    "#5207ec",
-                    "#840d2a",
-                    "#23f7ec",
-                    "#787878",
-                    "#cb7008",
-                    "#73b7c2",
-                    "#9773e6",
-                    "#147d4e",
-                    "#5e6a60",
-                    "#d65689",
-                    "#23bf48",
-                    "#662bf0",
-                    "#d426f0"
+                    "#ca3822",
+                    "#22d5fa",
+                    "#b88a2f",
+                    "#09def9",
+                    "#9c9c4d",
+                    "#b4ff01",
+                    "#66f1ac",
+                    "#779adc",
+                    "#3b4ade",
+                    "#3a9985",
+                    "#108f39",
+                    "#a80753",
+                    "#dc6aa9",
+                    "#ca38a1",
+                    "#a7ab80",
+                    "#69cc0a",
+                    "#dfbcb9",
+                    "#b82cf3"
                   ]
                 }
               ]
@@ -79,7 +79,7 @@
         ]
       },
       {
-        "title": "TOURISME ET HOTELLERIE",
+        "title": "tourism_and_hotel_business",
         "graphs": [
           {
             "title": "hotels_capacity",
@@ -106,7 +106,7 @@
               ],
               "datasets": [
                 {
-                  "label": "# d'hotels",
+                  "label": "# hotels",
                   "backgroundColor": "rgba(255,99,132,0.2)",
                   "borderColor": "rgba(255,99,132,1)",
                   "borderWidth": 1,
@@ -140,10 +140,10 @@
           }
         ]
       },
-      { "title": "EMPLOI", "graphs": [] },
-      { "title": "FINANCES PUBLIQUES", "graphs": [] },
-      { "title": "POPULATION", "graphs": [] },
-      { "title": "SANTÉ ET NUTRITION", "graphs": [] }
+      { "title": "employment", "graphs": [] },
+      { "title": "public_finances", "graphs": [] },
+      { "title": "population", "graphs": [] },
+      { "title": "health_and_nutrition", "graphs": [] }
     ]
   },
   "provinces": {
