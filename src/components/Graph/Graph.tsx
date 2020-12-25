@@ -1,3 +1,4 @@
+import { withTranslation } from '../../i18n';
 import { Doughnut, Line, Bubble, Radar, HorizontalBar } from 'react-chartjs-2';
 import { Text, Grid, Card, Link } from '@geist-ui/react';
 
@@ -9,12 +10,12 @@ const componentMap = {
   HorizontalBar: HorizontalBar,
 };
 
-const Item = ({ componentName, data, title, source }) => {
+const Item = ({ componentName, data, title, source, t }) => {
   const Component = componentMap[componentName];
   return (
     <Card className="card">
       <Text h5 style={{ marginBottom: '0' }}>
-        {title}
+        {t(title)}
       </Text>
       <Component data={data} />
       <Card.Footer>
@@ -29,10 +30,18 @@ const Item = ({ componentName, data, title, source }) => {
   );
 };
 
-export const Graph = ({ title, data, type, source }) => {
+export const Graph = ({ title, data, type, source, t }) => {
   return (
     <Grid xs={24} sm={24} md={24}>
-      <Item componentName={type} data={data} title={title} source={source} />
+      <Item
+        componentName={type}
+        data={data}
+        title={title}
+        source={source}
+        t={t}
+      />
     </Grid>
   );
 };
+
+export const GraphTranslated = withTranslation('common')(Graph);

@@ -1,0 +1,53 @@
+{
+  "about": "About",
+  "brb": "Bank of the Republic of Burundi (BRB)",
+  "change-locale": "EN",
+  "contact": "Contact",
+  "contributors": "Contributors",
+  "dashboard": "Dashboard",
+  "distribution_fundamental_schools": "Distribution of Fundamental Schools",
+  "data": "Data",
+  "datasets": "Datasets",
+  "domains": "Domains",
+  "dot": "point",
+  "education": "EDUCATION",
+  "health_and_nutrition": "HEALTH AND NUTRITION",
+  "population": "POPULATION",
+  "employment": "EMPLOYMENT",
+  "tourism_and_hotel_business": "TOURISM AND HOTEL BUSINESS",
+  "public_finances": "PUBLIC FINANCES",
+  "graphics": "Graphics",
+  "hotels_capacity": "Hotels Capacity",
+  "isteebu": "Institute of Statistics and Economic Studies of Burundi (ISTEEBU)",
+  "no_results_available_for": "No results are available for",
+  "publications": "Publications",
+  "search": "Search",
+  "country": "Country",
+  "provinces": "Provinces",
+  "communes": "Communes",
+  "Home": {
+    "title": "Open data platform on Burundi",
+    "subtitle": "Let's share, improve and reuse Burundian public data.",
+    "description": "Burundiarxiv Open Data is a project initiated and developed by a collective of Burundian computer engineers, statisticians, economists and data scientists. It aims to provide and centralize open and reusable data on Burundi. It is a work in progress. For the moment, we are making available data from the directories of the Institute of Statistics and Economic Studies of Burundi (ISTEEBU) and soon those of the Bank of the Republic of Burundi (BRB). We wish to offer a free tool at the service of citizens, researchers, NGOs and decision-makers."
+  },
+  "Dashboard": {
+    "title": "Graphics",
+    "subtitle": "A picture is worth a thousand words. - Confucius",
+    "description": "",
+    "note": "This page is under construction."
+  },
+  "About": {
+    "title": "About Us",
+    "subtitle": "Alone we go faster, together we go further.",
+    "description": "",
+    "publications": {
+      "description": "This project would never have seen the light of day without the public publication of the data by these institutions:"
+    },
+    "contributors": {
+      "description": "This project is directed by Lionel Kubwimana. Important contributions have been made by :"
+    },
+    "contact": {
+      "description": "To contribute, publish, correct or update the data, you can contact us at "
+    }
+  }
+}

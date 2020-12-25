@@ -1,1 +1,1 @@
-export { SectionTab } from './SectionTab';
+export { SectionTabTranslated as SectionTab } from './SectionTab';

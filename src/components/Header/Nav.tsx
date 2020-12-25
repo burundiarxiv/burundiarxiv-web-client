@@ -1,25 +1,31 @@
-import NextLink from 'next/link';
+import { Button } from '@geist-ui/react';
+import { i18n, Link, withTranslation } from '../../i18n';
 import styled from 'styled-components/macro';
 
-export const Nav = () => {
+const Nav = ({ t }) => {
   return (
     <StyledNav>
       <div className="link">
         <ul>
           <li>
-            <NextLink href="/">
-              <a>Données</a>
-            </NextLink>
+            <Link href="/">{t('data')}</Link>
           </li>
           <li>
-            <NextLink href="/dashboard">
-              <a>Graphiques</a>
-            </NextLink>
+            <Link href="/dashboard">{t('graphics')}</Link>
           </li>
           <li>
-            <NextLink href="/about">
-              <a>À Propos</a>
-            </NextLink>
+            <Link href="/about">{t('about')}</Link>
+          </li>
+          <li>
+            <Button
+              size="mini"
+              auto
+              onClick={() =>
+                i18n.changeLanguage(i18n.language === 'fr' ? 'en' : 'fr')
+              }
+            >
+              {t('change-locale')}
+            </Button>
           </li>
         </ul>
       </div>
@@ -33,6 +39,7 @@ const StyledNav = styled.nav`
   align-items: center;
   ul {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-left: 0;
   }
@@ -56,3 +63,5 @@ const StyledNav = styled.nav`
     }
   }
 `;
+
+export default withTranslation('common')(Nav);

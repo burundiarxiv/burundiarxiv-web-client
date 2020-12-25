@@ -1,10 +1,11 @@
 import React, { useContext, useState } from 'react';
+import { withTranslation } from '../../i18n';
 import styled from 'styled-components/macro';
 import { Divider, Link, Modal, Text, Table } from '@geist-ui/react';
 import Highlighter from 'react-highlight-words';
 import { HomeContext } from 'context';
 
-export const AllDatasets = () => {
+const AllDatasets = ({ t }) => {
   const {
     store: { relatedDatasets, searchTerm },
   } = useContext(HomeContext);
@@ -40,7 +41,7 @@ export const AllDatasets = () => {
         relatedDatasets.map(({ category, data }, datasetIndex) => (
           <div className="category" id={category} key={datasetIndex}>
             <Text h6>
-              {category} ({data.length} jeux de données)
+              {category} ({data.length} {t('datasets')})
             </Text>
             {data.map(({ name, path, id }, dataIndex) => (
               <Text
@@ -67,7 +68,7 @@ export const AllDatasets = () => {
         ))
       ) : (
         <Text style={{ textAlign: 'center', width: '100%' }}>
-          Aucun résultat associé à{' '}
+          {t('no_results_available_for')}{' '}
           <span className="highlight" style={{ fontWeight: 'bolder' }}>
             {searchTerm}
           </span>
@@ -114,3 +115,5 @@ export const AllDatasets = () => {
 };
 
 const StyledAllDatasets = styled.div``;
+
+export const AllDatasetsTranslated = withTranslation('common')(AllDatasets);

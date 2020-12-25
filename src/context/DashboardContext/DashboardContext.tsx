@@ -9,15 +9,15 @@ export const DashboardContext = React.createContext<any>({});
 export const DashboardProvider = ({ children }: Provider): JSX.Element => {
   const [tabsContent, setTabsContent] = useState({
     pays: {
-      label: 'Pays',
+      label: 'country',
       sections: [],
     },
     provinces: {
-      label: 'Provinces',
+      label: 'provinces',
       sections: [],
     },
     commune: {
-      label: 'Communes',
+      label: 'communes',
       sections: [],
     },
   });

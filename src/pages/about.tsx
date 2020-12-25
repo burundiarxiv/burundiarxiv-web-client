@@ -1,5 +1,10 @@
+import { i18n, withTranslation } from '../i18n';
 import { AboutView } from 'views';
 
-const AboutUsPage = () => <AboutView />;
+const AboutPage = () => <AboutView />;
 
-export default AboutUsPage;
+AboutPage.getInitialProps = async () => ({
+  namespacesRequired: ['common'],
+});
+
+export default withTranslation('common')(AboutPage);

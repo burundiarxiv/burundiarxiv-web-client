@@ -1,9 +1,10 @@
+import { withTranslation } from '../../i18n';
 import { Grid, Collapse } from '@geist-ui/react';
 import { Graph } from 'components';
 
-export const SectionTab = ({ title, subtitle, graphs }) => {
+const SectionTab = ({ title, subtitle, graphs, t }) => {
   return (
-    <Collapse title={title} subtitle={subtitle} shadow>
+    <Collapse title={t(title)} subtitle={subtitle} shadow>
       <div className="grid">
         <Grid.Container gap={5} justify="center">
           {graphs.map(({ title, data, type, source }, index) => (
@@ -20,3 +21,5 @@ export const SectionTab = ({ title, subtitle, graphs }) => {
     </Collapse>
   );
 };
+
+export const SectionTabTranslated = withTranslation('common')(SectionTab);

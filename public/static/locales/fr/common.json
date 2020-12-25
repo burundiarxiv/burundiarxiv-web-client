@@ -1,0 +1,53 @@
+{
+  "about": "À Propos",
+  "brb": "Banque de la République du Burundi (BRB)",
+  "change-locale": "FR",
+  "contact": "Contact",
+  "contributors": "Contributeurs",
+  "dashboard": "Tableau de bord",
+  "data": "Données",
+  "datasets": "Jeux de données",
+  "distribution_fundamental_schools": "Répartition des Écoles du Fondamental",
+  "domains": "Domaines",
+  "dot": "dot",
+  "education": "EDUCATION",
+  "health_and_nutrition": "SANTÉ ET NUTRITION",
+  "population": "POPULATION",
+  "employment": "EMPLOI",
+  "tourism_and_hotel_business": "TOURISME ET HOTELLERIE",
+  "public_finances": "FINANCES PUBLIQUES",
+  "graphics": "Graphiques",
+  "hotels_capacity": "Capacité d'Accueil des Hotels",
+  "isteebu": "Institut de Statistiques et d'Études Économiques du Burundi (ISTEEBU)",
+  "no_results_available_for": "Aucun résultat correspond à",
+  "publications": "Publications",
+  "search": "Recherche",
+  "country": "Pays",
+  "provinces": "Provinces",
+  "communes": "Communes",
+  "Home": {
+    "title": "Plateforme ouverte des données sur le Burundi",
+    "subtitle": "Partageons, améliorons et réutilisons les données publiques burundaises.",
+    "description": "Burundiarxiv Open Data est un projet initié et développé par un collectif d'Ingénieurs Informatique, Statisticiens, Économistes et Data scientists Burundais. Il a pour objectif de fournir et de centraliser les données ouvertes et réutilisables sur le Burundi. Il s'agit d'un travail en cours d'élabaration. Pour le moment, nous mettons à disposition les données provenant des annuaires de l'Institut de Statistiques et d'Etudes Economiques du Burundi (ISTEEBU) et bientôt ceux de la Banque de la République du Burundi (BRB). Nous souhaitons proposer un outil gratuit au service des citoyens, chercheurs, ONG et décideurs."
+  },
+  "Dashboard": {
+    "description": "",
+    "title": "Graphiques",
+    "subtitle": "Une image vaut mille mots. - Confucius",
+    "note": "Cette page est en cours de construction."
+  },
+  "About": {
+    "title": "À Propos",
+    "subtitle": "Seul on va plus vite, ensemble on va plus loin.",
+    "description": "",
+    "publications": {
+      "description": "Ce projet n'aurait jamais vu le jour sans la publication publique des données par ces institutions :"
+    },
+    "contributors": {
+      "description": "Ce projet est dirigé par Lionel Kubwimana. D'importantes contributions ont été réalisées par :"
+    },
+    "contact": {
+      "description": "Pour contribuer, publier, corriger ou mettre à jour les données, vous pouvez nous contacter à "
+    }
+  }
+}
