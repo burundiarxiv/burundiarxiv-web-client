@@ -102,11 +102,11 @@ const AllDatasets = ({ t }) => {
             setModalState(false);
           }}
         >
-          Fermer
+          {t('close')}
         </Modal.Action>
         <Modal.Action>
           <Link href={path} download icon color>
-            Téléchager au format CSV
+            {t('download_in_csv_format')}
           </Link>
         </Modal.Action>
       </Modal>

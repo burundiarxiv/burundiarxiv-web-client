@@ -1,0 +1,1557 @@
+[
+  {
+    "category": "HOUSING AND LIVING CONDITIONS",
+    "data": [
+      {
+        "name": "Number of Households with Electricity for Lighting by Province",
+        "path": "/datasets/isteebu-annuaire-2018-2-10.csv",
+        "id": "2-10"
+      },
+      {
+        "name": "Number of apartments with modern WC per province",
+        "path": "/datasets/isteebu-annuaire-2018-2-05.csv",
+        "id": "2-05"
+      },
+      {
+        "name": "Number of apartments with modern roofs by province",
+        "path": "/datasets/isteebu-annuaire-2018-2-07.csv",
+        "id": "2-07"
+      },
+      {
+        "name": "Number of dwellings with solid walls by province",
+        "path": "/datasets/isteebu-annuaire-2018-2-06.csv",
+        "id": "2-06"
+      },
+      {
+        "name": "Number of dwellings with tiled or cemented floors by province",
+        "path": "/datasets/isteebu-annuaire-2018-2-08.csv",
+        "id": "2-08"
+      },
+      {
+        "name": "Number of households housed for free by province",
+        "path": "/datasets/isteebu-annuaire-2018-2-04.csv",
+        "id": "2-04"
+      },
+      {
+        "name": "Number of households owning homes by province",
+        "path": "/datasets/isteebu-annuaire-2018-2-02.csv",
+        "id": "2-02"
+      },
+      {
+        "name": "Number of households owning selected consumer durables by place of residence",
+        "path": "/datasets/isteebu-annuaire-2018-2-01.csv",
+        "id": "2-01"
+      },
+      {
+        "name": "Number of households renting units by province",
+        "path": "/datasets/isteebu-annuaire-2018-2-03.csv",
+        "id": "2-03"
+      },
+      {
+        "name": "Number of households with drinking water by province",
+        "path": "/datasets/isteebu-annuaire-2018-2-09.csv",
+        "id": "2-09"
+      }
+    ]
+  },
+  {
+    "category": "ENVIRONMENT",
+    "data": [
+      {
+        "name": "Annual maximum temperature by province.",
+        "path": "/datasets/isteebu-annuaire-2018-3-04.csv",
+        "id": "3-04"
+      },
+      {
+        "name": "Annual minimum temperature by province.",
+        "path": "/datasets/isteebu-annuaire-2018-3-03.csv",
+        "id": "3-03"
+      },
+      {
+        "name": "Average annual temperature by province (in °C).",
+        "path": "/datasets/isteebu-annuaire-2018-3-02.csv",
+        "id": "3-02"
+      },
+      {
+        "name": "Development of the borders.",
+        "path": "/datasets/isteebu-annuaire-2018-3-20.csv",
+        "id": "3-20"
+      },
+      {
+        "name": "Distribution of Burundi's fauna by family.",
+        "path": "/datasets/isteebu-annuaire-2018-3-27.csv",
+        "id": "3-27"
+      },
+      {
+        "name": "Distribution of the fauna of Burundi by genus.",
+        "path": "/datasets/isteebu-annuaire-2018-3-28.csv",
+        "id": "3-28"
+      },
+      {
+        "name": "Distribution of the fauna of Burundi by species.",
+        "path": "/datasets/isteebu-annuaire-2018-3-29.csv",
+        "id": "3-29"
+      },
+      {
+        "name": "Distribution of the surface areas of certain natural ecosystems.",
+        "path": "/datasets/isteebu-annuaire-2018-3-22.csv",
+        "id": "3-22"
+      },
+      {
+        "name": "Distribution of the surface areas of protected areas.",
+        "path": "/datasets/isteebu-annuaire-2018-3-23.csv",
+        "id": "3-23"
+      },
+      {
+        "name": "Distribution of the vascular flora of Burundi according to families.",
+        "path": "/datasets/isteebu-annuaire-2018-3-24.csv",
+        "id": "3-24"
+      },
+      {
+        "name": "Distribution of the vascular flora of Burundi according to genus.",
+        "path": "/datasets/isteebu-annuaire-2018-3-25.csv",
+        "id": "3-25"
+      },
+      {
+        "name": "Distribution of the vascular flora of Burundi according to species.",
+        "path": "/datasets/isteebu-annuaire-2018-3-26.csv",
+        "id": "3-26"
+      },
+      {
+        "name": "Environmental indicators.",
+        "path": "/datasets/isteebu-annuaire-2018-3-01.csv",
+        "id": "3-01"
+      },
+      {
+        "name": "Monthly evolution of precipitation by weather station in Bujumbura - Airport.",
+        "path": "/datasets/isteebu-annuaire-2018-3-05.csv",
+        "id": "3-05"
+      },
+      {
+        "name": "Monthly evolution of rainfall by meteorological station of Gisozi.",
+        "path": "/datasets/isteebu-annuaire-2018-3-18.csv",
+        "id": "3-18"
+      },
+      {
+        "name": "Monthly evolution of rainfall by meteorological station of Karuzi.",
+        "path": "/datasets/isteebu-annuaire-2018-3-08.csv",
+        "id": "3-08"
+      },
+      {
+        "name": "Monthly evolution of rainfall by meteorological station of Mparambo.",
+        "path": "/datasets/isteebu-annuaire-2018-3-19.csv",
+        "id": "3-19"
+      },
+      {
+        "name": "Monthly evolution of rainfall by meteorological station of Muyinga.",
+        "path": "/datasets/isteebu-annuaire-2018-3-17.csv",
+        "id": "3-17"
+      },
+      {
+        "name": "Monthly evolution of rainfall by weather station of Bururi - Vyanda.",
+        "path": "/datasets/isteebu-annuaire-2018-3-07.csv",
+        "id": "3-07"
+      },
+      {
+        "name": "Monthly evolution of rainfall by weather station of Imbo - Sems.",
+        "path": "/datasets/isteebu-annuaire-2018-3-06.csv",
+        "id": "3-06"
+      },
+      {
+        "name": "Monthly evolution of rainfall by weather station of Makamba.",
+        "path": "/datasets/isteebu-annuaire-2018-3-10.csv",
+        "id": "3-10"
+      },
+      {
+        "name": "Monthly evolution of rainfall by weather station of Muriza.",
+        "path": "/datasets/isteebu-annuaire-2018-3-11.csv",
+        "id": "3-11"
+      },
+      {
+        "name": "Monthly evolution of rainfall by weather station of Musasa.",
+        "path": "/datasets/isteebu-annuaire-2018-3-13.csv",
+        "id": "3-13"
+      },
+      {
+        "name": "Monthly rainfall evolution by Cankuzo weather station.",
+        "path": "/datasets/isteebu-annuaire-2018-3-12.csv",
+        "id": "3-12"
+      },
+      {
+        "name": "Monthly rainfall trend by Kirundo weather station.",
+        "path": "/datasets/isteebu-annuaire-2018-3-16.csv",
+        "id": "3-16"
+      },
+      {
+        "name": "Monthly rainfall trend by Nyamuswaga weather station.",
+        "path": "/datasets/isteebu-annuaire-2018-3-15.csv",
+        "id": "3-15"
+      },
+      {
+        "name": "Monthly rainfall trend by Rwegura weather station.",
+        "path": "/datasets/isteebu-annuaire-2018-3-14.csv",
+        "id": "3-14"
+      },
+      {
+        "name": "Monthly rainfall trend by weather station of Gitega - Airport.",
+        "path": "/datasets/isteebu-annuaire-2018-3-09.csv",
+        "id": "3-09"
+      },
+      {
+        "name": "Surface area of protected natural areas in ha.",
+        "path": "/datasets/isteebu-annuaire-2018-3-21.csv",
+        "id": "3-21"
+      }
+    ]
+  },
+  {
+    "category": "HEALTH AND NUTRITION",
+    "data": [
+      {
+        "name": "Accommodation and deliveries.",
+        "path": "/datasets/isteebu-annuaire-2018-4-14.csv",
+        "id": "4-14"
+      },
+      {
+        "name": "Available health infrastructure by province.",
+        "path": "/datasets/isteebu-annuaire-2018-4-04.csv",
+        "id": "4-04"
+      },
+      {
+        "name": "Birth monitoring in health centers by province.",
+        "path": "/datasets/isteebu-annuaire-2018-4-16.csv",
+        "id": "4-16"
+      },
+      {
+        "name": "Births attended in health centers",
+        "path": "/datasets/isteebu-annuaire-2018-4-15.csv",
+        "id": "4-15"
+      },
+      {
+        "name": "Change in the structure of the WTP index in %",
+        "path": "/datasets/isteebu-annuaire-2018-4-20.csv",
+        "id": "4-20"
+      },
+      {
+        "name": "Curative activities in health centers and hospitals by province.",
+        "path": "/datasets/isteebu-annuaire-2018-4-07.csv",
+        "id": "4-07"
+      },
+      {
+        "name": "Evolution of health infrastructures.",
+        "path": "/datasets/isteebu-annuaire-2018-4-03.csv",
+        "id": "4-03"
+      },
+      {
+        "name": "Evolution of prenatal surveillance.",
+        "path": "/datasets/isteebu-annuaire-2018-4-13.csv",
+        "id": "4-13"
+      },
+      {
+        "name": "Evolution of the number of abortions.",
+        "path": "/datasets/isteebu-annuaire-2018-4-19.csv",
+        "id": "4-19"
+      },
+      {
+        "name": "Hospital morbidities due to AIDS.",
+        "path": "/datasets/isteebu-annuaire-2018-4-18.csv",
+        "id": "4-18"
+      },
+      {
+        "name": "Immunization coverage for children under 1 year of age.",
+        "path": "/datasets/isteebu-annuaire-2018-4-12.csv",
+        "id": "4-12"
+      },
+      {
+        "name": "Morbidity in hospitals by province",
+        "path": "/datasets/isteebu-annuaire-2018-4-08.csv",
+        "id": "4-08"
+      },
+      {
+        "name": "Number of health care physicians by province.",
+        "path": "/datasets/isteebu-annuaire-2018-4-06.csv",
+        "id": "4-06"
+      },
+      {
+        "name": "Numbers of health professions.",
+        "path": "/datasets/isteebu-annuaire-2018-4-05.csv",
+        "id": "4-05"
+      },
+      {
+        "name": "TBT surveillance data",
+        "path": "/datasets/isteebu-annuaire-2018-4-17.csv",
+        "id": "4-17"
+      },
+      {
+        "name": "The main causes of morbidity in health centers among children under 5 years of age.",
+        "path": "/datasets/isteebu-annuaire-2018-4-01.csv",
+        "id": "4-01"
+      },
+      {
+        "name": "The main causes of morbidity in health centers among people aged 5 years and older.",
+        "path": "/datasets/isteebu-annuaire-2018-4-02.csv",
+        "id": "4-02"
+      },
+      {
+        "name": "The main causes of mortality in hospitals among people aged 5 years and over.",
+        "path": "/datasets/isteebu-annuaire-2018-4-10.csv",
+        "id": "4-10"
+      },
+      {
+        "name": "The main causes of mortality in hospitals in children under 5 years of age.",
+        "path": "/datasets/isteebu-annuaire-2018-4-09.csv",
+        "id": "4-09"
+      },
+      {
+        "name": "Women who received the tetanus vaccine",
+        "path": "/datasets/isteebu-annuaire-2018-4-11.csv",
+        "id": "4-11"
+      }
+    ]
+  },
+  {
+    "category": "SOCIAL PROTECTION",
+    "data": [
+      {
+        "name": "Amount of benefits provided by INSS",
+        "path": "/datasets/isteebu-annuaire-2018-5-07A.csv",
+        "id": "5-07A"
+      },
+      {
+        "name": "Amount of benefits provided by ONPR",
+        "path": "/datasets/isteebu-annuaire-2018-5-07B.csv",
+        "id": "5-07B"
+      },
+      {
+        "name": "Amount of contributions by category (in thousands)",
+        "path": "/datasets/isteebu-annuaire-2018-5-16.csv",
+        "id": "5-16"
+      },
+      {
+        "name": "Breakdown of insured persons by activity salary at ONPR (basic salary)",
+        "path": "/datasets/isteebu-annuaire-2018-5-17.csv",
+        "id": "5-17"
+      },
+      {
+        "name": "Cost of care at ONPR.",
+        "path": "/datasets/isteebu-annuaire-2018-5-11B.csv",
+        "id": "5-11B"
+      },
+      {
+        "name": "Cost of care at the INSS.",
+        "path": "/datasets/isteebu-annuaire-2018-5-11A.csv",
+        "id": "5-11A"
+      },
+      {
+        "name": "Distribution of active workers by age and sex.",
+        "path": "/datasets/isteebu-annuaire-2018-5-05.csv",
+        "id": "5-05"
+      },
+      {
+        "name": "Evolution of INSS pension beneficiaries",
+        "path": "/datasets/isteebu-annuaire-2018-5-10A.csv",
+        "id": "5-10A"
+      },
+      {
+        "name": "Evolution of ONPR pension beneficiaries",
+        "path": "/datasets/isteebu-annuaire-2018-5-10B.csv",
+        "id": "5-10B"
+      },
+      {
+        "name": "Evolution of accidents at work and occupational diseases reported to the INSS.",
+        "path": "/datasets/isteebu-annuaire-2018-5-09A.csv",
+        "id": "5-09A"
+      },
+      {
+        "name": "Evolution of contribution income and benefit expenditure for the professional risks branch at the INSS.",
+        "path": "/datasets/isteebu-annuaire-2018-5-12A.csv",
+        "id": "5-12A"
+      },
+      {
+        "name": "Evolution of income from contributions and expenditure on benefits for the occupational risks branch at the ONPR.",
+        "path": "/datasets/isteebu-annuaire-2018-5-12B.csv",
+        "id": "5-12B"
+      },
+      {
+        "name": "Evolution of income in contributions and expenditure in benefits for the pension branch at INSS.",
+        "path": "/datasets/isteebu-annuaire-2018-5-08A.csv",
+        "id": "5-08A"
+      },
+      {
+        "name": "Evolution of income in contributions and expenditure in benefits for the pension branch at the ONPR.",
+        "path": "/datasets/isteebu-annuaire-2018-5-08B.csv",
+        "id": "5-08B"
+      },
+      {
+        "name": "Evolution of occupational risk cases at the INSS.",
+        "path": "/datasets/isteebu-annuaire-2018-5-02A.csv",
+        "id": "5-02A"
+      },
+      {
+        "name": "Evolution of occupational risk cases at the ONPR",
+        "path": "/datasets/isteebu-annuaire-2018-5-02B.csv",
+        "id": "5-02B"
+      },
+      {
+        "name": "Evolution of the annual amounts of expenditure at the INSS.",
+        "path": "/datasets/isteebu-annuaire-2018-5-14A.csv",
+        "id": "5-14A"
+      },
+      {
+        "name": "Evolution of the annual amounts of expenditure at the ONPR.",
+        "path": "/datasets/isteebu-annuaire-2018-5-14B.csv",
+        "id": "5-14B"
+      },
+      {
+        "name": "Evolution of the annual amounts of income at the INSS.",
+        "path": "/datasets/isteebu-annuaire-2018-5-13A.csv",
+        "id": "5-13A"
+      },
+      {
+        "name": "Evolution of the annual amounts of income at the ONPR.",
+        "path": "/datasets/isteebu-annuaire-2018-5-13B.csv",
+        "id": "5-13B"
+      },
+      {
+        "name": "Evolution of the number of insured persons at INSS",
+        "path": "/datasets/isteebu-annuaire-2018-5-04A.csv",
+        "id": "5-04A"
+      },
+      {
+        "name": "Evolution of the number of insured persons at ONPR",
+        "path": "/datasets/isteebu-annuaire-2018-5-04B.csv",
+        "id": "5-04B"
+      },
+      {
+        "name": "Evolution of the technical charges of the pension branch at the INSS",
+        "path": "/datasets/isteebu-annuaire-2018-5-06A.csv",
+        "id": "5-06A"
+      },
+      {
+        "name": "Evolution of the technical expenses of the pension branch at ONPR",
+        "path": "/datasets/isteebu-annuaire-2018-5-06B.csv",
+        "id": "5-06B"
+      },
+      {
+        "name": "Number of Affiliates by category at ONPR.",
+        "path": "/datasets/isteebu-annuaire-2018-5-15.csv",
+        "id": "5-15"
+      },
+      {
+        "name": "Number of persons receiving pensions by category served by ONPR",
+        "path": "/datasets/isteebu-annuaire-2018-5-01B.csv",
+        "id": "5-01B"
+      },
+      {
+        "name": "Number of persons receiving pensions by category served by the INSS",
+        "path": "/datasets/isteebu-annuaire-2018-5-01A.csv",
+        "id": "5-01A"
+      },
+      {
+        "name": "Participation of women in the National Assembly.",
+        "path": "/datasets/isteebu-annuaire-2018-5-19.csv",
+        "id": "5-19"
+      },
+      {
+        "name": "Staff numbers and membership fees for members of the Mutuelle de la Fonction Publique.",
+        "path": "/datasets/isteebu-annuaire-2018-5-18.csv",
+        "id": "5-18"
+      },
+      {
+        "name": "Trends in occupational accidents and diseases reported to ONPR",
+        "path": "/datasets/isteebu-annuaire-2018-5-09B.csv",
+        "id": "5-09B"
+      },
+      {
+        "name": "Workforce of beneficiaries of occupational risk services at INSS",
+        "path": "/datasets/isteebu-annuaire-2018-5-03A.csv",
+        "id": "5-03A"
+      },
+      {
+        "name": "Workforce of beneficiaries of occupational risk services at ONPR",
+        "path": "/datasets/isteebu-annuaire-2018-5-03B.csv",
+        "id": "5-03B"
+      }
+    ]
+  },
+  {
+    "category": "EMPLOYMENT",
+    "data": [
+      {
+        "name": "Active population employed according to employment status.",
+        "path": "/datasets/isteebu-annuaire-2018-6-01.csv",
+        "id": "6-01"
+      },
+      {
+        "name": "Breakdown of active employers by branch of economic activity (as of December 31).",
+        "path": "/datasets/isteebu-annuaire-2018-6-02.csv",
+        "id": "6-02"
+      },
+      {
+        "name": "Breakdown of staff sub-status by grade",
+        "path": "/datasets/isteebu-annuaire-2018-6-08.csv",
+        "id": "6-08"
+      },
+      {
+        "name": "Distribution of Public Service employees by department (as of December 31).",
+        "path": "/datasets/isteebu-annuaire-2018-6-05.csv",
+        "id": "6-05"
+      },
+      {
+        "name": "Distribution of active employers by province (as of December 31).",
+        "path": "/datasets/isteebu-annuaire-2018-6-03.csv",
+        "id": "6-03"
+      },
+      {
+        "name": "Distribution of companies according to the number of active workers (as of December 31).",
+        "path": "/datasets/isteebu-annuaire-2018-6-04.csv",
+        "id": "6-04"
+      },
+      {
+        "name": "Number of employers per sector",
+        "path": "/datasets/isteebu-annuaire-2018-6-07.csv",
+        "id": "6-07"
+      },
+      {
+        "name": "Wage income per state institution (million BIF).",
+        "path": "/datasets/isteebu-annuaire-2018-6-06.csv",
+        "id": "6-06"
+      }
+    ]
+  },
+  {
+    "category": "EDUCATION",
+    "data": [
+      {
+        "name": "Distribution of elementary schools by school province.",
+        "path": "/datasets/isteebu-annuaire-2018-7-02.csv",
+        "id": "7-02"
+      },
+      {
+        "name": "Distribution of elementary students by province.",
+        "path": "/datasets/isteebu-annuaire-2018-7-04.csv",
+        "id": "7-04"
+      },
+      {
+        "name": "Distribution of elementary teachers by province.",
+        "path": "/datasets/isteebu-annuaire-2018-7-03.csv",
+        "id": "7-03"
+      },
+      {
+        "name": "Enrolment of students in post-basic education by type of education.",
+        "path": "/datasets/isteebu-annuaire-2018-7-05.csv",
+        "id": "7-05"
+      },
+      {
+        "name": "Evolution of higher education institutions",
+        "path": "/datasets/isteebu-annuaire-2018-7-10.csv",
+        "id": "7-10"
+      },
+      {
+        "name": "Evolution of higher education students by type of institution",
+        "path": "/datasets/isteebu-annuaire-2018-7-11.csv",
+        "id": "7-11"
+      },
+      {
+        "name": "Evolution of public higher education data",
+        "path": "/datasets/isteebu-annuaire-2018-7-09.csv",
+        "id": "7-09"
+      },
+      {
+        "name": "Foreign students in post-basic education by type of education and gender.",
+        "path": "/datasets/isteebu-annuaire-2018-7-06.csv",
+        "id": "7-06"
+      },
+      {
+        "name": "Key information from basic training",
+        "path": "/datasets/isteebu-annuaire-2018-7-01.csv",
+        "id": "7-01"
+      },
+      {
+        "name": "Principal information on post-basic education",
+        "path": "/datasets/isteebu-annuaire-2018-7-07.csv",
+        "id": "7-07"
+      },
+      {
+        "name": "Trends in higher education data",
+        "path": "/datasets/isteebu-annuaire-2018-7-08.csv",
+        "id": "7-08"
+      }
+    ]
+  },
+  {
+    "category": "TOURISM AND HOTEL BUSINESS",
+    "data": [
+      {
+        "name": "Arrivals by mode of transport.",
+        "path": "/datasets/isteebu-annuaire-2018-8-03.csv",
+        "id": "8-03"
+      },
+      {
+        "name": "Hotels in Burundi, their capacity and average price of a room",
+        "path": "/datasets/isteebu-annuaire-2018-8-01.csv",
+        "id": "8-01"
+      },
+      {
+        "name": "Receiving tourism",
+        "path": "/datasets/isteebu-annuaire-2018-8-02.csv",
+        "id": "8-02"
+      }
+    ]
+  },
+  {
+    "category": "PRODUCTION",
+    "data": [
+      {
+        "name": "Area sown and number of cotton growers",
+        "path": "/datasets/isteebu-annuaire-2018-9-07.csv",
+        "id": "9-07"
+      },
+      {
+        "name": "Bringing cherry coffee to washing companies (tons)",
+        "path": "/datasets/isteebu-annuaire-2018-9-02.csv",
+        "id": "9-02"
+      },
+      {
+        "name": "Cotton production.",
+        "path": "/datasets/isteebu-annuaire-2018-9-05.csv",
+        "id": "9-05"
+      },
+      {
+        "name": "Dry tea production per factory (in tons)",
+        "path": "/datasets/isteebu-annuaire-2018-9-09.csv",
+        "id": "9-09"
+      },
+      {
+        "name": "Evolution of cane, sugar and molasses production (in tons)",
+        "path": "/datasets/isteebu-annuaire-2018-9-12.csv",
+        "id": "9-12"
+      },
+      {
+        "name": "Evolution of cotton seed production (in tons)",
+        "path": "/datasets/isteebu-annuaire-2018-9-06.csv",
+        "id": "9-06"
+      },
+      {
+        "name": "Evolution of sugarcane areas",
+        "path": "/datasets/isteebu-annuaire-2018-9-13.csv",
+        "id": "9-13"
+      },
+      {
+        "name": "Evolution of the quantities of livestock products",
+        "path": "/datasets/isteebu-annuaire-2018-9-22.csv",
+        "id": "9-22"
+      },
+      {
+        "name": "Evolution of the surface area of the tenera variety (Ha)",
+        "path": "/datasets/isteebu-annuaire-2018-9-20.csv",
+        "id": "9-20"
+      },
+      {
+        "name": "Fishery production (in tons)",
+        "path": "/datasets/isteebu-annuaire-2018-9-14.csv",
+        "id": "9-14"
+      },
+      {
+        "name": "Fishery production by type of fish (in tons)",
+        "path": "/datasets/isteebu-annuaire-2018-9-15.csv",
+        "id": "9-15"
+      },
+      {
+        "name": "Fishing valorization (in millions of FBU)",
+        "path": "/datasets/isteebu-annuaire-2018-9-16.csv",
+        "id": "9-16"
+      },
+      {
+        "name": "Green coffee production by quality and season (in tons)",
+        "path": "/datasets/isteebu-annuaire-2018-9-04.csv",
+        "id": "9-04"
+      },
+      {
+        "name": "Green coffee production per season (in tonnes)",
+        "path": "/datasets/isteebu-annuaire-2018-9-03.csv",
+        "id": "9-03"
+      },
+      {
+        "name": "Livestock numbers by species",
+        "path": "/datasets/isteebu-annuaire-2018-9-21.csv",
+        "id": "9-21"
+      },
+      {
+        "name": "Number of fishing boats by type of fishing",
+        "path": "/datasets/isteebu-annuaire-2018-9-19.csv",
+        "id": "9-19"
+      },
+      {
+        "name": "Planted areas and production areas of industrial blocks (in ha)",
+        "path": "/datasets/isteebu-annuaire-2018-9-10.csv",
+        "id": "9-10"
+      },
+      {
+        "name": "Production of food crops in tons",
+        "path": "/datasets/isteebu-annuaire-2018-9-01.csv",
+        "id": "9-01"
+      },
+      {
+        "name": "Production of the main industries",
+        "path": "/datasets/isteebu-annuaire-2018-9-17.csv",
+        "id": "9-17"
+      },
+      {
+        "name": "Slaughtered animals slaughtered for consumption",
+        "path": "/datasets/isteebu-annuaire-2018-9-18.csv",
+        "id": "9-18"
+      },
+      {
+        "name": "Surface areas planted in the village environment per site (in ha)",
+        "path": "/datasets/isteebu-annuaire-2018-9-11.csv",
+        "id": "9-11"
+      },
+      {
+        "name": "Tea production: Green leaves (in tons)",
+        "path": "/datasets/isteebu-annuaire-2018-9-08.csv",
+        "id": "9-08"
+      }
+    ]
+  },
+  {
+    "category": "TRANSPORT AND TELECOMMUNICATION",
+    "data": [
+      {
+        "name": "Capacity of Burundi's telephone networks as of December 31",
+        "path": "/datasets/isteebu-annuaire-2018-10-09.csv",
+        "id": "10-09"
+      },
+      {
+        "name": "Characteristics of Bujumbura International Airport and Burundi's aerodromes",
+        "path": "/datasets/isteebu-annuaire-2018-10-05.csv",
+        "id": "10-05"
+      },
+      {
+        "name": "Distribution of postal offices by province",
+        "path": "/datasets/isteebu-annuaire-2018-10-11.csv",
+        "id": "10-11"
+      },
+      {
+        "name": "Entrances of goods at the Port of Bujumbura (in tons)",
+        "path": "/datasets/isteebu-annuaire-2018-10-02.csv",
+        "id": "10-02"
+      },
+      {
+        "name": "Evolution of postal revenues (amount in thousands)",
+        "path": "/datasets/isteebu-annuaire-2018-10-17.csv",
+        "id": "10-17"
+      },
+      {
+        "name": "Evolution of print runs",
+        "path": "/datasets/isteebu-annuaire-2018-10-20.csv",
+        "id": "10-20"
+      },
+      {
+        "name": "Evolution of the national road network (in km)",
+        "path": "/datasets/isteebu-annuaire-2018-10-07.csv",
+        "id": "10-07"
+      },
+      {
+        "name": "Evolution of the publications of the written press",
+        "path": "/datasets/isteebu-annuaire-2018-10-19.csv",
+        "id": "10-19"
+      },
+      {
+        "name": "Evolution of transport companies",
+        "path": "/datasets/isteebu-annuaire-2018-10-22.csv",
+        "id": "10-22"
+      },
+      {
+        "name": "National and provincial roads in kilometers",
+        "path": "/datasets/isteebu-annuaire-2018-10-06.csv",
+        "id": "10-06"
+      },
+      {
+        "name": "Number of airplanes, vehicles and other means of transport in burundi",
+        "path": "/datasets/isteebu-annuaire-2018-10-23.csv",
+        "id": "10-23"
+      },
+      {
+        "name": "Number of subscribers connected to the telephone exchange",
+        "path": "/datasets/isteebu-annuaire-2018-10-08.csv",
+        "id": "10-08"
+      },
+      {
+        "name": "Outgoing goods from the Port of Bujumbura (in tons)",
+        "path": "/datasets/isteebu-annuaire-2018-10-03.csv",
+        "id": "10-03"
+      },
+      {
+        "name": "Parcel post traffic",
+        "path": "/datasets/isteebu-annuaire-2018-10-15.csv",
+        "id": "10-15"
+      },
+      {
+        "name": "Postal money order traffic (amount in thousands).",
+        "path": "/datasets/isteebu-annuaire-2018-10-16.csv",
+        "id": "10-16"
+      },
+      {
+        "name": "Registered mail traffic (number in thousands).",
+        "path": "/datasets/isteebu-annuaire-2018-10-14.csv",
+        "id": "10-14"
+      },
+      {
+        "name": "Regular shipment traffic (number in thousands).",
+        "path": "/datasets/isteebu-annuaire-2018-10-13.csv",
+        "id": "10-13"
+      },
+      {
+        "name": "Staff of the Régie Nationale des Postes.",
+        "path": "/datasets/isteebu-annuaire-2018-10-18.csv",
+        "id": "10-18"
+      },
+      {
+        "name": "Status of postal subscribers",
+        "path": "/datasets/isteebu-annuaire-2018-10-12.csv",
+        "id": "10-12"
+      },
+      {
+        "name": "Telecommunications",
+        "path": "/datasets/isteebu-annuaire-2018-10-21.csv",
+        "id": "10-21"
+      },
+      {
+        "name": "Traffic at Bujumbura International Airport",
+        "path": "/datasets/isteebu-annuaire-2018-10-04.csv",
+        "id": "10-04"
+      },
+      {
+        "name": "Traffic at the Port of Bujumbura (in tons)",
+        "path": "/datasets/isteebu-annuaire-2018-10-01.csv",
+        "id": "10-01"
+      },
+      {
+        "name": "Transmitted telephone traffic",
+        "path": "/datasets/isteebu-annuaire-2018-10-10.csv",
+        "id": "10-10"
+      }
+    ]
+  },
+  {
+    "category": "WATER, ENERGY AND MINING",
+    "data": [
+      {
+        "name": "Bagasse and energy produced at SOSUMO",
+        "path": "/datasets/isteebu-annuaire-2018-11-10.csv",
+        "id": "11-10"
+      },
+      {
+        "name": "Change in the number of water subscribers by region.",
+        "path": "/datasets/isteebu-annuaire-2018-11-13.csv",
+        "id": "11-13"
+      },
+      {
+        "name": "Change in water consumption by region (in m3).",
+        "path": "/datasets/isteebu-annuaire-2018-11-12.csv",
+        "id": "11-12"
+      },
+      {
+        "name": "Consumption of petroleum products (in thousands of liters)",
+        "path": "/datasets/isteebu-annuaire-2018-11-16.csv",
+        "id": "11-16"
+      },
+      {
+        "name": "Electricity production by hydroelectric center (in Kwh).",
+        "path": "/datasets/isteebu-annuaire-2018-11-01.csv",
+        "id": "11-01"
+      },
+      {
+        "name": "Evolution of bitumen and lubricants imports (in tons).",
+        "path": "/datasets/isteebu-annuaire-2018-11-23.csv",
+        "id": "11-23"
+      },
+      {
+        "name": "Evolution of electricity consumption by category of consumers (in GWh).",
+        "path": "/datasets/isteebu-annuaire-2018-11-04.csv",
+        "id": "11-04"
+      },
+      {
+        "name": "Evolution of electricity consumption by voltage level.",
+        "path": "/datasets/isteebu-annuaire-2018-11-06.csv",
+        "id": "11-06"
+      },
+      {
+        "name": "Evolution of electricity consumption per center (in Kwh).",
+        "path": "/datasets/isteebu-annuaire-2018-11-03.csv",
+        "id": "11-03"
+      },
+      {
+        "name": "Evolution of electricity imports (in Kw).",
+        "path": "/datasets/isteebu-annuaire-2018-11-02.csv",
+        "id": "11-02"
+      },
+      {
+        "name": "Evolution of electricity production and consumption in Burundi (in GWh).",
+        "path": "/datasets/isteebu-annuaire-2018-11-07.csv",
+        "id": "11-07"
+      },
+      {
+        "name": "Evolution of imported and consumed electrical energy.",
+        "path": "/datasets/isteebu-annuaire-2018-11-09.csv",
+        "id": "11-09"
+      },
+      {
+        "name": "Evolution of losses on the REGIDESO network.",
+        "path": "/datasets/isteebu-annuaire-2018-11-08.csv",
+        "id": "11-08"
+      },
+      {
+        "name": "Evolution of the number of ABER subscribers by province.",
+        "path": "/datasets/isteebu-annuaire-2018-11-15.csv",
+        "id": "11-15"
+      },
+      {
+        "name": "Evolution of the number of electricity subscribers per center.",
+        "path": "/datasets/isteebu-annuaire-2018-11-05.csv",
+        "id": "11-05"
+      },
+      {
+        "name": "Evolution of the production of the ABER's M.C.H.E.",
+        "path": "/datasets/isteebu-annuaire-2018-11-14.csv",
+        "id": "11-14"
+      },
+      {
+        "name": "Evolution of water consumption by category of consumer (in m3).",
+        "path": "/datasets/isteebu-annuaire-2018-11-11.csv",
+        "id": "11-11"
+      },
+      {
+        "name": "Imports of petroleum products (in thousands of liters).",
+        "path": "/datasets/isteebu-annuaire-2018-11-22.csv",
+        "id": "11-22"
+      },
+      {
+        "name": "Mining production.",
+        "path": "/datasets/isteebu-annuaire-2018-11-19.csv",
+        "id": "11-19"
+      },
+      {
+        "name": "National consumption of primary energy (in tons).",
+        "path": "/datasets/isteebu-annuaire-2018-11-21.csv",
+        "id": "11-21"
+      },
+      {
+        "name": "National primary energy production",
+        "path": "/datasets/isteebu-annuaire-2018-11-20.csv",
+        "id": "11-20"
+      },
+      {
+        "name": "Peat consumption by customer category (in metric tons).",
+        "path": "/datasets/isteebu-annuaire-2018-11-18.csv",
+        "id": "11-18"
+      },
+      {
+        "name": "Peat production (in tons).",
+        "path": "/datasets/isteebu-annuaire-2018-11-17.csv",
+        "id": "11-17"
+      }
+    ]
+  },
+  {
+    "category": "PRICES AND PRICE INDICES",
+    "data": [
+      {
+        "name": "Average annual average household consumption price",
+        "path": "/datasets/isteebu-annuaire-2018-12-02.csv",
+        "id": "12-02"
+      },
+      {
+        "name": "National household consumer price index (base 100 = December 2016)",
+        "path": "/datasets/isteebu-annuaire-2018-12-01.csv",
+        "id": "12-01"
+      }
+    ]
+  },
+  {
+    "category": "FOREIGN TRADE AND AID",
+    "data": [
+      {
+        "name": "Breakdown of FDI according to their categories in millions of BIF",
+        "path": "/datasets/isteebu-annuaire-2018-13-23.csv",
+        "id": "13-23"
+      },
+      {
+        "name": "Breakdown of GPI by categories in millions of BIF",
+        "path": "/datasets/isteebu-annuaire-2018-13-19.csv",
+        "id": "13-19"
+      },
+      {
+        "name": "Breakdown of TPI according to branches of activity in Millions BIF",
+        "path": "/datasets/isteebu-annuaire-2018-13-21.csv",
+        "id": "13-21"
+      },
+      {
+        "name": "Burundi's imports by continent (in millions of BIF)",
+        "path": "/datasets/isteebu-annuaire-2018-13-05.csv",
+        "id": "13-05"
+      },
+      {
+        "name": "Distribution of FDI according to branches of activity in Millions BIF",
+        "path": "/datasets/isteebu-annuaire-2018-13-24.csv",
+        "id": "13-24"
+      },
+      {
+        "name": "Distribution of FDI by industries according to types of investment companies",
+        "path": "/datasets/isteebu-annuaire-2018-13-25.csv",
+        "id": "13-25"
+      },
+      {
+        "name": "Evolution of Exports by Continent(in millions of BIF)",
+        "path": "/datasets/isteebu-annuaire-2018-13-11.csv",
+        "id": "13-11"
+      },
+      {
+        "name": "Evolution of Exports by product in value (in millions of BIF)",
+        "path": "/datasets/isteebu-annuaire-2018-13-12.csv",
+        "id": "13-12"
+      },
+      {
+        "name": "Evolution of Exports by products in quantity (Tons)",
+        "path": "/datasets/isteebu-annuaire-2018-13-13.csv",
+        "id": "13-13"
+      },
+      {
+        "name": "Evolution of foreign trade",
+        "path": "/datasets/isteebu-annuaire-2018-13-01.csv",
+        "id": "13-01"
+      },
+      {
+        "name": "Evolution of imports by major product groups in millions of BIF",
+        "path": "/datasets/isteebu-annuaire-2018-13-02.csv",
+        "id": "13-02"
+      },
+      {
+        "name": "Evolution of imports from CEPGL countries (in millions of BIF)",
+        "path": "/datasets/isteebu-annuaire-2018-13-08.csv",
+        "id": "13-08"
+      },
+      {
+        "name": "Evolution of imports from COMESA countries (in millions of BIF)",
+        "path": "/datasets/isteebu-annuaire-2018-13-06.csv",
+        "id": "13-06"
+      },
+      {
+        "name": "Evolution of imports from EAC Countries (in millions of BIF)",
+        "path": "/datasets/isteebu-annuaire-2018-13-07.csv",
+        "id": "13-07"
+      },
+      {
+        "name": "Evolution of imports from SADC countries (in millions of BIF)",
+        "path": "/datasets/isteebu-annuaire-2018-13-10.csv",
+        "id": "13-10"
+      },
+      {
+        "name": "Export to EAC countries( in millions BIF)",
+        "path": "/datasets/isteebu-annuaire-2018-13-14.csv",
+        "id": "13-14"
+      },
+      {
+        "name": "Exports of services and primary income (in millions of BIF).",
+        "path": "/datasets/isteebu-annuaire-2018-13-18.csv",
+        "id": "13-18"
+      },
+      {
+        "name": "Geographical distribution of GIF in millions of BIF",
+        "path": "/datasets/isteebu-annuaire-2018-13-20.csv",
+        "id": "13-20"
+      },
+      {
+        "name": "Imports from ECCAS countries (in millions of FBU)",
+        "path": "/datasets/isteebu-annuaire-2018-13-09.csv",
+        "id": "13-09"
+      },
+      {
+        "name": "Imports of services and primary income (in millions of BIF).",
+        "path": "/datasets/isteebu-annuaire-2018-13-17.csv",
+        "id": "13-17"
+      },
+      {
+        "name": "Main imported products (net weight in tons).",
+        "path": "/datasets/isteebu-annuaire-2018-13-04.csv",
+        "id": "13-04"
+      },
+      {
+        "name": "Main imported products (value in millions of BIF).",
+        "path": "/datasets/isteebu-annuaire-2018-13-03.csv",
+        "id": "13-03"
+      },
+      {
+        "name": "Re-exports in quantity (Tons)",
+        "path": "/datasets/isteebu-annuaire-2018-13-16.csv",
+        "id": "13-16"
+      },
+      {
+        "name": "Re-exports in value (in millions of BIF)",
+        "path": "/datasets/isteebu-annuaire-2018-13-15.csv",
+        "id": "13-15"
+      },
+      {
+        "name": "Summary of Bilateral Aid Disbursements (in millions of USD)",
+        "path": "/datasets/isteebu-annuaire-2018-13-27.csv",
+        "id": "13-27"
+      },
+      {
+        "name": "Translated with www.DeepL.com/Translator (free version)",
+        "path": "/datasets/isteebu-annuaire-2018-13-22.csv",
+        "id": "13-22"
+      },
+      {
+        "name": "Trends in Aid Disbursements by Donor (in millions of USD)",
+        "path": "/datasets/isteebu-annuaire-2018-13-26.csv",
+        "id": "13-26"
+      }
+    ]
+  },
+  {
+    "category": "BALANCE OF PAYMENTS",
+    "data": [
+      {
+        "name": "Balance of payments (in millions of BIF)",
+        "path": "/datasets/isteebu-annuaire-2018-14-01.csv",
+        "id": "14-01"
+      },
+      {
+        "name": "Change in foreign currency income and expenditure (in millions of BIF)",
+        "path": "/datasets/isteebu-annuaire-2018-14-02.csv",
+        "id": "14-02"
+      }
+    ]
+  },
+  {
+    "category": "PUBLIC FINANCES",
+    "data": [
+      {
+        "name": "Consolidated financial transactions of the State (in millions of BIF)",
+        "path": "/datasets/isteebu-annuaire-2018-15-08.csv",
+        "id": "15-08"
+      },
+      {
+        "name": "Evolution of Donations (in millions of BIF).",
+        "path": "/datasets/isteebu-annuaire-2018-15-04.csv",
+        "id": "15-04"
+      },
+      {
+        "name": "Evolution of Non-Fiscal Revenue (in millions of BIF)",
+        "path": "/datasets/isteebu-annuaire-2018-15-03.csv",
+        "id": "15-03"
+      },
+      {
+        "name": "Evolution of Tax Revenue (in millions of BIF)",
+        "path": "/datasets/isteebu-annuaire-2018-15-02.csv",
+        "id": "15-02"
+      },
+      {
+        "name": "Evolution of the communes' capital expenditure (in thousands of BIF)",
+        "path": "/datasets/isteebu-annuaire-2018-15-12.csv",
+        "id": "15-12"
+      },
+      {
+        "name": "Evolution of the investment income of the communes (in thousands of BIF)",
+        "path": "/datasets/isteebu-annuaire-2018-15-11.csv",
+        "id": "15-11"
+      },
+      {
+        "name": "Evolution of the operating expenses of the communes (in thousands of BIF)",
+        "path": "/datasets/isteebu-annuaire-2018-15-10.csv",
+        "id": "15-10"
+      },
+      {
+        "name": "Evolution of the operation of the communes' revenues (in thousands of BIF)",
+        "path": "/datasets/isteebu-annuaire-2018-15-09.csv",
+        "id": "15-09"
+      },
+      {
+        "name": "Evolution of the ordinary budget (in millions of BIF).",
+        "path": "/datasets/isteebu-annuaire-2018-15-01.csv",
+        "id": "15-01"
+      },
+      {
+        "name": "Evolution of the public debt (in millions of BIF).",
+        "path": "/datasets/isteebu-annuaire-2018-15-06.csv",
+        "id": "15-06"
+      },
+      {
+        "name": "Expenditures (in millions of BIF).",
+        "path": "/datasets/isteebu-annuaire-2018-15-05.csv",
+        "id": "15-05"
+      },
+      {
+        "name": "External public debt by sector (in millions of BIF)",
+        "path": "/datasets/isteebu-annuaire-2018-15-07.csv",
+        "id": "15-07"
+      }
+    ]
+  },
+  {
+    "category": "CURRENCY AND CREDITS",
+    "data": [
+      {
+        "name": "Average exchange rates of the main currencies (BIF per foreign currency unit).",
+        "path": "/datasets/isteebu-annuaire-2018-16-06.csv",
+        "id": "16-06"
+      },
+      {
+        "name": "Breakdown of bank deposits by holder (end of year: in millions of BIF).",
+        "path": "/datasets/isteebu-annuaire-2018-16-03.csv",
+        "id": "16-03"
+      },
+      {
+        "name": "Burundi's reserve assets (in millions of BIF)",
+        "path": "/datasets/isteebu-annuaire-2018-16-07.csv",
+        "id": "16-07"
+      },
+      {
+        "name": "Counterpart of monetary resources (end of year: in millions of BIF).",
+        "path": "/datasets/isteebu-annuaire-2018-16-02.csv",
+        "id": "16-02"
+      },
+      {
+        "name": "Evolution of credits distributed to the economy (in millions of BIF).",
+        "path": "/datasets/isteebu-annuaire-2018-16-05.csv",
+        "id": "16-05"
+      },
+      {
+        "name": "Evolution of financial system risks (in millions of BIF).",
+        "path": "/datasets/isteebu-annuaire-2018-16-04.csv",
+        "id": "16-04"
+      },
+      {
+        "name": "Resources of the banking system (end of year: in millions of BIF).",
+        "path": "/datasets/isteebu-annuaire-2018-16-01.csv",
+        "id": "16-01"
+      }
+    ]
+  },
+  {
+    "category": "ECONOMIC ACCOUNTS",
+    "data": [
+      {
+        "name": "Breakdown of GFCF by sector in billions of BFBF",
+        "path": "/datasets/isteebu-annuaire-2018-17-09.csv",
+        "id": "17-09"
+      },
+      {
+        "name": "Distribution of value added by sector (in %)",
+        "path": "/datasets/isteebu-annuaire-2018-17-02.csv",
+        "id": "17-02"
+      },
+      {
+        "name": "Evolution of the value added of the primary sector (in billions of BIF)",
+        "path": "/datasets/isteebu-annuaire-2018-17-03.csv",
+        "id": "17-03"
+      },
+      {
+        "name": "Evolution of the value added of the secondary sector (in billions of BIF)",
+        "path": "/datasets/isteebu-annuaire-2018-17-04.csv",
+        "id": "17-04"
+      },
+      {
+        "name": "Evolution of the value added of the tertiary sector (in billions of BIF)",
+        "path": "/datasets/isteebu-annuaire-2018-17-05.csv",
+        "id": "17-05"
+      },
+      {
+        "name": "GDP employment (in billions of BIF, constant prices)",
+        "path": "/datasets/isteebu-annuaire-2018-17-07.csv",
+        "id": "17-07"
+      },
+      {
+        "name": "GDP employment (in billions of BIF, current prices)",
+        "path": "/datasets/isteebu-annuaire-2018-17-06.csv",
+        "id": "17-06"
+      },
+      {
+        "name": "Gross domestic product according to the production perspective (in billions of BIF)",
+        "path": "/datasets/isteebu-annuaire-2018-17-01.csv",
+        "id": "17-01"
+      },
+      {
+        "name": "Structure of exports by products, in billions of BIF",
+        "path": "/datasets/isteebu-annuaire-2018-17-11.csv",
+        "id": "17-11"
+      },
+      {
+        "name": "Structure of food consumption (in %)",
+        "path": "/datasets/isteebu-annuaire-2018-17-08.csv",
+        "id": "17-08"
+      },
+      {
+        "name": "Structure of imports in billions of BIF",
+        "path": "/datasets/isteebu-annuaire-2018-17-10.csv",
+        "id": "17-10"
+      }
+    ]
+  },
+  {
+    "category": "BANKING AND COMMERCIAL INSURANCE",
+    "data": [
+      {
+        "name": "Change in claims paid by category of non-life insurance (in thousands of BIF) at December 31",
+        "path": "/datasets/isteebu-annuaire-2018-18-08.csv",
+        "id": "18-08"
+      },
+      {
+        "name": "Change in premiums written by category of Life insurance (in thousands of BIF)",
+        "path": "/datasets/isteebu-annuaire-2018-18-07.csv",
+        "id": "18-07"
+      },
+      {
+        "name": "Change in premiums written by category of non-life insurance (in thousands of BIF)",
+        "path": "/datasets/isteebu-annuaire-2018-18-06.csv",
+        "id": "18-06"
+      },
+      {
+        "name": "Evolution of benefits by category of Life insurance (in thousands of BIF) at December 31",
+        "path": "/datasets/isteebu-annuaire-2018-18-09.csv",
+        "id": "18-09"
+      },
+      {
+        "name": "Evolution of the number of employees per financial institution",
+        "path": "/datasets/isteebu-annuaire-2018-18-11.csv",
+        "id": "18-11"
+      },
+      {
+        "name": "Evoution of financial institutions",
+        "path": "/datasets/isteebu-annuaire-2018-18-12.csv",
+        "id": "18-12"
+      },
+      {
+        "name": "Number of Financial Institution Branches by Province",
+        "path": "/datasets/isteebu-annuaire-2018-18-10.csv",
+        "id": "18-10"
+      },
+      {
+        "name": "Number of contracts (1) by category of non-life insurance at December 31",
+        "path": "/datasets/isteebu-annuaire-2018-18-02.csv",
+        "id": "18-02"
+      },
+      {
+        "name": "Number of contracts by category of life insurance at December 31",
+        "path": "/datasets/isteebu-annuaire-2018-18-03.csv",
+        "id": "18-03"
+      },
+      {
+        "name": "Number of employees of insurance companies",
+        "path": "/datasets/isteebu-annuaire-2018-18-01.csv",
+        "id": "18-01"
+      },
+      {
+        "name": "Some information on Financial Institutions, Financial Institutions and Microfinance",
+        "path": "/datasets/isteebu-annuaire-2018-18-13.csv",
+        "id": "18-13"
+      },
+      {
+        "name": "The number of claims reported by category of Life Insurance as of December 31",
+        "path": "/datasets/isteebu-annuaire-2018-18-05.csv",
+        "id": "18-05"
+      },
+      {
+        "name": "The number of claims reported by category of Non-Life Insurance as of December 31",
+        "path": "/datasets/isteebu-annuaire-2018-18-04.csv",
+        "id": "18-04"
+      }
+    ]
+  },
+  {
+    "category": "JUSTICE",
+    "data": [
+      {
+        "name": "Distribution of magistrates having exercised in the jurdiction",
+        "path": "/datasets/isteebu-annuaire-2018-19-11.csv",
+        "id": "19-11"
+      },
+      {
+        "name": "Evolution of the number of Magistrates having exerted in the Jurisdictions",
+        "path": "/datasets/isteebu-annuaire-2018-19-03.csv",
+        "id": "19-03"
+      },
+      {
+        "name": "Evolution of the prison population",
+        "path": "/datasets/isteebu-annuaire-2018-19-02.csv",
+        "id": "19-02"
+      },
+      {
+        "name": "Evolution of the specific number of inmates per prison",
+        "path": "/datasets/isteebu-annuaire-2018-19-13.csv",
+        "id": "19-13"
+      },
+      {
+        "name": "Number of cases closed by magistrates",
+        "path": "/datasets/isteebu-annuaire-2018-19-08.csv",
+        "id": "19-08"
+      },
+      {
+        "name": "Number of cases pending before the Public Prosecutor's Office at the end of the year",
+        "path": "/datasets/isteebu-annuaire-2018-19-05.csv",
+        "id": "19-05"
+      },
+      {
+        "name": "Number of cases registered with the Public Prosecutor's Office during the year",
+        "path": "/datasets/isteebu-annuaire-2018-19-07.csv",
+        "id": "19-07"
+      },
+      {
+        "name": "Number of criminal judgments handed down by the First Instance Courts according to the type of rape",
+        "path": "/datasets/isteebu-annuaire-2018-19-12.csv",
+        "id": "19-12"
+      },
+      {
+        "name": "Number of criminal judgments rendered according to the nature of the offence",
+        "path": "/datasets/isteebu-annuaire-2018-19-04.csv",
+        "id": "19-04"
+      },
+      {
+        "name": "Number of disputes subject to civil decisions rendered",
+        "path": "/datasets/isteebu-annuaire-2018-19-10.csv",
+        "id": "19-10"
+      },
+      {
+        "name": "Number of files opened for instructions remaining at the end of the year",
+        "path": "/datasets/isteebu-annuaire-2018-10-06.csv",
+        "id": "10-06"
+      },
+      {
+        "name": "Some justice performance indicators",
+        "path": "/datasets/isteebu-annuaire-2018-19-01.csv",
+        "id": "19-01"
+      },
+      {
+        "name": "Total number of decisions (judgments) rendered at the Court of Appeal",
+        "path": "/datasets/isteebu-annuaire-2018-19-09B.csv",
+        "id": "19-09B"
+      },
+      {
+        "name": "Total number of decisions (judgments) rendered at the Suppression Court",
+        "path": "/datasets/isteebu-annuaire-2018-19-09A.csv",
+        "id": "19-09A"
+      },
+      {
+        "name": "Total number of decisions (judgments) rendered in the High Courts",
+        "path": "/datasets/isteebu-annuaire-2018-19-09C.csv",
+        "id": "19-09C"
+      }
+    ]
+  },
+  {
+    "category": "PUBLIC SAFETY",
+    "data": [
+      {
+        "name": "Changes in the number of persons in police custody by province",
+        "path": "/datasets/isteebu-annuaire-2018-20-06.csv",
+        "id": "20-06"
+      },
+      {
+        "name": "Distribution of Offenders by Province and Gender",
+        "path": "/datasets/isteebu-annuaire-2018-20-04.csv",
+        "id": "20-04"
+      },
+      {
+        "name": "Distribution of road traffic accidents by province according to causes",
+        "path": "/datasets/isteebu-annuaire-2018-20-10.csv",
+        "id": "20-10"
+      },
+      {
+        "name": "Driver's license statistics and revenues",
+        "path": "/datasets/isteebu-annuaire-2018-20-12.csv",
+        "id": "20-12"
+      },
+      {
+        "name": "Evolution of recurring infractions",
+        "path": "/datasets/isteebu-annuaire-2018-20-03.csv",
+        "id": "20-03"
+      },
+      {
+        "name": "Evolution of the open files transmitted to the Public Prosecutor's Office",
+        "path": "/datasets/isteebu-annuaire-2018-20-05.csv",
+        "id": "20-05"
+      },
+      {
+        "name": "Monthly evolution of the impact of traffic accidents in Bujumbura City Hall",
+        "path": "/datasets/isteebu-annuaire-2018-20-16.csv",
+        "id": "20-16"
+      },
+      {
+        "name": "Police strength by province",
+        "path": "/datasets/isteebu-annuaire-2018-20-01.csv",
+        "id": "20-01"
+      },
+      {
+        "name": "Statistics of East African Community nationals",
+        "path": "/datasets/isteebu-annuaire-2018-20-09.csv",
+        "id": "20-09"
+      },
+      {
+        "name": "Statistics on International Driver's Licenses Renewed or Changed",
+        "path": "/datasets/isteebu-annuaire-2018-20-15.csv",
+        "id": "20-15"
+      },
+      {
+        "name": "Statistics on Provisional Driver's Licence Renewals and Duplicates Issued in 2016",
+        "path": "/datasets/isteebu-annuaire-2018-20-13.csv",
+        "id": "20-13"
+      },
+      {
+        "name": "Statistics on final driver's licenses renewed or changed",
+        "path": "/datasets/isteebu-annuaire-2018-20-14.csv",
+        "id": "20-14"
+      },
+      {
+        "name": "Statistics on the cross-border movement of persons",
+        "path": "/datasets/isteebu-annuaire-2018-20-08.csv",
+        "id": "20-08"
+      },
+      {
+        "name": "Travel Document Statistics",
+        "path": "/datasets/isteebu-annuaire-2018-20-07.csv",
+        "id": "20-07"
+      },
+      {
+        "name": "Vehicles violating the highway code in Bujumbura City Hall and traded almonds",
+        "path": "/datasets/isteebu-annuaire-2018-20-11.csv",
+        "id": "20-11"
+      },
+      {
+        "name": "Violations of the Penal Code recorded by the Police",
+        "path": "/datasets/isteebu-annuaire-2018-20-02.csv",
+        "id": "20-02"
+      }
+    ]
+  },
+  {
+    "category": "DIPLOMACY",
+    "data": [
+      {
+        "name": "Burundi's Diplomatic Missions Abroad in 2017",
+        "path": "/datasets/isteebu-annuaire-2018-21-01.csv",
+        "id": "21-01"
+      },
+      {
+        "name": "Diplomatic Missions accredited in Bujumbura and residing in third countries in 2017",
+        "path": "/datasets/isteebu-annuaire-2018-21-04.csv",
+        "id": "21-04"
+      },
+      {
+        "name": "Diplomatic and consular missions accredited to Bujumbura in 2017",
+        "path": "/datasets/isteebu-annuaire-2018-21-02.csv",
+        "id": "21-02"
+      },
+      {
+        "name": "International Organizations and other accredited foreign representations in Bujumbura in 2017",
+        "path": "/datasets/isteebu-annuaire-2018-21-03.csv",
+        "id": "21-03"
+      },
+      {
+        "name": "Scholarships and internships offered in various disciplines",
+        "path": "/datasets/isteebu-annuaire-2018-21-05.csv",
+        "id": "21-05"
+      }
+    ]
+  }
+]
