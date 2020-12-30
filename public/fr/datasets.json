@@ -648,7 +648,7 @@
         "id": "9-19"
       },
       {
-        "name": "Production de café vert par qualité  et par campagne  (en tonnes)",
+        "name": "Production de café vert par qualité  et par campagne (en tonnes)",
         "path": "/datasets/isteebu-annuaire-2018-9-04.csv",
         "id": "9-04"
       },
@@ -743,7 +743,7 @@
         "id": "10-19"
       },
       {
-        "name": "Evolution des recettes postales (montant en millier)",
+        "name": "Evolution des recettes postales (montant en milliers)",
         "path": "/datasets/isteebu-annuaire-2018-10-17.csv",
         "id": "10-17"
       },
@@ -763,7 +763,7 @@
         "id": "10-08"
       },
       {
-        "name": "Nombre d'avions,véhicules et autres moyens de transport  au burundi",
+        "name": "Nombre d'avions,véhicules et autres moyens de transport  au Burundi",
         "path": "/datasets/isteebu-annuaire-2018-10-23.csv",
         "id": "10-23"
       },
@@ -818,7 +818,7 @@
         "id": "10-13"
       },
       {
-        "name": "Trafic des mandats postaux (montant en millier)",
+        "name": "Trafic des mandats postaux (montant en milliers)",
         "path": "/datasets/isteebu-annuaire-2018-10-16.csv",
         "id": "10-16"
       },
@@ -1028,7 +1028,7 @@
         "id": "13-01"
       },
       {
-        "name": "Exportation vers les pays de l'EAC( en Million fbu)",
+        "name": "Exportation vers les pays de l'EAC( en millions of FBU)",
         "path": "/datasets/isteebu-annuaire-2018-13-14.csv",
         "id": "13-14"
       },
@@ -1183,7 +1183,7 @@
         "id": "15-01"
       },
       {
-        "name": "Opérations financières consolidées de l'Etat (en millions de Fbu)",
+        "name": "Opérations financières consolidées de l'Etat (en millions de FBU)",
         "path": "/datasets/isteebu-annuaire-2018-15-08.csv",
         "id": "15-08"
       }
@@ -1233,37 +1233,37 @@
     "category": "COMPTES ECONOMIQUES",
     "data": [
       {
-        "name": "Emplois du PIB (en milliards de Fbu, prix constants)",
+        "name": "Emplois du PIB (en milliards de FBU, prix constants)",
         "path": "/datasets/isteebu-annuaire-2018-17-07.csv",
         "id": "17-07"
       },
       {
-        "name": "Emplois du PIB (en milliards de Fbu, prix courants)",
+        "name": "Emplois du PIB (en milliards de FBU, prix courants)",
         "path": "/datasets/isteebu-annuaire-2018-17-06.csv",
         "id": "17-06"
       },
       {
-        "name": "Evolution de la valeur ajoutée du secteur primaire (en milliards de Fbu)",
+        "name": "Evolution de la valeur ajoutée du secteur primaire (en milliards de FBU)",
         "path": "/datasets/isteebu-annuaire-2018-17-03.csv",
         "id": "17-03"
       },
       {
-        "name": "Evolution de la valeur ajoutée du secteur secondaire (en milliards de Fbu)",
+        "name": "Evolution de la valeur ajoutée du secteur secondaire (en milliards de FBU)",
         "path": "/datasets/isteebu-annuaire-2018-17-04.csv",
         "id": "17-04"
       },
       {
-        "name": "Evolution de la valeur ajoutée du secteur tertiaire (en milliards de Fbu)",
+        "name": "Evolution de la valeur ajoutée du secteur tertiaire (en milliards de FBU)",
         "path": "/datasets/isteebu-annuaire-2018-17-05.csv",
         "id": "17-05"
       },
       {
-        "name": "Produit intérieur brut selon l'optique production (en milliards de Fbu)",
+        "name": "Produit intérieur brut selon l'optique production (en milliards de FBU)",
         "path": "/datasets/isteebu-annuaire-2018-17-01.csv",
         "id": "17-01"
       },
       {
-        "name": "Répartition de la FBCF par secteurs en milliards de Fbu",
+        "name": "Répartition de la FBCF par secteurs en milliards de FBU",
         "path": "/datasets/isteebu-annuaire-2018-17-09.csv",
         "id": "17-09"
       },
@@ -1278,12 +1278,12 @@
         "id": "17-08"
       },
       {
-        "name": "Structure des exportations par produits, en milliards de Fbu",
+        "name": "Structure des exportations par produits, en milliards de FBU",
         "path": "/datasets/isteebu-annuaire-2018-17-11.csv",
         "id": "17-11"
       },
       {
-        "name": "Structure des importations en milliards de Fbu",
+        "name": "Structure des importations en milliards de FBU",
         "path": "/datasets/isteebu-annuaire-2018-17-10.csv",
         "id": "17-10"
       }
@@ -1292,11 +1292,6 @@
   {
     "category": "BANQUES ET ASSURANCES COMMERCIALES",
     "data": [
-      {
-        "name": "18.10.",
-        "path": "/datasets/isteebu-annuaire-2018-18-10.csv",
-        "id": "18-10"
-      },
       {
         "name": "Evolution des prestations par categorie d'assurance Vie(en milliers de FBU) au 31 Décembre",
         "path": "/datasets/isteebu-annuaire-2018-18-09.csv",
@@ -1336,6 +1331,11 @@
         "name": "Le nombre de sinistres déclarés par catégories d'Assurances vie  au 31 décembre",
         "path": "/datasets/isteebu-annuaire-2018-18-05.csv",
         "id": "18-05"
+      },
+      {
+        "name": "Nombre d'agences  des institutions financières par province",
+        "path": "/datasets/isteebu-annuaire-2018-18-10.csv",
+        "id": "18-10"
       },
       {
         "name": "Nombre d'employés  des societés d'assurance",
@@ -1488,7 +1488,7 @@
         "id": "20-09"
       },
       {
-        "name": "Statistiques sur les  permis de conduire provisoires   renouvelés et duplicata délivrés en 2016",
+        "name": "Statistiques sur les  permis de conduire provisoires renouvelés et duplicata délivrés en 2016",
         "path": "/datasets/isteebu-annuaire-2018-20-13.csv",
         "id": "20-13"
       },
@@ -1533,7 +1533,7 @@
         "id": "21-05"
       },
       {
-        "name": "Missions Diplomatiques accréditées à Bujumbura et résidant dans les pays tiers  en 2017",
+        "name": "Missions Diplomatiques accréditées à Bujumbura et résidant dans les pays tiers en 2017",
         "path": "/datasets/isteebu-annuaire-2018-21-04.csv",
         "id": "21-04"
       },
