@@ -1,5 +1,6 @@
 import React, { ReactNode, useEffect } from 'react';
 import { searchActionHandler } from './search.action';
+import { i18n } from '../../i18n';
 
 /**
  * Types
@@ -59,15 +60,13 @@ export const HomeProvider = ({ children }: Provider): JSX.Element => {
 
   useEffect(() => {
     const fetchDatasets = async () => {
-      await fetch(
-        '/datasets.json'
-      )
+      await fetch(`/${i18n.language}/datasets.json`)
         .then((response) => response.json())
         .then((data) => dispatch({ name: 'FETCH_SUCCESS', payload: data }));
     };
 
     fetchDatasets();
-  }, []);
+  }, [i18n.language]);
 
   return (
     <HomeContext.Provider value={{ store, dispatch }}>
