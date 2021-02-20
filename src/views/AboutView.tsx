@@ -48,7 +48,6 @@ export const AboutView = ({ t }) => {
           <Text h3>{t('contributors')}</Text>
           <Text p>{t('About.contributors.description')}</Text>
           <ul>
-            <li>Armel Michel Ndayikeza</li>
             <li>Bahati Nsaba</li>
             <li>Bertrand Rukundo</li>
             <li>Charbel Mugisha</li>
