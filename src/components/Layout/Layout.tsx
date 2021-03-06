@@ -21,7 +21,7 @@ export const Layout = ({ children, pageTitle }: LayoutProps) => {
         </Page.Content>
         <Page.Footer>
           <Text p style={{ textAlign: 'center' }}>
-            © Burundiarxiv 2020
+            © Burundiarxiv 2021
           </Text>
         </Page.Footer>
       </Page>
